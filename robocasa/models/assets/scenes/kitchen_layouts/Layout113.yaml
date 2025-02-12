@@ -139,7 +139,7 @@ main_group_1:
     - name: microwave1
       type: microwave
       size: [0.75,0.45,null]
-      pos: [1.236,-0.325,1.16]
+      pos: [1.236, -0.325, 1.16]
 
     # - name: microwave
     #   type: microwave

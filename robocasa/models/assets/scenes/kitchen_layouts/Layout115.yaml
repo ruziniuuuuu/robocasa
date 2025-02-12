@@ -465,16 +465,6 @@ right_group_1:
       levels: [drawer, drawer, drawer, drawer]
       percentages: [0.25, 0.25, 0.25, 0.25]
 
-    # - name: singlecabinet_1.006
-    #   #name: stack_1.009
-    #   type: single_cabinet
-    #   pos: [0.965, -0.333, 0.47]
-    #   size: [0.61, 0.65, 0.84]
-    #   orientation: left
-    #   panel_config:
-    #     handle_hpos: right
-    #     handle_vpos: top
-
     - name: singlecabinet_1.006
       type: stack
       pos: [0.965, -0.333, 0.47]
@@ -489,11 +479,6 @@ right_group_1:
       pos: [2.56, -0.332, 0.25]
       size: [0.788, 0.66, 0.4]
 
-    - name: microwave
-      type: microwave
-      size: [0.75, 0.45, null]
-      pos: [4.04, -0.332, 1.15]
-
     - name: middle
       type: hinge_cabinet
       size: [0.788, 0.66, 0.758]
@@ -503,14 +488,29 @@ right_group_1:
       panel_config:
         handle_vpos: center
 
-    - name: top
-      type: hinge_cabinet
-      size: [0.788, 0.66, null]
+    - name: microwave
+      type: microwave
+      size: [0.75, 0.45, null]
+      # pos: [4.04, -0.332, 1.15]
+
+    - name: microwave_housing
+      type: housing_cabinet
+      size: [0.788, 0.65, 0.55]
+      padding: [null, [-0.01, null], null]
       align_to: middle
       alignment: front
       side: top
-      stack_fixtures: [bottom, middle]
+      interior_obj: microwave
+
+    - name: top
+      type: hinge_cabinet
+      size: [0.788, 0.66, null]
+      align_to: microwave_housing
+      alignment: front
+      side: top
+      stack_fixtures: [bottom, middle, microwave_housing]
       stack_height: 2.405
+
     - name: stack_1.003
       type: stack
       pos: [4.606, -0.333, 0.47]

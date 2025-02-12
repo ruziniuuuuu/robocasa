@@ -200,21 +200,27 @@ main_group_1:
       panel_config:
         handle_vpos: top
 
-    - name: singlecabinet_1.002
-      type: single_cabinet
-      size: [0.836,0.65,0.55]
+    - name: microwave
+      type: microwave
+      size: [0.75, 0.45, null]
+
+    - name: microwave_housing
+      type: housing_cabinet
+      size: [0.836, 0.65, 0.55]
+      padding: [null, [-0.01, null], null]
+      align_to: hingecabinet_1.001
       alignment: front
       side: top
-      align_to: hingecabinet_1.001
+      interior_obj: microwave
 
     - name: top
       type: hinge_cabinet
       size: [0.836, 0.65, null]
-      align_to: singlecabinet_1.002
+      align_to: microwave_housing
       alignment: front
       side: top
       stack_height: 2.3
-      stack_fixtures: [bottom, hingecabinet_1.001, singlecabinet_1.002]
+      stack_fixtures: [bottom, hingecabinet_1.001, microwave_housing]
 
     - name: wall_main_stack_2
       type: stack
@@ -288,10 +294,10 @@ left_group_1:
       pos: [1.457, -0.375, 0.45]
       size: [0.6, 0.6, 0.89]
 
-    - name: microwave
-      type: microwave
-      size: [0.75,0.45,null]
-      pos: [1.457, -0.325, 1.15]
+    # - name: microwave
+    #   type: microwave
+    #   size: [0.75,0.45,null]
+    #   pos: [1.457, -0.325, 1.15]
 
     - name: stack_1.005
       type: stack
@@ -353,10 +359,6 @@ left_group_1:
         pos: [-1.0, 1.0]
         rotation: [0, 0]
 
-right_group_1:
-  group_origin: [0, 0]
-  group_pos: [4.493, 0.0]
-  group_z_rot: -1.5707962925663537
 front_group_1:
   group_origin: [0, 0]
   group_pos: [2.262, -2.197]

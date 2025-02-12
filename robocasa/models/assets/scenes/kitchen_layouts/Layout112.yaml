@@ -219,10 +219,10 @@ left_group_1:
       pos: [4.161, -0.325, 0.46]
       size: [1.735, 0.65, 0.92]
     
-    - name: microwave_1
-      type: microwave
-      pos: [3.761, -0.325, 1.16]
-      size: [0.75, 0.45, Null]
+    # - name: microwave_1
+    #   type: microwave
+    #   pos: [3.761, -0.325, 1.16]
+    #   size: [0.75, 0.45, Null]
 
     - name: stack_1.003
       type: stack
@@ -544,57 +544,33 @@ front_group_2:
       levels: [drawer]
       percentages: [1]
       pos: [-0.413, -0.325, 0.15]
-      size: [0.731, 0.65, 0.3]
-
-    # - name: oven
-    #   type: oven
-    #   size: [0.631, 0.65, 0.68]
-
-    # - name: oven_housing
-    #   type: housing_cabinet
-    #   size: [0.731, 0.65, 0.7]
-    #   padding: [null, [-0.01, null], null]
-    #   align_to: bottom
-    #   alignment: front
-    #   side: top
-    #   interior_obj: oven
+      size: [0.8, 0.65, 0.3]
 
     - name: hingecabinet_1.006
       type: hinge_cabinet
-      size: [0.731, 0.65, 0.7]
+      size: [0.8, 0.65, 0.7]
       align_to: bottom
       alignment: front
       side: top
 
-    # - name: microwave
-    #   type: microwave
-    #   size: [0.631, 0.65, null]
+    - name: microwave
+      type: microwave
+      size: [0.75, 0.5, null]
 
-    # - name: microwave_housing
-    #   type: housing_cabinet
-    #   size: [0.731, 0.65, 0.55]
-    #   padding: [null, [-0.01, null], null]
-    #   align_to: oven_housing
-    #   alignment: front
-    #   side: top
-    #   interior_obj: microwave
-
-    - name: hingecabinet_1.007
-      type: hinge_cabinet
-      size: [0.731, 0.65, 0.55]
+    - name: microwave_housing
+      type: housing_cabinet
+      size: [0.8, 0.65, 0.55]
+      padding: [null, [-0.01, null], null]
       align_to: hingecabinet_1.006
       alignment: front
       side: top
+      interior_obj: microwave
 
     - name: top
       type: hinge_cabinet
-      size: [0.731, 0.65, null]
-      align_to: hingecabinet_1.007
+      size: [0.8, 0.65, null]
+      align_to: microwave_housing
       alignment: front
       side: top
-      stack_height: 2.059577703475952
-      stack_fixtures: [bottom, hingecabinet_1.006, hingecabinet_1.007]
-
-    
-
-    
+      stack_height: 2.3
+      stack_fixtures: [bottom, hingecabinet_1.006, microwave_housing]

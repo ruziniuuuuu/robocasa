@@ -145,7 +145,7 @@ main_group_1:
       size: [0.76, 0.66, 0.915]
       align_to: counter_1.001
       side: left
-      alignment: bottom_back
+      alignment: top_back
 
     - name: hood_1
       type: hood
@@ -153,21 +153,6 @@ main_group_1:
       offset: [0, 0, 0.75]
       align_to: stove_1
       side: top
-
-    # - name: stove_1.001
-    #   type: stove
-    #   # pos: [3.603, -0.453, 0.46]
-    #   size: [0.768, 0.65, null]
-    #   align_to: stove_1
-    #   side: left
-    #   alignment: top_back
-
-    # - name: hood_1.001
-    #   type: hood
-    #   size: [stove_1.001, 0.6, null]
-    #   offset: [0, 0, 0.75]
-    #   align_to: stove_1.001
-    #   side: top
 
     - name: stack_1.005
       type: stack
@@ -177,15 +162,6 @@ main_group_1:
       size: [0.627, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
       percentages: [0.5, 0.25, 0.25]
-    
-    # - name: stack_1.002
-    #   type: stack
-    #   # pos: [2.1, -0.325, 0.47]
-    #   align_to: stack_1.005
-    #   side: left
-    #   size: [0.982, 0.65, 0.84]
-    #   levels: [drawer, drawer]
-    #   percentages: [0.5, 0.5]
 
     - name: dishwasher_1
       type: dishwasher
@@ -202,11 +178,10 @@ main_group_1:
       alignment: top_back
       size: [3.219, 0.65, 0.92]
     
-    - name: microwave
-      type: microwave
-      size: [0.75, 0.45, null]
-      pos: [2.999, -0.325, 1.173]
-
+    # - name: microwave
+    #   type: microwave
+    #   size: [0.75, 0.45, null]
+    #   pos: [2.999, -0.325, 1.173]
     
     - name: stack_1.004
       type: stack
@@ -342,19 +317,6 @@ right_group_1:
       pos: [3.346, -0.325, 0.2]
       size: [0.8, 0.65, 0.3]
 
-    # - name: oven
-    #   type: oven
-    #   size: [0.7, 0.65, 0.68]
-
-    # - name: oven_housing
-    #   type: housing_cabinet
-    #   size: [0.8, 0.65, 0.7]
-    #   padding: [null, [-0.01, null], null]
-    #   align_to: bottom
-    #   alignment: front
-    #   side: top
-    #   interior_obj: oven
-
     - name: hingecabinet_1.002
       type: hinge_cabinet
       size: [0.8, 0.65, 0.7]
@@ -362,34 +324,27 @@ right_group_1:
       alignment: front
       side: top
 
-    # - name: microwave
-    #   type: microwave
-    #   size: [0.75, 0.45, null]
+    - name: microwave
+      type: microwave
+      size: [0.75, 0.45, null]
 
-    # - name: microwave_housing
-    #   type: housing_cabinet
-    #   size: [0.8, 0.65, 0.55]
-    #   padding: [null, [-0.01, null], null]
-    #   align_to: oven_housing
-    #   alignment: front
-    #   side: top
-    #   interior_obj: microwave
-
-    - name: hingecabinet_1.001
-      type: hinge_cabinet
+    - name: microwave_housing
+      type: housing_cabinet
       size: [0.8, 0.65, 0.55]
+      padding: [null, [-0.01, null], null]
       align_to: hingecabinet_1.002
       alignment: front
       side: top
+      interior_obj: microwave
 
     - name: top
       type: hinge_cabinet
       size: [0.8, 0.65, null]
-      align_to: hingecabinet_1.001
+      align_to: microwave_housing
       alignment: front
       side: top
       stack_height: 2.3
-      stack_fixtures: [bottom, hingecabinet_1.002, hingecabinet_1.001]
+      stack_fixtures: [bottom, hingecabinet_1.002, microwave_housing]
 
     - name: fridge
       type: fridge
@@ -444,7 +399,7 @@ island_group_1:
     - name: panelbox
       type: stack
       size: [0.222, 1.77, 0.84]
-      pos: [-3.771, 0.885, 0.469]
+      pos: [-3.771, 0.885, 0.47]
       levels: [panel_cabinet]
       percentages: [1]
       configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}
@@ -507,11 +462,11 @@ island_group_1:
 island_group_2:
   group_origin: [0, 0]
   group_pos: [1.485, -2.025]
-  group_z_rot: -3.496911062939106e-07
+  group_z_rot: 0
   island_bottom_row.001:
     - name: stack_1.003
       type: stack
-      pos: [0.524, -1.445, 0.471]
+      pos: [0.524, -1.445, 0.47]
       size: [0.605, 0.65, 0.84]
       levels: [single_cabinet]
       percentages: [1]
@@ -519,6 +474,6 @@ island_group_2:
     - name: stack_1.006
       type: stack
       pos: [3.35, -1.445, 0.47]
-      size: [0.605, 0.65, 0.84]
+      size: [0.62, 0.65, 0.84]
       levels: [single_cabinet]
       percentages: [1]
