@@ -343,7 +343,7 @@ left_group_1:
   bottom_row.002:
     - name: dishwasher_1
       type: dishwasher
-      pos: [1.56, -0.375, 0.46]
+      pos: [1.56, -0.375, 0.45]
       #size: [0.911, 0.65, 0.84]
       size: [0.6,0.6,0.89]
 

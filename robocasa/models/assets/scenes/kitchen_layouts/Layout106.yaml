@@ -439,7 +439,7 @@ right_group_1:
       type: dishwasher
       size: [0.6, 0.6, 0.89]
       # pos: [4.760, -0.325, 0.46]
-      pos: [4.760, -0.375, 0.46]
+      pos: [4.760, -0.375, 0.45]
     
     - name: panelbox
       type: stack

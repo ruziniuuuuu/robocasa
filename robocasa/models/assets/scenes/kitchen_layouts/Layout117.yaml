@@ -318,7 +318,7 @@ left_group_1:
 
     - name: dishwasher
       type: dishwasher
-      pos: [1.457, -0.375, 0.47]
+      pos: [1.457, -0.375, 0.45]
       size: [0.6, 0.6, 0.89]
 
     - name: microwave

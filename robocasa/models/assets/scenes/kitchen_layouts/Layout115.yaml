@@ -428,7 +428,7 @@ left_group_1:
 
     - name: dishwasher_1
       type: dishwasher
-      pos: [3.765, -0.375, 0.46]
+      pos: [3.765, -0.375, 0.45]
       size: [0.6, 0.6, 0.89]
   
   counter_accessories:
