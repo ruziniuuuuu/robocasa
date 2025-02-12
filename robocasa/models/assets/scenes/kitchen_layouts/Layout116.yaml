@@ -375,8 +375,11 @@ right_group_3:
 
     - name: hingecabinet_1.005
       type: hinge_cabinet
-      pos: [0.613, -0.2, 1.89]
+      # pos: [0.613, -0.2, 1.89]
       size: [1.225, 0.4, 0.92]
+      align_to: hingecabinet_1.003
+      side: left
+      alignment: back
   
   counter_accessories:
     - name: coffee_machine
