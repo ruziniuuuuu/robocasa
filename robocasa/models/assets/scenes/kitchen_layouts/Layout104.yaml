@@ -46,20 +46,6 @@ room:
       pos: [4.55, -2.396, 1.5]
       wall_side: right
 
-    # - name: wall_right_2
-    #   type: wall
-    #   size: [1.078, 0.46, 0.02]
-    #   # pos: [4.35, -1.898, 0.46]
-    #   pos: [4.35, -1.978, 0.45]
-    #   wall_side: right
-
-    # - name: wall_right_2_backing
-    #   type: wall
-    #   backing: true
-    #   size: [1.078, 0.46, 0.1]
-    #   # pos: [4.35, -1.898, 0.46]
-    #   pos: [4.35, -1.978, 0.45]
-    #   wall_side: right
 
   floor:
     - name: floor_1
@@ -237,17 +223,10 @@ left_group_1:
       pos: [2.996, -0.33, 0.46]
       size: [2.41, 0.65, 0.92]
 
-    # - name: stack_1.006
-    #   type: stack
-    #   pos: [3.942, -0.33, 0.47]
-    #   size: [0.519, 0.65, 0.84]
-    #   levels: [single_cabinet]
-    #   percentages: [1]
-
-    - name: stack_1.006
+    - name: corner_box
       type: box
-      size: [0.519, 0.65, 0.84]
-      pos: [3.942, -0.33, 0.47]
+      pos: [3.942, -0.33, 0.445]
+      size: [0.519, 0.65, 0.89]
 
     - name: stack_1.007
       type: stack
@@ -307,16 +286,8 @@ left_group_1:
       stack_height: 2.35
       stack_fixtures: [fridge_housing]
 
-    # - name: microwave_1
-    #   type: microwave
-    #   size: [0.75, 0.45, null]
-    #   align_to: hingecabinet_1.004
-    #   side: left
-    #   alignment: bottom_back
-
     - name: hingecabinet_1.005
       type: hinge_cabinet
-
       # pos: [2.219, -0.204, 2.033]
       size: [0.75, 0.4, 0.92]
       align_to: hingecabinet_1.004
@@ -341,16 +312,14 @@ island_group_1:
   island_bottom_row.003:
     - name: counter_1.005
       type: counter
-      # pos: [1.436, -0.325, 0.46]
       pos: [1.415, -0.325, 0.46]
-      # size: [0.873, 0.65, 0.92]
       size: [0.910, 0.65, 0.92]
 
     - name: stack_1.013
       type: stack
       # pos: [1.143, -0.325, 0.47]
-      pos: [1.104, -0.325, 0.47]
-      size: [0.286, 0.65, 0.84]
+      pos: [1.119, -0.325, 0.47]
+      size: [0.256, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
       percentages: [0.34, 0.34, 0.32]
 
@@ -363,19 +332,31 @@ island_group_1:
       obj_x_percent: 0.5
       obj_y_percent: 0.5
       # pos: [0.5, -0.325, 0.46]
-      pos: [0.48, -0.325, 0.46]
+      # pos: [0.48, -0.325, 0.46]
+      pos: [0.51, -0.325, 0.46]
       # size: [1.0, 0.65, 0.92]
       size: [0.96, 0.65, 0.92]
 
     - name: sink_1_stack
       type: stack
-      levels: [hinge_cabinet, panel_cabinet]
+      levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
       # pos: [0.5, -0.325, 0.47]
-      pos: [0.48, -0.325, 0.47]
+      pos: [0.51, -0.325, 0.47]
+      # size: [1.0, 0.65, 0.84]
       size: [0.96, 0.65, 0.84]
       # open_top: true
-      # configs: {'drawer': {'open_top': 'true'}}
+      configs: {'drawer': {'open_top': 'true'}}
+    
+    - name: panelbox_1
+      type: box
+      pos: [0.015, -0.325, 0.47]
+      size: [0.03, 0.65, 0.84]
+    
+    - name: counter_1.006
+      type: counter
+      pos: [0.015, -0.325, 0.46]
+      size: [0.03, 0.65, 0.92]
 
     - name: dishwasher_1.001
       type: dishwasher
@@ -389,13 +370,13 @@ island_group_1:
 
     - name: cube.002
       type: box
-      size: [1.873, 0.121, 1.015]
-      pos: [0.936, 0.06, 0.5075]
+      size: [1.873, 0.121, 0.978]
+      pos: [0.936, 0.06, 0.526]
 
     - name: panelbox
       type: stack
-      size: [0.02, 0.650, 0.84]
-      pos: [1.862, -0.325, 0.47]
+      size: [0.02, 0.650, 0.89]
+      pos: [1.862, -0.33, 0.445]
       levels: [panel_cabinet]
       percentages: [1]
       configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}
@@ -424,15 +405,12 @@ stool_group_1:
   stool_row:
     - name: stool_1
       type: stool
-      # pos: [-0.326, 1.327, 0.5]
       pos: [-0.326, 1.04, 0.5]
 
     - name: stool_1.001
       type: stool
-      # pos: [-0.92, 1.386, 0.5]
       pos: [-0.92, 1.04, 0.5]
 
     - name: stool_1.002
       type: stool
-      # pos: [-1.526, 1.309, 0.5]
       pos: [-1.526, 1.04, 0.5]

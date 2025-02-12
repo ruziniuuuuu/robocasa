@@ -271,10 +271,6 @@ left_group_1:
       type: counter
       pos: [5.11, -0.325, 0.46]
       size: [0.548, 0.65, 0.92]
-      # align_to: stove
-      # side: right
-      # alignment: top_back
-      
 
     - name: stove
       type: stove
@@ -318,14 +314,11 @@ left_group_1:
     - name: fridge_1_housing
       type: housing_cabinet
       interior_obj: fridge_1
-      # padding: [[0.35, 0.35], [-0.04, 0.02], [0, 0.15]]
-      padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.15]]
-
-      # pos: [1.27, -0.325, 1.149]
+      padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.02]]
       align_to: stack_1.006
       side: left
       alignment: bottom_back
-      offset: [0, 0, -0.2]
+      offset: [0, 0, -0.05]
     
     - name: hingecabinet_1.006
       type: hinge_cabinet
@@ -378,27 +371,8 @@ right_group_1:
       type: stack
       levels: [drawer, hinge_cabinet]
       percentages: [0.3, 0.7]
-      pos: [1.35, -0.3, 0.5]
+      pos: [1.35, -0.3, 0.55]
       size: [0.8, 0.6, 1.0]
-
-    # - name: oven
-    #   type: oven
-    #   size: [0.7, 0.6, 0.68]
-
-    # - name: oven_housing
-    #   type: housing_cabinet
-    #   size: [0.8, 0.6, 0.7]
-    #   padding: [null, [-0.01, null], null]
-    #   align_to: bottom
-    #   alignment: front
-    #   side: top
-    #   interior_obj: oven
-
-    # - name: hingecabinet_1.005
-    #   type: hinge_cabinet
-    #   size: [0.8, 0.6, 0.7]
-    #   align_to: bottom
-    #   side: top
 
     - name: microwave
       type: microwave
@@ -419,12 +393,12 @@ right_group_1:
       align_to: microwave_housing
       alignment: front
       side: top
-      stack_height: 2.298609972000122
+      stack_height: 2.25
       stack_fixtures: [bottom, microwave_housing]
 
     - name: stack_1.008
       type: stack
-      pos: [4.998, -0.325, 0.6]
+      pos: [4.998, -0.325, 0.65]
       size: [0.883, 0.65, 1.2]
       levels: [hinge_cabinet]
       percentages: [1]
@@ -460,9 +434,11 @@ right_group_1:
   top_row.002:
     - name: hingecabinet_1.002
       type: hinge_cabinet
-      pos: [4.998, -0.327, 1.749]
+      # pos: [4.998, -0.327, 1.749]
       size: [0.883, 0.647, 1.099]
-
+      align_to: stack_1.008
+      side: top
+      alignment: back
     - name: singlecabinet_1.001
       type: single_cabinet
       pos: [0.677, -0.2, 1.839]
