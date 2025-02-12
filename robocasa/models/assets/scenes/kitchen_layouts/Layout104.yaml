@@ -349,8 +349,8 @@ island_group_1:
     - name: stack_1.013
       type: stack
       # pos: [1.143, -0.325, 0.47]
-      pos: [1.104, -0.325, 0.47]
-      size: [0.286, 0.65, 0.84]
+      pos: [1.119, -0.325, 0.47]
+      size: [0.256, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
       percentages: [0.34, 0.34, 0.32]
 
@@ -363,7 +363,8 @@ island_group_1:
       obj_x_percent: 0.5
       obj_y_percent: 0.5
       # pos: [0.5, -0.325, 0.46]
-      pos: [0.48, -0.325, 0.46]
+      # pos: [0.48, -0.325, 0.46]
+      pos: [0.51, -0.325, 0.46]
       # size: [1.0, 0.65, 0.92]
       size: [0.96, 0.65, 0.92]
 
@@ -372,11 +373,21 @@ island_group_1:
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
       # pos: [0.5, -0.325, 0.47]
-      pos: [0.48, -0.325, 0.47]
+      pos: [0.51, -0.325, 0.47]
       # size: [1.0, 0.65, 0.84]
       size: [0.96, 0.65, 0.84]
       # open_top: true
       configs: {'drawer': {'open_top': 'true'}}
+    
+    - name: panelbox_1
+      type: box
+      pos: [0.015, -0.325, 0.47]
+      size: [0.03, 0.65, 0.84]
+    
+    - name: counter_1.006
+      type: counter
+      pos: [0.015, -0.325, 0.46]
+      size: [0.03, 0.65, 0.92]
 
     - name: dishwasher_1.001
       type: dishwasher
@@ -401,10 +412,10 @@ island_group_1:
       type: stack
       # size: [0.087, 0.65, 0.84]
       # size: [0.030, 0.650, 0.862]
-      size: [0.02, 0.650, 0.862]
+      size: [0.02, 0.650, 0.89]
       # pos: [1.873, -0.33, 0.45]
       # pos: [1.852, -0.33, 0.45] # (1)
-      pos: [1.862, -0.33, 0.45]
+      pos: [1.862, -0.33, 0.445]
       levels: [panel_cabinet]
       percentages: [1]
       configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}
