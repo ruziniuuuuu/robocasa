@@ -571,7 +571,7 @@ front_group_1:
       type: housing_cabinet
       interior_obj: fridge_1
       padding: [[0.02, 0.02], [0, 0], [0, 0]]
-      pos: [0.566, -0.327, 0.87]
+      pos: [0.566, -0.327, 0.89]
 
   top_row.004:
     - name: hingecabinet_1.007
@@ -580,7 +580,7 @@ front_group_1:
       align_to: fridge_1_housing
       side: top
       alignment: back
-      stack_height: 2.36
+      stack_height: 2.35
       stack_fixtures: [fridge_1_housing]
 
     - name: singlecabinet_1.003
