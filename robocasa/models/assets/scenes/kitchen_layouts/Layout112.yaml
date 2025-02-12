@@ -354,11 +354,21 @@ main_group_3:
       padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.02]]
       pos: [2.098, -0.325, 0.894]
 
+    - name: counter_1.005
+      type: counter
+      pos: [0.906, -0.325, 0.46]
+      size: [1.432, 0.65, 0.92]
+
   top_row.002:
     - name: hingecabinet_1.003
       type: hinge_cabinet
-      pos: [2.098, -0.325, 2.044]
-      size: [0.96, 0.65, 0.51]
+      # pos: [2.098, -0.325, 2.044]
+      size: [fridge_1_housing, 0.8, null]
+      align_to: fridge_1_housing
+      side: top
+      alignment: back
+      stack_height: 2.3
+      stack_fixtures: [fridge_1_housing]
 
     - name: hingecabinet_1.005
       type: hinge_cabinet
@@ -373,22 +383,17 @@ main_group_3:
   bottom_row_cabinets.002:
     - name: stack_1.008
       type: stack
-      pos: [1.32, -0.325, 0.47]
+      pos: [1.255, -0.325, 0.47]
       size: [0.74, 0.65, 0.84]
       levels: [hinge_cabinet, ['drawer', 'drawer']]
       percentages: [0.75, 0.25]
 
     - name: stack_1.009
       type: stack
-      pos: [0.6, -0.325, 0.47]
+      pos: [0.535, -0.325, 0.47]
       size: [0.697, 0.65, 0.84]
       levels: [hinge_cabinet, ['drawer', 'drawer']]
       percentages: [0.75, 0.25]
-
-    - name: counter_1.005
-      type: counter
-      pos: [0.932, -0.325, 0.46]
-      size: [1.37, 0.65, 0.92]
   
   counter_accessories:
     - name: coffee_machine

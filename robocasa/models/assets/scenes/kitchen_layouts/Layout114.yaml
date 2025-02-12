@@ -88,7 +88,7 @@ main_group_1:
       pos: [5.026, -0.325, 0.47]
       size: [0.543, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
-      percentages: [0.5, 0.25, 0.25]
+      percentages: [0.34, 0.33, 0.33]
 
     - name: stack_1.020
       type: stack
@@ -126,7 +126,7 @@ main_group_1:
       pos: [7.269, -0.325, 0.47]
       size: [0.543, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
-      percentages: [0.5, 0.25, 0.25]
+      percentages: [0.34, 0.33, 0.33]
 
     - name: stack_1.009
       type: stack
@@ -161,7 +161,7 @@ main_group_1:
       side: left
       size: [0.627, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
-      percentages: [0.5, 0.25, 0.25]
+      percentages: [0.34, 0.33, 0.33]
 
     - name: dishwasher_1
       type: dishwasher
@@ -191,7 +191,7 @@ main_group_1:
       size: [1.364, 0.65, 0.84]
       offset: [0, 0.015, 0]
       levels: [drawer, drawer, drawer]
-      percentages: [0.5, 0.25, 0.25]
+      percentages: [0.34, 0.33, 0.33]
     
     - name: singlecabinet_1.005
       type: single_cabinet
@@ -358,6 +358,7 @@ right_group_1:
       align_to: bottom
       alignment: bottom_front
       side: left
+      offset: [0, 0, -0.05]
 
     - name: fridge_top_cabinet
       type: hinge_cabinet
@@ -431,14 +432,14 @@ island_group_1:
       pos: [-0.524, 0.325, 0.47]
       size: [0.605, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
-      percentages: [0.5, 0.25, 0.25]
+      percentages: [0.34, 0.33, 0.33]
 
     - name: stack_1.018
       type: stack
       pos: [-3.358, 0.325, 0.47]
       size: [0.605, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
-      percentages: [0.5, 0.25, 0.25]
+      percentages: [0.34, 0.33, 0.33]
 
     - name: sink_1
       type: sink

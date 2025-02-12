@@ -266,7 +266,7 @@ left_group_1:
       align_to: fridge_1_housing
       side: top
       alignment: back
-      stack_height: 2.33
+      stack_height: 2.325
       stack_fixtures: ["fridge_1_housing"]
 
   counter_accessories:

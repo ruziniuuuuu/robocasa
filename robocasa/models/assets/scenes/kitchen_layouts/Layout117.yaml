@@ -404,20 +404,21 @@ front_group_1:
 
     - name: counter_1.001
       type: counter
-      # pos: [-0.171, 0.325, 0.46]
       align_to: stove
       side: right
-      # offset: [0, 0, -0.02]
+      alignment: top_back
       size: [0.342, 0.65, 0.92]
     
     - name: stack_1.011
       type: stack
       # pos: [-0.171, 0.325, 0.47]
-      align_to: stove
-      side: right
       size: [0.342, 0.65, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
+      align_to: stove
+      side: right
+      alignment: top_back
+      offset: [0, 0, -0.03]
 
     - name: cube
       type: box

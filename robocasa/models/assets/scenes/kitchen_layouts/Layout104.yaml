@@ -331,27 +331,21 @@ island_group_1:
       interior_obj: sink_1
       obj_x_percent: 0.5
       obj_y_percent: 0.5
-      # pos: [0.5, -0.325, 0.46]
-      # pos: [0.48, -0.325, 0.46]
       pos: [0.51, -0.325, 0.46]
-      # size: [1.0, 0.65, 0.92]
       size: [0.96, 0.65, 0.92]
 
     - name: sink_1_stack
       type: stack
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
-      # pos: [0.5, -0.325, 0.47]
       pos: [0.51, -0.325, 0.47]
-      # size: [1.0, 0.65, 0.84]
       size: [0.96, 0.65, 0.84]
-      # open_top: true
       configs: {'drawer': {'open_top': 'true'}}
     
     - name: panelbox_1
       type: box
-      pos: [0.015, -0.325, 0.47]
-      size: [0.03, 0.65, 0.84]
+      pos: [0.015, -0.325, 0.445]
+      size: [0.03, 0.65, 0.89]
     
     - name: counter_1.006
       type: counter
@@ -370,13 +364,13 @@ island_group_1:
 
     - name: cube.002
       type: box
-      size: [1.873, 0.121, 0.978]
-      pos: [0.936, 0.06, 0.526]
+      size: [1.873, 0.121, 1.015]
+      pos: [0.936, 0.06, 0.5075]
 
     - name: panelbox
       type: stack
-      size: [0.02, 0.650, 0.89]
-      pos: [1.862, -0.33, 0.445]
+      size: [0.02, 0.65, 0.89]
+      pos: [1.862, -0.325, 0.445]
       levels: [panel_cabinet]
       percentages: [1]
       configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}

@@ -9,7 +9,6 @@ room:
     - name: wall_left_1_backing
       type: wall
       backing: true
-      # backing_extended: [True, True]
       size: [1.636, 1.5, 0.1]
       pos: [0.0, -1.636, 1.5]
       wall_side: left
@@ -46,10 +45,7 @@ room:
     - name: wall_main_2_backing
       type: wall
       backing: true
-      # backing_extended: [True, True]
-      # size: [0.476, 0.459, 0.1]
       size: [0.476, 0.339, 0.1]
-      # pos: [1.152, 0.0, 2.541]
       pos: [1.152, 0.0, 2.661]
 
     - name: wall_right_1
@@ -105,11 +101,6 @@ left_group_1:
   group_pos: [0.0, -3.272]
   group_z_rot: 1.5707962925663537
   bottom_row_cabinets.004:
-  #   - name: counter_1.003
-  #     type: counter
-  #     pos: [1.252, -0.325, 0.46]
-  #     size: [2.505, 0.65, 0.92]
-
     - name: counter_1.003
       type: counter
       pos: [2.115, -0.325, 0.46]
@@ -153,38 +144,12 @@ left_group_1:
       pos: [2.889, -0.325, 0.15]
       size: [0.768, 0.65, 0.3]
 
-    # - name: oven
-    #   type: oven
-    #   size: [0.668, 0.65, 0.68]
-
-    # - name: qianrugui_1_oven_housing
-    #   type: housing_cabinet
-    #   size: [0.768, 0.65, 0.7]
-    #   padding: [null, [-0.01, null], null]
-    #   align_to: qianrugui_1_bottom
-    #   alignment: front
-    #   side: top
-    #   interior_obj: qianrugui_1_oven
-
     - name: hingecabinet_1.008
       type: hinge_cabinet
       size: [0.768, 0.65, 0.7]
       align_to: bottom
       alignment: front
       side: top
-
-    # - name: qianrugui_1_microwave
-    #   type: microwave
-    #   size: [0.668, 0.65, null]
-
-    # - name: qianrugui_1_microwave_housing
-    #   type: housing_cabinet
-    #   size: [0.768, 0.65, 0.55]
-    #   padding: [null, [-0.01, null], null]
-    #   align_to: qianrugui_1_oven_housing
-    #   alignment: front
-    #   side: top
-    #   interior_obj: qianrugui_1_microwave
 
     - name: hingecabinet_1.007
       type: hinge_cabinet
@@ -193,22 +158,14 @@ left_group_1:
       alignment: front
       side: top
 
-
     - name: top
       type: hinge_cabinet
       size: [0.768, 0.65, null]
       align_to: hingecabinet_1.007
       alignment: front
       side: top
-      stack_height: 2.298609733581543
+      stack_height: 2.23
       stack_fixtures: [bottom, hingecabinet_1.008, hingecabinet_1.007]
-
-    # - name: stack_1.001
-    #   type: stack
-    #   pos: [1.252, -0.325, 0.47]
-    #   size: [0.835, 0.65, 0.84]
-    #   levels: [hinge_cabinet, [drawer, drawer]]
-    #   percentages: [0.75, 0.25]
     
     - name: counter_1.006
       type: counter
@@ -315,15 +272,6 @@ right_group_1:
       type: counter
       pos: [3.122, -0.375, 0.46]
       size: [1, 0.75, 0.92]
-
-
-    # - name: counter_corner_1.001
-    #   type: counter
-    #   # pos: [2.947, -0.375, 0.46]
-    #   pos: [3.297, -0.375, 0.46]
-    #   # size: [0.65, 0.75, 0.92]
-    #   size: [1, 0.75, 0.92]
-    #   hollow: [False, False]
 
   top_row.001:
     - name: hingecabinet_1.006
@@ -444,11 +392,6 @@ island_group_1:
       size: [0.472, 0.65, 0.84]
       levels: [drawer, drawer, drawer, drawer]
       percentages: [0.25, 0.25, 0.25, 0.25]
-
-    # - name: counter_1.002
-    #   type: counter
-    #   pos: [0.758, 0.325, 0.46]
-    #   size: [1.317, 0.65, 0.92]
 
     - name: counter_1.002
       type: counter
