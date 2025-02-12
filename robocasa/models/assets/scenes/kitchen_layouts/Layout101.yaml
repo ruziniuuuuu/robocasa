@@ -207,7 +207,8 @@ main_group_1:
     - name: stack_1.005
       type: stack
       # pos: [4.242, -0.325, 0.606]
-      size: [0.892, 0.65, 2.25]
+      # size: [0.892, 0.65, 2.25]
+      size: [0.747, 0.65, 2.25]
       levels: [single_cabinet, single_cabinet]
       percentages: [0.5, 0.5]
       align_to: stack_1.003
@@ -221,7 +222,6 @@ main_group_1:
             handle_hpos: left
 
   top_row:
-      
     - name: hingecabinet_1.001
       type: hinge_cabinet
       # pos: [3.351, -0.203, 1.839]
@@ -406,18 +406,32 @@ right_group_1:
       interior_obj: fridge_1
       padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.02]]
       # pos: [1.15, -0.325, 0.875]
-      pos: [1.17, -0.391, 0.875]
+      # pos: [1.17, -0.391, 0.875]
+      pos: [1.121, -0.391, 0.875]
+      # align_to: singlecabinet_1.004
+      # alignment: top
+      # side: left
 
-  top_row.002:
     - name: hingecabinet_1.002
       type: hinge_cabinet
-      pos: [1.15, -0.323, 2.024]
-      size: [1.0, 0.654, 0.549]
+      # pos: [1.15, -0.323, 2.024]
+      # size: [1.0, 0.654, 0.549]
+      size: [fridge_1_housing, fridge_1_housing, null]
+      align_to: fridge_1_housing
+      alignment: back
+      side: top
+      stack_fixtures: ["fridge_1"]
+      stack_height: 2.29
 
+  top_row.002:
     - name: box.004
       type: box
-      pos: [0.325, -0.327, 1.149]
-      size: [0.65, 0.655, 2.299]
+      # pos: [0.325, -0.327, 1.149]
+      pos: [0.325, -0.397, 1.149]
+      # pos: [0.286, -0.327, 1.149]
+      # size: [0.65, 0.655, 2.299]
+      # size: [0.65, 0.944, 2.299]
+      size: [0.65, 0.804, 2.299]
 
 island_group_1:
   group_origin: [0, 0]
