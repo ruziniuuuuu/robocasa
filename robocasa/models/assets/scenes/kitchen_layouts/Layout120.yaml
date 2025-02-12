@@ -144,25 +144,25 @@ left_group_1:
       type: housing_cabinet
       interior_obj: fridge_1
       padding: [[0.06, 0.04], [-0.04, 0.02], [0, 0.02]]
-      pos: [4.7, -0.325, 0.875]
+      pos: [4.7, -0.4, 0.875]
 
-    - name: stack_1.013
-      type: stack
-      pos: [5.325, -0.325, 1.148]
-      size: [0.25, 0.65, 2.295]
-      levels: [single_cabinet, single_cabinet]
-      percentages: [0.5, 0.5]
-      configs:
-        single_cabinet_1:
-          orientation: right
-          panel_config:
-            handle_hpos: left
-            handle_vpos: top
-        single_cabinet_2:
-          orientation: right
-          panel_config:
-            handle_hpos: left
-            handle_vpos: bottom
+    # - name: stack_1.013
+    #   type: stack
+    #   pos: [5.325, -0.325, 1.148]
+    #   size: [0.25, 0.65, 2.295]
+    #   levels: [single_cabinet, single_cabinet]
+    #   percentages: [0.5, 0.5]
+    #   configs:
+    #     single_cabinet_1:
+    #       orientation: right
+    #       panel_config:
+    #         handle_hpos: left
+    #         handle_vpos: top
+    #     single_cabinet_2:
+    #       orientation: right
+    #       panel_config:
+    #         handle_hpos: left
+    #         handle_vpos: bottom
         
 
     - name: counter_1.001
@@ -197,25 +197,29 @@ left_group_1:
     - name: oven_1
       type: oven
       # pos: [1.2, -0.325, 0.683]
-      size: [0.8, 0.65, 0.42]
-
-    - name: oven_1_housing
-      type: housing_cabinet
-      # pos: [1.2, -0.325, 0.683]
-      size: [0.8, 0.65, 0.42]
-      interior_obj: oven_1
+      size: [0.8, 0.65, 0.5]
       align_to: counter_1.001
       side: left
       alignment: top_back
       offset: [0, 0, -0.03]
 
+    # - name: oven_1_housing
+    #   type: housing_cabinet
+    #   # pos: [1.2, -0.325, 0.683]
+    #   size: [0.8, 0.65, 0.42]
+    #   interior_obj: oven_1
+    #   align_to: counter_1.001
+    #   side: left
+    #   alignment: top_back
+    #   offset: [0, 0, -0.03]
+
     - name: stack_1.004
       type: stack
       # pos: [1.2, -0.325, 0.263]
-      size: [0.8, 0.65, 0.42]
+      size: [0.8, 0.65, 0.34]
       levels: [drawer]
       percentages: [1]
-      align_to: oven_1_housing
+      align_to: oven_1
       side: bottom
       alignment: left_back
 
@@ -241,37 +245,8 @@ left_group_1:
   top_row.001:
     - name: hingecabinet_1.002
       type: hinge_cabinet
-      pos: [3.8, -0.203, 1.835]
+      pos: [3.8, -0.2, 1.84]
       size: [0.8, 0.4, 0.92]
-
-    - name: hingecabinet_1.003
-      type: hinge_cabinet
-      pos: [4.7, -0.327, 2.023]
-      size: [1.0, 0.647, 0.545]
-
-    - name: hingecabinet_1.001
-      type: hinge_cabinet
-      # pos: [1.2, -0.203, 1.835]
-      size: [0.8, 0.4, 0.92]
-      align_to: counter_1.004
-      side: top
-      offset: [0, 0.2, 0.46]
-
-    - name: hingecabinet_1.004
-      type: hinge_cabinet
-      # pos: [2.0, -0.203, 1.835]
-      size: [0.8, 0.4, 0.92]
-      align_to: counter_1.001
-      side: top
-      offset: [0, 0.2, 0.46]
-
-    - name: hingecabinet_1.005
-      type: hinge_cabinet
-      # pos: [0.4, -0.203, 1.835]
-      size: [0.8, 0.4, 0.92]
-      align_to: counter_1.005
-      side: top
-      offset: [0, 0.2, 0.46]
 
     - name: microwave
       type: microwave
@@ -282,12 +257,47 @@ left_group_1:
 
     - name: hingecabinet_1.006
       type: hinge_cabinet
-      size: [microwave, 0.45, null]
+      size: [microwave, 0.4, null]
       align_to: microwave
       side: top
       alignment: back
       stack_height: 0.92
       stack_fixtures: ["microwave"]
+
+    - name: hingecabinet_1.001
+      type: hinge_cabinet
+      # pos: [1.2, -0.203, 1.835]
+      size: [0.8, 0.4, 0.92]
+      align_to: microwave
+      side: left
+      alignment: back_bottom
+      # offset: [0, 0, 0.46]
+
+    - name: hingecabinet_1.004
+      type: hinge_cabinet
+      # pos: [2.0, -0.203, 1.835]
+      size: [0.8, 0.4, 0.92]
+      align_to: hingecabinet_1.001
+      side: left
+      alignment: back_bottom
+
+    - name: hingecabinet_1.005
+      type: hinge_cabinet
+      # pos: [0.4, -0.203, 1.835]
+      size: [0.8, 0.4, 0.92]
+      align_to: hingecabinet_1.004
+      side: left
+      alignment: back_bottom
+
+    - name: hingecabinet_1.003
+      type: hinge_cabinet
+      # pos: [4.7, -0.327, 2.023]
+      size: [1.0, 0.8, null]
+      align_to: fridge_1_housing
+      side: top
+      alignment: back
+      stack_height: 2.33
+      stack_fixtures: ["fridge_1_housing"]
 
   counter_accessories:
     - name: plant
