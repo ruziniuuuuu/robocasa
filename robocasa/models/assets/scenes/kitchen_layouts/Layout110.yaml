@@ -182,6 +182,22 @@ main_group_1:
       align_to: stack_1.003
       side: right
       alignment: bottom_back
+    
+    - name: hingecabinet_1.011
+      type: hinge_cabinet
+      pos: [5.489, -0.196, 1.145]
+      size: [0.773, 0.67, 2.37]
+      panel_config:
+        handle_vpos: center
+    
+    - name: hingecabinet_1.012
+      type: hinge_cabinet
+      align_to: hingecabinet_1.011
+      side: right
+      alignment: back
+      size: [0.773, 0.67, 2.37]
+      panel_config:
+        handle_vpos: center
 
 
   top_row.003:
@@ -606,5 +622,7 @@ front_group_1:
         size: [1.0, 0.40]
         pos: [1.0, 0]
         rotation: [0, 0]
+
+
 
     
