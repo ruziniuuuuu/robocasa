@@ -303,7 +303,6 @@ left_group_1:
         handle_vpos: top
         handle_hpos: right
 
-
     - name: stovetop
       type: stovetop
 
@@ -461,6 +460,17 @@ right_group_1:
       num_windows: 3
       pos: [3.321, -0.002, 1.828]
       size: [1.235, 0.045, 0.903]
+
+    - name: hinge_stack
+      type: stack
+      levels: [hinge_cabinet]
+      percentages: [1]
+      pos: [5.5, -0.325, 1.22]
+      size: [1, 0.65, 2.34]
+      configs:
+        hinge_cabinet:
+          panel_config:
+            handle_vpos: center
 
   counter_accessories:
     - name: toaster

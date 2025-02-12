@@ -119,7 +119,6 @@ main_group_1:
       type: stove
       # pos: [2.314, -0.325, 0.46]
       size: [0.76, 0.66, 0.915]
-      # size: [null, 0.66, null] # this means [0.76, 0.66, 0.915]
       align_to: counter_1.002
       side: right
       alignment: top_back
@@ -181,6 +180,22 @@ main_group_1:
       align_to: stack_1.003
       side: right
       alignment: bottom_back
+    
+    - name: hingecabinet_1.011
+      type: hinge_cabinet
+      pos: [5.489, -0.196, 1.145]
+      size: [0.773, 0.67, 2.37]
+      panel_config:
+        handle_vpos: center
+    
+    - name: hingecabinet_1.012
+      type: hinge_cabinet
+      align_to: hingecabinet_1.011
+      side: right
+      alignment: back
+      size: [0.773, 0.67, 2.37]
+      panel_config:
+        handle_vpos: center
 
 
   top_row.003:
@@ -343,7 +358,7 @@ left_group_1:
   bottom_row.002:
     - name: dishwasher_1
       type: dishwasher
-      pos: [1.56, -0.375, 0.45]
+      pos: [1.56, -0.375, 0.46]
       #size: [0.911, 0.65, 0.84]
       size: [0.6,0.6,0.89]
 
@@ -452,7 +467,7 @@ island_group_2:
       pos: [1.071, -0.71, 0.46]
       size: [2.281, 0.633, 0.92]
 
-    - name: panelbox
+    - name: panelbox_panel_box
       type: stack
       size: [0.064, 0.904, 0.84]
       pos: [2.179, -0.524, 0.47]
@@ -460,7 +475,7 @@ island_group_2:
       percentages: [1]
       configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}
 
-    - name: panelbox.001
+    - name: panelbox.001_panel_box
       type: stack
       size: [0.064, 0.904, 0.84]
       pos: [-0.038, -0.524, 0.47]
@@ -571,7 +586,7 @@ front_group_1:
       type: housing_cabinet
       interior_obj: fridge_1
       padding: [[0.02, 0.02], [0, 0], [0, 0]]
-      pos: [0.566, -0.327, 0.89]
+      pos: [0.566, -0.327, 0.87]
 
   top_row.004:
     - name: hingecabinet_1.007
@@ -580,7 +595,7 @@ front_group_1:
       align_to: fridge_1_housing
       side: top
       alignment: back
-      stack_height: 2.35
+      stack_height: 2.36
       stack_fixtures: [fridge_1_housing]
 
     - name: singlecabinet_1.003
@@ -605,5 +620,3 @@ front_group_1:
         size: [1.0, 0.40]
         pos: [1.0, 0]
         rotation: [0, 0]
-
-    
