@@ -345,7 +345,7 @@ left_group_1:
       pos: [1.226, -0.33, 0.47]
       size: [1.1, 0.65, 0.84]
       open_top: true
-      configs: {'hinge_cabinet': {'open_top': 'true', 'panel_config': {'handle_vpos': 'center'}}}
+      configs: {'hinge_cabinet': {'open_top': 'true', 'panel_config': {'handle_vpos': 'top'}}}
 
     - name: dishwasher_1
       type: dishwasher

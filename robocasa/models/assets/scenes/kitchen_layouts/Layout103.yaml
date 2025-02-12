@@ -347,6 +347,17 @@ right_group_1:
       align_to: stack_1.010
       alignment: bottom_back
       side: right
+    
+    - name: hingecabinet_1.002
+      type: hinge_cabinet
+      # pos: [2.707, -0.327, 2.024]
+      align_to: fridge_1_housing
+      side: top
+      alignment: back
+      # size: [1.0, 0.654, 0.530]
+      size: [fridge_1_housing, 0.654, null]
+      stack_fixtures: [fridge_1_housing]
+      stack_height: 2.29
 
   top_row.002:
     - name: singlecabinet_1.002
@@ -359,7 +370,6 @@ right_group_1:
         handle_vpos: bottom
         handle_hpos: right
  
-
     - name: hingecabinet_1.003
       type: hinge_cabinet
       pos: [1.204, -0.2, 1.839]
@@ -369,14 +379,6 @@ right_group_1:
       type: single_cabinet
       pos: [1.923, -0.327, 1.839]
       size: [0.569, 0.654, 0.92]
-
-    - name: hingecabinet_1.002
-      type: hinge_cabinet
-      # pos: [2.707, -0.327, 2.024]
-      align_to: fridge_1_housing
-      side: top
-      alignment: back
-      size: [1.0, 0.654, 0.530]
 
   counter_accessories:
     - name: coffee_machine

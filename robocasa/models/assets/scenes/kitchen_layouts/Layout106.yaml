@@ -308,9 +308,10 @@ main_group_1:
     - name: singlecabinet_1.004
       type: single_cabinet
       # pos: [2.471, -0.2, 1.89]
-      pos: [2.402, -0.2, 1.89]
+      # pos: [2.402, -0.2, 1.89]
+      pos: [2.403, -0.2, 1.89]
       # size: [0.35, 0.4, 0.92]
-      size: [0.484, 0.4, 0.92]
+      size: [0.486, 0.4, 0.92]
 
     - name: microwave
       type: microwave
@@ -526,7 +527,8 @@ front_group_1:
       placement:
         fixture: counter_1.005
         size: [0.4, 0.40]
-        pos: [-1.0, 0.0]
+        # pos: [-1.0, 0.0]
+        pos: [-1.0, -0.7]
         rotation: [0, 0]
 
 stool_group_1:
