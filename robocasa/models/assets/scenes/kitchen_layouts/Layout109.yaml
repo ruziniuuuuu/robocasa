@@ -163,17 +163,46 @@ left_group_1:
   group_pos: [0.0, -3.272]
   group_z_rot: 1.5707962925663537
   bottom_row_cabinets.004:
+  #   - name: counter_1.003
+  #     type: counter
+  #     pos: [1.252, -0.325, 0.46]
+  #     size: [2.505, 0.65, 0.92]
+
     - name: counter_1.003
       type: counter
-      pos: [1.252, -0.325, 0.46]
-      size: [2.505, 0.65, 0.92]
+      pos: [2.115, -0.325, 0.46]
+      size: [0.769, 0.65, 0.92]
 
     - name: stack_1.003
       type: stack
-      pos: [2.087, -0.325, 0.47]
-      size: [0.835, 0.65, 0.84]
+      # pos: [2.087, -0.325, 0.47]
+      pos: [2.115, -0.325, 0.47]
+      # size: [0.835, 0.65, 0.84]
+      # size: [0.769, 0.65, 0.84]
+      size: [0.769, 0.65, 0.84]
       levels: [hinge_cabinet, [drawer, drawer]]
       percentages: [0.75, 0.25]
+
+    - name: sink
+      type: sink
+
+    - name: sink_counter
+      type: counter
+      interior_obj: sink
+      obj_x_percent: 0.5
+      obj_y_percent: 0.5
+      pos: [1.252, -0.325, 0.46]
+      size: [0.96, 0.65, 0.92]
+    
+    - name: sink_stack
+      type: stack
+      levels: [hinge_cabinet, drawer]
+      percentages: [0.7, 0.3]
+      pos: [1.252, -0.325, 0.47]
+      size: [0.96, 0.65, 0.84]
+      # configs: {'drawer': {'open_top': 'true'}}
+      configs: {'hinge_cabinet': {'open_top': 'true', 'panel_config': {'handle_vpos': 'top'}}}
+
 
     - name: bottom
       type: stack
@@ -232,17 +261,24 @@ left_group_1:
       stack_height: 2.298609733581543
       stack_fixtures: [bottom, hingecabinet_1.008, hingecabinet_1.007]
 
-    - name: stack_1.001
-      type: stack
-      pos: [1.252, -0.325, 0.47]
-      size: [0.835, 0.65, 0.84]
-      levels: [hinge_cabinet, [drawer, drawer]]
-      percentages: [0.75, 0.25]
+    # - name: stack_1.001
+    #   type: stack
+    #   pos: [1.252, -0.325, 0.47]
+    #   size: [0.835, 0.65, 0.84]
+    #   levels: [hinge_cabinet, [drawer, drawer]]
+    #   percentages: [0.75, 0.25]
+    
+    - name: counter_1.006
+      type: counter
+      pos: [0.388, -0.325, 0.46]
+      size: [0.769, 0.65, 0.92]
 
     - name: stack_1.004
       type: stack
-      pos: [0.417, -0.325, 0.47]
-      size: [0.835, 0.65, 0.84]
+      # pos: [0.417, -0.325, 0.47]
+      pos: [0.388, -0.325, 0.47]
+      # size: [0.835, 0.65, 0.84]
+      size: [0.765, 0.65, 0.84]
       levels: [hinge_cabinet, [drawer, drawer]]
       percentages: [0.75, 0.25]
 
@@ -268,15 +304,15 @@ left_group_1:
       placement:
         fixture: counter_1.003
         size: [1.0, 0.40]
-        pos: [0.7, 1.0]
+        pos: [0, 1.0]
         rotation: [0, 0]
     
     - name: toaster
       type: toaster
       placement:
-        fixture: counter_1.003
+        fixture: counter_1.006
         size: [1.0, 0.40]
-        pos: [-0.7, 1.0]
+        pos: [0, 1.0]
         rotation: [0, 0]
 
 right_group_1:
