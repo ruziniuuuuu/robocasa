@@ -1,6 +1,20 @@
       
 room:
   walls:
+    # - name: wall_front_1
+    #   type: wall
+    #   size: [0.325, 1.5, 0.02]
+    #   pos: [0.325, -3.272, 1.5]
+    #   wall_side: front
+
+    # - name: wall_front_1_backing
+    #   type: wall
+    #   backing: true
+    #   # backing_extended: [True, True]
+    #   size: [0.325, 1.5, 0.1]
+    #   pos: [0.325, -3.272, 1.5]
+    #   wall_side: front
+
     - name: wall_left_1
       type: wall
       size: [1.636, 1.5, 0.02]
@@ -10,6 +24,7 @@ room:
     - name: wall_left_1_backing
       type: wall
       backing: true
+      # backing_extended: [True, True]
       size: [1.636, 1.5, 0.1]
       pos: [0.0, -1.636, 1.5]
       wall_side: left
@@ -167,12 +182,38 @@ left_group_1:
       pos: [2.889, -0.325, 0.15]
       size: [0.768, 0.65, 0.3]
 
+    # - name: oven
+    #   type: oven
+    #   size: [0.668, 0.65, 0.68]
+
+    # - name: qianrugui_1_oven_housing
+    #   type: housing_cabinet
+    #   size: [0.768, 0.65, 0.7]
+    #   padding: [null, [-0.01, null], null]
+    #   align_to: qianrugui_1_bottom
+    #   alignment: front
+    #   side: top
+    #   interior_obj: qianrugui_1_oven
+
     - name: hingecabinet_1.008
       type: hinge_cabinet
       size: [0.768, 0.65, 0.7]
       align_to: bottom
       alignment: front
       side: top
+
+    # - name: qianrugui_1_microwave
+    #   type: microwave
+    #   size: [0.668, 0.65, null]
+
+    # - name: qianrugui_1_microwave_housing
+    #   type: housing_cabinet
+    #   size: [0.768, 0.65, 0.55]
+    #   padding: [null, [-0.01, null], null]
+    #   align_to: qianrugui_1_oven_housing
+    #   alignment: front
+    #   side: top
+    #   interior_obj: qianrugui_1_microwave
 
     - name: hingecabinet_1.007
       type: hinge_cabinet
@@ -360,6 +401,42 @@ main_group_3:
       pos: [2.406, -0.2, 1.839]
 
   bottom_row_cabinets.002:
+    # - name: qianrugui_bottom
+    #   type: stack
+    #   levels: [drawer]
+    #   percentages: [1]
+    #   # pos: [0.554, -0.325, 0.15]
+    #   size: [0.774, 0.65, 0.3]
+    #   align_to: stove_1.001
+    #   alignment: bottom_back
+    #   side: left
+    #   offset: [0, 0, -0.03]
+
+    # - name: qianrugui_oven
+    #   type: oven
+    #   size: [0.674, 0.65, 0.68]
+
+    # - name: qianrugui_oven_housing
+    #   type: housing_cabinet
+    #   size: [0.774, 0.65, 0.7]
+    #   padding: [null, [-0.01, null], null]
+    #   align_to: qianrugui_bottom
+    #   alignment: front
+    #   side: top
+    #   interior_obj: qianrugui_oven
+
+    # - name: qianrugui_microwave
+    #   type: microwave
+    #   size: [0.674, 0.65, null]
+
+    # - name: qianrugui_microwave_housing
+    #   type: housing_cabinet
+    #   size: [0.774, 0.65, 0.55]
+    #   padding: [null, [-0.01, null], null]
+    #   align_to: qianrugui_oven_housing
+    #   alignment: front
+    #   side: top
+    #   interior_obj: qianrugui_microwave
 
     - name: fridge_1
       type: fridge
