@@ -441,13 +441,6 @@ right_group_1:
       stack_height: 2.32
       stack_fixtures: [fridge_1_housing]
 
-    # - name: fridge_housing
-    #   type: housing_cabinet
-    #   interior_obj: fridge
-    #   padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.02]]
-    #   pos: [4.11, -0.631, 0.875]
-    
-
     - name: stack_1.006
       type: stack
       pos: [1.896, -0.333, 0.47]
@@ -500,30 +493,6 @@ island_group:
   group_pos: [3.73, -3.969]
   group_z_rot: 3.1415925661670165
   island_bottom_row:
-    # - name: panelbox_panel_box
-    #   type: stack
-    #   size: [0.174, 2.039, 0.84]
-    #   pos: [0.087, -1.02, 0.47]
-    #   levels: [panel_cabinet]
-    #   percentages: [1]
-    #   configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}
-
-    # - name: panelbox.001_panel_box
-    #   type: stack
-    #   size: [0.174, 2.039, 0.84]
-    #   pos: [1.713, -1.02, 0.47]
-    #   levels: [panel_cabinet]
-    #   percentages: [1]
-    #   configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}
-
-    # - name: panelbox.002_panel_box
-    #   type: stack
-    #   size: [1.8, 0.219, 0.84]
-    #   pos: [0.9, -1.023, 0.47]
-    #   levels: [panel_cabinet]
-    #   percentages: [1]
-    #   configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}
-
     - name: stack_1.016
       type: stack
       pos: [0.581, -1.714, 0.47]

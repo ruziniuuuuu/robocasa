@@ -165,7 +165,7 @@ main_group_1:
       type: stack
       levels: [drawer]
       percentages: [1]
-      pos: [0.4, -0.325, 0.15]
+      pos: [0.4, -0.325, 0.2]
       size: [0.8, 0.65, 0.3]
 
     - name: oven
@@ -194,20 +194,13 @@ main_group_1:
       side: top
       interior_obj: microwave
 
-    # - name: hingecabinet_1.013
-    #   type: hinge_cabinet
-    #   size: [0.8, 0.65, 0.55]
-    #   align_to: oven_housing
-    #   alignment: front
-    #   side: top
-
     - name: top
       type: hinge_cabinet
       size: [0.8, 0.65, null]
       align_to: microwave_housing
       alignment: front
       side: top
-      stack_height: 2.31
+      stack_height: 2.26
       stack_fixtures: [bottom, oven_housing, microwave_housing]
 
     # - name: stack_1.006

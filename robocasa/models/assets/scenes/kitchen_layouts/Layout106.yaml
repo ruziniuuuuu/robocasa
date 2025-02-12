@@ -2,24 +2,15 @@ room:
   walls:
     - name: wall_left_3
       type: wall
-      # size: [0.213, 1.04, 0.02]
       size: [0.213, 1.04, 0.02]
-      # size: [0.213, 0.92, 0.02]
-      # pos: [0.0, -1.921, 1.96]
       pos: [0.0, -1.921, 1.96]
-      # pos: [0.0, -1.921, 2.26]
       wall_side: left
 
     - name: wall_left_3_backing
       type: wall
       backing: true
-      # backing_extended: [True, True]
-      # size: [0.213, 1.04, 0.1]
       size: [0.213, 0.92, 0.1]
-      # size: [0.213, 0.90, 0.1]
-      # pos: [0.0, -1.921, 1.96]
       pos: [0.0, -1.921, 2.08]
-      # pos: [0.0, -1.921, 2.26]
       wall_side: left
 
     - name: wall_main
@@ -43,26 +34,20 @@ room:
     - name: wall_right_1_backing
       type: wall
       backing: true
-      # backing_extended: [True, True]
       size: [1.067, 1.5, 0.1]
       pos: [3.046, -1.067, 1.5]
       wall_side: right
 
     - name: wall_left_2
       type: wall
-      # size: [0.527, 0.351, 0.02]
       size: [0.447, 0.351, 0.02]
-      # pos: [0.0, -1.181, 2.649]
       pos: [0.0, -1.181, 2.649]
       wall_side: left
 
     - name: wall_left_2_backing
       type: wall
       backing: true
-      # backing_extended: [True, True]
-      # size: [0.527, 0.351, 0.1]
       size: [0.447, 0.231, 0.1]
-      # pos: [0.0, -1.181, 2.649]
       pos: [0.0, -1.181, 2.769]
       wall_side: left
 
@@ -75,26 +60,20 @@ room:
     - name: wall_left_1_backing
       type: wall
       backing: true
-      # backing_extended: [True, True]
       size: [0.327, 1.5, 0.1]
       pos: [-0.0, -0.327, 1.5]
       wall_side: left
 
     - name: wall_left_4
       type: wall
-      # size: [0.941, 0.351, 0.02]
       size: [0.863, 0.351, 0.02]
-      # pos: [0.0, -3.076, 2.649]
       pos: [0.0, -3.076, 2.649]
       wall_side: left
 
     - name: wall_left_4_backing
       type: wall
       backing: true
-      # backing_extended: [True, True]
-      # size: [0.941, 0.351, 0.1]
       size: [0.863, 0.231, 0.1]
-      # pos: [0.0, -3.076, 2.649]
       pos: [0.0, -3.076, 2.769]
       wall_side: left
 
@@ -107,35 +86,25 @@ room:
     - name: wall_left_5_backing
       type: wall
       backing: true
-      # backing_extended: [True, True]
-      # size: [0.213, 1.04, 0.1]
       size: [0.213, 0.92, 0.1]
-      # pos: [0.0, -4.231, 1.96]
       pos: [0.0, -4.231, 2.08]
       wall_side: left
 
     - name: wall_right_3
       type: wall
-      # size: [0.213, 1.5, 0.02]
       size: [0.912, 1.5, 0.02]
-      # pos: [3.046, -4.245, 1.5]
       pos: [3.046, -4.946, 1.5]
       wall_side: right
 
     - name: wall_right_3_backing
       type: wall
       backing: true
-      # backing_extended: [True, True]
-      # size: [0.213, 1.5, 0.1]
       size: [0.912, 1.5, 0.1]
-      # pos: [3.046, -4.245, 1.5]
       pos: [3.046, -4.946, 1.5]
       wall_side: right
 
     - name: wall_right_2
       type: wall
-      # size: [0.949, 0.351, 0.02]
-      # size: [0.871, 0.351, 0.02]
       size: [0.871, 0.351, 0.02]
       pos: [3.046, -3.083, 2.649]
       wall_side: right
@@ -143,25 +112,16 @@ room:
     - name: wall_right_2_backing
       type: wall
       backing: true
-      # backing_extended: [True, True]
-      # size: [0.949, 0.351, 0.1]
-      # size: [0.871, 0.351, 0.1]
       size: [0.871, 0.231, 0.1]
-      # pos: [3.046, -3.083, 2.649]
       pos: [3.046, -3.083, 2.769]
       wall_side: right
     
-    # - name: wall_right_4
-    #   type: wall
-    #   size: [0.84, 0.351, 0.02]
-    #   pos: [3.046, -3.153, 1.5]
-    #   wall_side: right
     
     - name: wall_right_4_backing
       type: wall
       backing: true
-      size: [0.949, 0.485, 0.1]
-      pos: [3.046, -3.083, 0.485]
+      size: [0.949, 0.46, 0.1]
+      pos: [3.046, -3.083, 0.46]
       wall_side: right
 
   floor:
@@ -308,9 +268,10 @@ main_group_1:
     - name: singlecabinet_1.004
       type: single_cabinet
       # pos: [2.471, -0.2, 1.89]
-      pos: [2.402, -0.2, 1.89]
+      # pos: [2.402, -0.2, 1.89]
+      pos: [2.403, -0.2, 1.89]
       # size: [0.35, 0.4, 0.92]
-      size: [0.484, 0.4, 0.92]
+      size: [0.486, 0.4, 0.92]
 
     - name: microwave
       type: microwave
@@ -526,7 +487,8 @@ front_group_1:
       placement:
         fixture: counter_1.005
         size: [0.4, 0.40]
-        pos: [-1.0, 0.0]
+        # pos: [-1.0, 0.0]
+        pos: [-1.0, -0.7]
         rotation: [0, 0]
 
 stool_group_1:

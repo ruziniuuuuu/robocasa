@@ -441,7 +441,7 @@ island_group_1:
   group_z_rot: 3.1415925661670165
   island_bottom_row:
 
-    - name: panelbox_panel_box
+    - name: panelbox
       type: stack
       size: [0.222, 1.77, 0.84]
       pos: [-3.771, 0.885, 0.469]
@@ -449,7 +449,7 @@ island_group_1:
       percentages: [1]
       configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}
 
-    - name: panelbox.001_panel_box
+    - name: panelbox.001
       type: stack
       size: [0.222, 1.77, 0.84]
       pos: [-0.111, 0.885, 0.47]

@@ -118,7 +118,7 @@ main_group_1:
       pos: [2.954, -0.325, 0.47]
       size: [1.0, 0.65, 0.84]
       open_top: true
-      configs: {'hinge_cabinet': {'open_top': 'true', 'panel_config': {'handle_vpos': 'center'}}}
+      configs: {'hinge_cabinet': {'open_top': 'true', 'panel_config': {'handle_vpos': 'top'}}}
 
     - name: counter_1.001
       type: counter
@@ -159,11 +159,13 @@ main_group_1:
 
     - name: stack_1.001
       type: stack
-      pos: [1.155, -0.325, 0.47]
+      # pos: [1.155, -0.325, 0.47]
+      pos: [1.154, -0.325, 0.47]
       # size: [0.4, 0.65, 0.84]
-      size: [0.408, 0.6, 0.84]
+      # size: [0.408, 0.6, 0.84]
+      size: [0.403, 0.6, 0.84]
       levels: [drawer, drawer, drawer]
-      percentages: [0.34, 0.34, 0.32]
+      percentages: [0.34, 0.33, 0.33]
 
     - name: stack_1.002
       type: stack
@@ -328,8 +330,8 @@ right_group_1:
 
     - name: stack_1.010
       type: stack
-      pos: [1.923, -0.33, 0.689]
-      size: [0.569, 0.65, 1.379]
+      pos: [1.923, -0.4, 0.74]
+      size: [0.569, 0.8, 1.38]
       levels: [single_cabinet]
       percentages: [1]
 
@@ -347,6 +349,17 @@ right_group_1:
       align_to: stack_1.010
       alignment: bottom_back
       side: right
+    
+    - name: hingecabinet_1.002
+      type: hinge_cabinet
+      # pos: [2.707, -0.327, 2.024]
+      align_to: fridge_1_housing
+      side: top
+      alignment: back
+      # size: [1.0, 0.654, 0.530]
+      size: [fridge_1_housing, 0.8, null]
+      stack_fixtures: [fridge_1_housing]
+      stack_height: 2.25
 
   top_row.002:
     - name: singlecabinet_1.002
@@ -359,7 +372,6 @@ right_group_1:
         handle_vpos: bottom
         handle_hpos: right
  
-
     - name: hingecabinet_1.003
       type: hinge_cabinet
       pos: [1.204, -0.2, 1.839]
@@ -367,16 +379,13 @@ right_group_1:
 
     - name: singlecabinet_1.001
       type: single_cabinet
-      pos: [1.923, -0.327, 1.839]
-      size: [0.569, 0.654, 0.92]
-
-    - name: hingecabinet_1.002
-      type: hinge_cabinet
-      # pos: [2.707, -0.327, 2.024]
-      align_to: fridge_1_housing
+      # pos: [1.923, -0.327, 1.839]
+      size: [0.569, 0.8, null]
+      align_to: stack_1.010
       side: top
       alignment: back
-      size: [1.0, 0.654, 0.530]
+      stack_fixtures: [stack_1.010]
+      stack_height: 2.25
 
   counter_accessories:
     - name: coffee_machine
@@ -388,8 +397,6 @@ right_group_1:
         pos: [1.0, 1.0]
         rotation: [0, 0]
         margin: 0.0
-        
-    
 
 front_group_1:
   group_origin: [0, 0]

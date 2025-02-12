@@ -452,7 +452,7 @@ island_group_2:
       pos: [1.071, -0.71, 0.46]
       size: [2.281, 0.633, 0.92]
 
-    - name: panelbox_panel_box
+    - name: panelbox
       type: stack
       size: [0.064, 0.904, 0.84]
       pos: [2.179, -0.524, 0.47]
@@ -460,7 +460,7 @@ island_group_2:
       percentages: [1]
       configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}
 
-    - name: panelbox.001_panel_box
+    - name: panelbox.001
       type: stack
       size: [0.064, 0.904, 0.84]
       pos: [-0.038, -0.524, 0.47]

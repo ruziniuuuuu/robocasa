@@ -256,6 +256,16 @@ main_group_1:
       interior_obj: fridge_1
       padding: [[0.05, 0.05], [-0.04, 0.02], [0, 0.02]]
       pos: [1.3, -0.325, 0.878]
+    
+    - name: hingecabinet_1.003
+      type: hinge_cabinet
+      # pos: [1.3, -0.327, 2.026]
+      align_to: fridge_1_housing
+      alignment: front
+      side: top
+      size: [fridge_1_housing, fridge_1_housing, null]
+      stack_fixtures: [fridge_1_housing]
+      stack_height: 2.29
 
     - name: counter_1.003
       type: counter
@@ -335,11 +345,6 @@ main_group_1:
       stack_fixtures: [bottom, oven_housing, hingecabinet_1.008]
 
   top_row:
-    - name: hingecabinet_1.003
-      type: hinge_cabinet
-      pos: [1.3, -0.327, 2.026]
-      size: [1.0, 0.647, 0.545]
-
     - name: hingecabinet_1.007
       type: hinge_cabinet
       pos: [2.2, -0.203, 1.839]
@@ -463,8 +468,10 @@ front_group_1:
 
     - name: stack_1.007
       type: stack
-      pos: [0.4, -0.325, 0.47]
-      size: [0.8, 0.65, 0.84]
+      # pos: [0.4, -0.325, 0.47]
+      pos: [0.38, -0.325, 0.47]
+      # size: [0.8, 0.65, 0.84]
+      size: [0.76, 0.65, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.75, 0.25]
 
