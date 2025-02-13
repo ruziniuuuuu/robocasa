@@ -339,14 +339,14 @@ left_group_1:
 
     - name: hingecabinet_1.007
       type: hinge_cabinet
-      # pos: [0.975, -0.323, 2.02]
       align_to: fridge_1_housing
       side: top
-      size: [0.95, 0.655, 0.558]
+      size: [fridge_1_housing, 0.65, null]
+      stack_height: 2.35
+      stack_fixtures: [fridge_1_housing]
 
     - name: hingecabinet_1.006
       type: hinge_cabinet
-      # pos: [1.925, -0.196, 1.84]
       align_to: hingecabinet_1.007
       side: right
       alignment: top_back
@@ -354,7 +354,6 @@ left_group_1:
 
     - name: singlecabinet_1.008
       type: single_cabinet
-      # pos: [0.205, -0.196, 1.84]
       align_to: hingecabinet_1.007
       side: left
       alignment: top_back

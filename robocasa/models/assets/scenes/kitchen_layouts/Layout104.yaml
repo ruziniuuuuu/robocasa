@@ -119,15 +119,14 @@ main_group_1:
       size: [0.491, 0.65, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
-    
-    - name: singlecabinet_1.001
-      type: single_cabinet
+  
+    - name: stack_singlecabinet
+      type: stack
       pos: [0.842, -0.325, 0.47]
       size: [0.385, 0.65, 0.84]
-      orientation: left
-      panel_config:
-        handle_vpos: top
-        handle_hpos: right
+      levels: [single_cabinet]
+      percentages: [1]
+      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'right'}}}
 
     - name: framedwindow.001
       type: framed_window
@@ -142,14 +141,6 @@ main_group_1:
       align_to: counter_1.002
       side: right
       alignment: top_back
-
-    # - name: hood
-    #   type: hood
-    #   size: [stove, 0.6, null]
-    #   offset: [0, 0, 0.75]
-
-    #   align_to: stove
-    #   side: top
 
     - name: counter_1.003
       type: counter

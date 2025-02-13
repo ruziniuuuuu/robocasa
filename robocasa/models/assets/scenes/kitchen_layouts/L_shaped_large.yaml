@@ -370,14 +370,14 @@ left_group:
       side: right
       alignment: top_back
 
-    - name: stack_3
-      type: stack
-      levels: ["hinge_cabinet", ["drawer", "drawer"]]
-      percentages: [0.75, 0.25]
+    # - name: stack_3
+    #   type: stack
+    #   levels: ["hinge_cabinet", ["drawer", "drawer"]]
+    #   percentages: [0.75, 0.25]
 
-      size: [1, 0.6, 0.84]
-      align_to: stack_2
-      side: right
+    #   size: [1, 0.6, 0.84]
+    #   align_to: stack_2
+    #   side: right
 
   counter_accessories:
     - name: coffee_machine

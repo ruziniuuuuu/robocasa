@@ -252,14 +252,6 @@ left_group_1:
       side: left
       alignment: top_back
 
-    - name: hood
-      type: hood
-      size: [stove, 0.6, null]
-      offset: [0, 0, 0.75]
-
-      align_to: stove
-      side: top
-
     - name: counter_1.004
       type: counter
       # pos: [2.068, -0.325, 0.46]
@@ -268,13 +260,7 @@ left_group_1:
       side: left
       alignment: top_back
 
-    - name: stack_1.006
-      type: stack
-      pos: [3.412, -0.325, 0.47]
-      size: [0.344, 0.65, 0.84]
-      levels: [single_cabinet]
-      percentages: [1]
-
+  bottom_row_cabinets:
     - name: stack_1.007
       type: stack
       # pos: [2.068, -0.325, 0.47]
@@ -286,7 +272,33 @@ left_group_1:
       alignment: top_back
       offset: [0, 0, -0.03]
 
+    - name: stack_1.006
+      type: stack
+      # pos: [3.412, -0.325, 0.47]
+      size: [0.3, 0.65, 0.84]
+      levels: [single_cabinet]
+      percentages: [1]
+      align_to: stove
+      side: right
+      alignment: top_back
+      offset: [0, 0, -0.03]
+
+    - name: box
+      type: box
+      size: [0.1, 0.65, 0.89]
+      align_to: stack_1.006
+      side: right
+      alignment: top_back
+
   top_row.001:
+    - name: hood
+      type: hood
+      size: [stove, 0.6, null]
+      offset: [0, 0, 0.75]
+
+      align_to: stove
+      side: top
+
     - name: singlecabinet_1.003
       type: single_cabinet
       pos: [3.558, -0.2, 1.84]
@@ -357,7 +369,7 @@ right_group_1:
       # size: [1.0, 0.654, 0.530]
       size: [fridge_1_housing, 0.8, null]
       stack_fixtures: [fridge_1_housing]
-      stack_height: 2.25
+      stack_height: 2.3
 
   top_row.002:
     - name: singlecabinet_1.002
