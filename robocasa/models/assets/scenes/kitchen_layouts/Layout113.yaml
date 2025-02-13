@@ -261,23 +261,23 @@ left_group_1:
     
     - name: counter_1.002
       type: counter
-      # pos: [-4.183, -0.45, 0.46]
-      align_to: stove_1
-      side: left
-      alignment: top_back
+      pos: [-3.41, -0.45, 0.46]
+      # align_to: stove_1
+      # side: left
+      # alignment: top_back
       # offset: [0, 0, 0.02]
       size: [1.706, 0.65, 0.92]
     
     - name: stack_1.007
       type: stack
-      # pos: [-3.618, -0.45, 0.47]
-      align_to: stove_1
-      side: left
-      alignment: top_back
+      pos: [-2.844, -0.45, 0.47]
+      # align_to: stove_1
+      # side: left
+      # alignment: top_back
       size: [0.577, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
       percentages: [0.34, 0.33, 0.33]
-      offset: [0, 0, -0.02]
+      # offset: [0, 0, -0.02]
 
     - name: stack_1.003
       type: stack
@@ -285,6 +285,7 @@ left_group_1:
       align_to: stack_1.007
       side: left
       alignment: top_back
+      # size: [1.13, 0.65, 0.84]
       size: [1.13, 0.65, 0.84]
       levels: [hinge_cabinet]
       percentages: [1]

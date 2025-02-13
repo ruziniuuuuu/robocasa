@@ -301,17 +301,25 @@ left_group_1:
 
     - name: stack_1.005
       type: stack
-      pos: [0.874, -0.325, 0.47]
-      size: [0.583, 0.65, 0.84]
+      # pos: [0.874, -0.325, 0.47]
+      pos: [0.868, -0.325, 0.47]
+      # size: [0.583, 0.65, 0.84]
+      size: [0.577, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
       percentages: [0.34, 0.34, 0.32]
 
     - name: stack_1.006
       type: stack
-      pos: [0.291, -0.325, 0.47]
-      size: [0.583, 0.65, 0.84]
+      pos: [0.290, -0.325, 0.47]
+      size: [0.580, 0.65, 0.84]
       levels: [single_cabinet,drawer]
       percentages: [0.7, 0.3]
+      configs:
+        single_cabinet:
+          panel_config:
+            handle_vpos: top
+            handle_hpos: right
+          orientation: left
     
     - name: fridge
       type: fridge
@@ -372,9 +380,16 @@ front_group_1:
     - name: stack_1.012
       type: stack
       pos: [-2.06, 0.325, 0.47]
-      size: [0.342, 0.65, 0.84]
+      # size: [0.342, 0.65, 0.84]
+      size: [0.34, 0.65, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
+      configs:
+        single_cabinet:
+          panel_config:
+            handle_vpos: top
+            handle_hpos: right
+          orientation: left
 
     - name: stack_1.002
       type: stack
@@ -386,6 +401,7 @@ front_group_1:
         hinge_cabinet:
           panel_config:
             handle_hpos: right
+            handle_vpos: top
 
     - name: stove
       type: stove

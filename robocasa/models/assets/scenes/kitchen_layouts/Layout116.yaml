@@ -157,20 +157,25 @@ main_group_1:
 
     - name: counter_1.003
       type: counter
-      pos: [3.098, -0.325, 0.46]
-      size: [0.807, 0.65, 0.92]
+      # pos: [3.098, -0.325, 0.46] 
+      pos: [3.096, -0.325, 0.46]
+      # size: [0.807, 0.65, 0.92]
+      size: [0.802, 0.65, 0.92]
 
     - name: stack_1.003
       type: stack
-      pos: [3.098, -0.325, 0.47]
-      size: [0.807, 0.65, 0.84]
+      pos: [3.096, -0.325, 0.47]
+      # size: [0.807, 0.65, 0.84]
+      size: [0.802, 0.65, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
 
     - name: stack_1.006
       type: stack
-      pos: [4.782, -0.325, 1.2]
-      size: [0.766, 0.65, 2.3]
+      pos: [4.78, -0.325, 1.2]
+      # size: [0.766, 0.65, 2.3]
+      # size: [0.762, 0.65, 2.3]
+      size: [0.758, 0.65, 2.3]
       levels: [drawer, drawer, hinge_cabinet, hinge_cabinet]
       percentages: [0.2, 0.2, 0.3, 0.3]
       configs:
@@ -195,17 +200,22 @@ main_group_1:
       align_to: stove_1.001
       side: left
       alignment: top_front
-      offset: [0, 0, 0.02]
+      # offset: [0, 0, 0.02]
       size: [1.154, 0.65, 0.92]
     
     - name: stack_1.005
       type: stack
-      # pos: [1.29, -0.325, 0.47]
-      align_to: stove_1.001
-      side: left
+      pos: [1.357, -0.325, 0.47]
+      # align_to: counter_1.008
+      # side: bottom
+      # alignment: front
       size: [1.154, 0.65, 0.84]
       levels: [hinge_cabinet]
       percentages: [1]
+      configs:
+        hinge_cabinet:
+          panel_config:
+            handle_vpos: top
     
     - name: counter_1.002
       type: counter
@@ -214,16 +224,15 @@ main_group_1:
       side: left
       # offset: [0, 0, 0.02]
       size: [0.813, 0.65, 0.92]
-    
 
     - name: stack_1.002
       type: stack
       # pos: [0.357, -0.325, 0.47]
       align_to: stack_1.005
       side: left
-      size: [0.813, 0.65, 0.84]
+      size: [0.777, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
-      percentages: [0.4, 0.35, 0.25]
+      percentages: [0.34, 0.33, 0.33]
 
   top_row:
     - name: opencabinet_1.003
@@ -234,7 +243,8 @@ main_group_1:
     - name: hingecabinet_1.001
       type: hinge_cabinet
       # pos: [3.95, -0.327, 2.029]
-      size: [0.897, 0.646, null]
+      # size: [0.897, 0.646, null]
+      size: [fridge_1_housing, fridge_1_housing, null]
       align_to: fridge_1_housing
       side: top
       alignment: front
@@ -306,7 +316,8 @@ front_group_1:
     - name: stack_1.015
       type: stack
       pos: [2.702, -0.325, 0.47]
-      size: [0.613, 0.65, 0.84]
+      # size: [0.613, 0.65, 0.84]
+      size: [0.605, 0.65, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
 
