@@ -181,22 +181,46 @@ main_group_1:
       side: right
       alignment: bottom_back
     
-    - name: hingecabinet_1.011
-      type: hinge_cabinet
+    # - name: hingecabinet_1.011
+    #   type: hinge_cabinet
+    #   pos: [5.489, -0.196, 1.145]
+    #   size: [0.773, 0.67, 2.37]
+    #   panel_config:
+    #     handle_vpos: center
+    
+    # - name: hingecabinet_1.012
+    #   type: hinge_cabinet
+    #   align_to: hingecabinet_1.011
+    #   side: right
+    #   alignment: back
+    #   size: [0.773, 0.67, 2.37]
+    #   panel_config:
+    #     handle_vpos: center
+
+    - name: stack_2
+      type: stack
+      levels: [hinge_cabinet]
+      percentages: [1]
       pos: [5.489, -0.196, 1.145]
       size: [0.773, 0.67, 2.37]
-      panel_config:
-        handle_vpos: center
-    
-    - name: hingecabinet_1.012
-      type: hinge_cabinet
-      align_to: hingecabinet_1.011
+      configs:
+        hinge_cabinet:
+          panel_config:
+            handle_vpos: center
+
+    - name: stack_3
+      type: stack
+      levels: [hinge_cabinet]
+      percentages: [1]
+      # pos: [5.489, -0.196, 1.145]
+      size: [0.773, 0.67, 2.37]
+      align_to: stack_2
       side: right
       alignment: back
-      size: [0.773, 0.67, 2.37]
-      panel_config:
-        handle_vpos: center
-
+      configs:
+        hinge_cabinet:
+          panel_config:
+            handle_vpos: center
 
   top_row.003:
     - name: box
@@ -429,24 +453,12 @@ island_group_2:
   group_pos: [4.205, -2.835]
   group_z_rot: 3.1415925661670165
   island_row:
-    # - name: oven_1.001
-    #   type: oven
-    #   pos: [1.065, -0.668, 0.47]
-    #   size: [0.71, 0.538, 0.84]
-    - name: singlecabinet_1.009
-      type: single_cabinet
-      pos: [1.065,-0.768,0.47]
-      size: [0.71,0.538,0.84]
-      orientation: right
-      panel_config:
-        handle_vpos: center
-        handle_hpos: left
-
-    # - name: oven_1.001_housing
-    #   type: housing_cabinet
-    #   pos: [1.065, -0.668, 0.47]
-    #   size: [0.71, 0.538, 0.84]
-    #   interior_obj: oven_1.001
+    - name: stack_island_middle
+      type: stack
+      pos: [1.065, -0.833, 0.47]
+      size: [0.71, 0.409, 0.84]
+      levels: [drawer, drawer]
+      percentages: [0.5, 0.5]
 
     - name: stack_1.006
       type: stack
@@ -525,17 +537,6 @@ front_group_2:
       size: [0.932, 0.4, 0.92]
 
   bottom_row.003:
-    # - name: oven_1
-    #   type: oven
-    #   pos: [1.333, -0.325, 0.46]
-    #   size: [0.846, 0.655, 0.84]
-
-    # - name: oven_1_housing
-    #   type: housing_cabinet
-    #   pos: [1.333, -0.325, 0.46]
-    #   size: [0.846, 0.655, 0.84]
-    #   interior_obj: oven_1
-
     - name: singlecabinet_1.010
       type: single_cabinet
       pos: [1.333,-0.325,0.46]

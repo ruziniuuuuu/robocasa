@@ -428,7 +428,7 @@ right_group_1:
 
     - name: dishwasher_1
       type: dishwasher
-      pos: [4.303, -0.372, 0.45]
+      pos: [4.303, -0.372, 0.445]
       size: [0.6, 0.6, 0.89]
     
     - name: panelbox

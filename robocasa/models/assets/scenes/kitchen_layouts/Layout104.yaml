@@ -119,13 +119,6 @@ main_group_1:
       size: [0.491, 0.65, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
-
-    # - name: stack_1.001
-    #   type: stack
-    #   pos: [0.842, -0.325, 0.47]
-    #   size: [0.385, 0.65, 0.84]
-    #   levels: [single_cabinet]
-    #   percentages: [1]
     
     - name: singlecabinet_1.001
       type: single_cabinet
@@ -150,50 +143,56 @@ main_group_1:
       side: right
       alignment: top_back
 
-    - name: hood
-      type: hood
-      size: [stove, 0.6, null]
-      offset: [0, 0, 0.75]
+    # - name: hood
+    #   type: hood
+    #   size: [stove, 0.6, null]
+    #   offset: [0, 0, 0.75]
 
-      align_to: stove
-      side: top
+    #   align_to: stove
+    #   side: top
 
     - name: counter_1.003
       type: counter
-      # pos: [4.026, -0.325, 0.46]
-      # size: [1.028, 0.65, 0.92]
       size: [1.235, 0.65, 0.92]
       align_to: stove
       side: right
-      alignment: back
-      offset: [0, 0, -0.05]
-    
-    - name: microwave_1
-      type: microwave
-      size: [0.75, 0.45, null]
-      pos: [4.026, -0.325, 1.109]
+      alignment: top_back
 
     - name: stack_1.002
       type: stack
-      # pos: [4.026, -0.325, 0.47]
-      # size: [1.028, 0.65, 0.84]
       size: [1.235, 0.65, 0.84]
       levels: [hinge_cabinet, [drawer, drawer]]
       percentages: [0.75, 0.25]
       align_to: stove
       side: right
-      alignment: bottom_back
+      alignment: top_back
+      offset: [0, 0, -0.03]
 
   top_row:
     - name: hingecabinet_1.001
       type: hinge_cabinet
-      # pos: [3.83, -0.203, 1.89]
-      # size: [1.028, 0.4, 0.92]
       size: [1.235, 0.4, 0.92]
       align_to: counter_1.003
       side: top
       alignment: back
       offset: [0, 0, 0.55]
+
+    - name: microwave
+      type: microwave
+      size: [stove, 0.45, null]
+      align_to: hingecabinet_1.001
+      side: left
+      alignment: bottom_back
+
+    - name: microwave_above_cabinet
+      type: hinge_cabinet
+      size: [stove, 0.4, null]
+      align_to: microwave
+      side: top
+      alignment: back
+      stack_height: 0.92
+      stack_fixtures: [microwave]
+
   counter_accessories:
     - name: coffee_machine
       type: coffee_machine
@@ -354,7 +353,7 @@ island_group_1:
 
     - name: dishwasher_1.001
       type: dishwasher
-      pos: [1.55, -0.375, 0.45]
+      pos: [1.55, -0.375, 0.445]
       size: [0.6, 0.6, 0.89]
 
     - name: counter_1.001

@@ -284,17 +284,17 @@ left_group_1:
       type: dishwasher
       # pos: [3.58, -0.325, 0.45]
       # pos: [3.58, -0.375, 0.45]
-      pos: [3.596, -0.375, 0.45]
+      pos: [3.596, -0.375, 0.445]
       size: [0.6, 0.6, 0.89]
 
     - name: oven
       type: oven
-      pos: [1.969, -0.325, 0.45]
+      pos: [1.969, -0.325, 0.445]
       size: [0.65, 0.65, 0.89]
 
     - name: oven_housing
       type: housing_cabinet
-      pos: [1.969, -0.325, 0.45]
+      pos: [1.969, -0.325, 0.445]
       size: [0.65, 0.65, 0.89]
       interior_obj: oven
 
@@ -306,12 +306,12 @@ left_group_1:
   top_row:
     - name: hingecabinet_1.001
       type: hinge_cabinet
-      pos: [4.652, -0.203, 1.839]
+      pos: [4.652, -0.203, 1.84]
       size: [0.753, 0.4, 0.92]
 
     - name: hingecabinet_1.002
       type: hinge_cabinet
-      pos: [0.843, -0.203, 1.839]
+      pos: [0.843, -0.203, 1.84]
       size: [0.753, 0.4, 0.92]
   
   counter_accessories:
@@ -372,12 +372,12 @@ main_group_3:
 
     - name: hingecabinet_1.005
       type: hinge_cabinet
-      pos: [1.274, -0.2, 1.839]
+      pos: [1.274, -0.2, 1.84]
       size: [0.686, 0.4, 0.92]
 
     - name: hingecabinet_1.001
       type: hinge_cabinet
-      pos: [0.588, -0.2, 1.839]
+      pos: [0.588, -0.2, 1.84]
       size: [0.686, 0.4, 0.92]
 
   bottom_row_cabinets.002:
@@ -548,7 +548,7 @@ front_group_2:
       type: stack
       levels: [drawer]
       percentages: [1]
-      pos: [-0.413, -0.325, 0.15]
+      pos: [-0.413, -0.325, 0.2]
       size: [0.8, 0.65, 0.3]
 
     - name: hingecabinet_1.006

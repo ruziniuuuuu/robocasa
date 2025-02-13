@@ -219,23 +219,23 @@ main_group_1:
   top_row:
     - name: hingecabinet_1.001
       type: hinge_cabinet
-      pos: [0.896, -0.203, 1.839]
+      pos: [0.896, -0.203, 1.84]
       size: [0.991, 0.4, 0.92]
 
     - name: cabcorner.001_cab_corner
       type: box
       size: [0.4, 0.4, 0.92]
-      pos: [0.2, -0.203, 1.839]
+      pos: [0.2, -0.203, 1.84]
 
     - name: hingecabinet_1.004
       type: hinge_cabinet
-      pos: [3.987, -0.203, 1.839]
+      pos: [3.987, -0.203, 1.84]
       size: [0.991, 0.4, 0.92]
 
     - name: cabcorner_cab_corner
       type: box
       size: [0.685, 0.4, 0.92]
-      pos: [4.825, -0.203, 1.839]
+      pos: [4.825, -0.203, 1.84]
   
   counter_accessories:
     - name: paper_towel
@@ -330,7 +330,7 @@ left_group_1:
   top_row.001:
     - name: singlecabinet_2.003
       type: single_cabinet
-      # pos: [2.669, -0.2, 1.839]
+      # pos: [2.669, -0.2, 1.84]
       size: [0.786, 0.4, 0.92]
       align_to: hingecabinet_1.006
       side: right
@@ -342,7 +342,7 @@ left_group_1:
 
     - name: singlecabinet_1.004
       type: single_cabinet
-      pos: [5.234, -0.2, 1.839]
+      pos: [5.234, -0.2, 1.84]
       size: [0.794, 0.4, 0.92]
   
   counter_accessories:
@@ -441,7 +441,7 @@ right_group_1:
       alignment: back
     - name: singlecabinet_1.001
       type: single_cabinet
-      pos: [0.677, -0.2, 1.839]
+      pos: [0.677, -0.2, 1.84]
       size: [0.547, 0.4, 0.92]
       orientation: left
 
