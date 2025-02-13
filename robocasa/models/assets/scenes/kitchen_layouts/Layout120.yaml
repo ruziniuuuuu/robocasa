@@ -174,24 +174,25 @@ left_group_1:
       alignment: top_back
 
 
-    - name: oven_1
-      type: oven
-      # pos: [1.2, -0.325, 0.683]
-      size: [0.8, 0.65, 0.5]
-      align_to: counter_1.001
-      side: left
-      alignment: top_back
-      offset: [0, 0, -0.03]
+    # - name: oven_1
+    #   type: oven
+    #   # pos: [1.2, -0.325, 0.683]
+    #   size: [0.8, 0.65, 0.5]
+    #   align_to: counter_1.001
+    #   side: left
+    #   alignment: top_back
+    #   offset: [0, 0, -0.03]
 
     - name: stack_1.004
       type: stack
       # pos: [1.2, -0.325, 0.263]
-      size: [0.8, 0.65, 0.34]
-      levels: [drawer]
-      percentages: [1]
-      align_to: oven_1
-      side: bottom
-      alignment: left_back
+      size: [0.8, 0.65, 0.84]
+      levels: [drawer, drawer, drawer]
+      percentages: [0.34, 0.33, 0.33]
+      align_to: counter_1.001
+      side: left
+      alignment: top_back
+      offset: [0, 0, -0.03]
 
     - name: counter_1.005
       type: counter
@@ -365,18 +366,31 @@ right_group_1:
       # size: [0.349, 0.65, 0.92]
       size: [0.35, 0.65, 0.92]
 
-    - name: singlecabinet_1.001
-      type: single_cabinet
-      # pos: [0.174, -0.325, 0.47]
+    # - name: singlecabinet_1.001
+    #   type: single_cabinet
+    #   # pos: [0.174, -0.325, 0.47]
+    #   pos: [0.247, -0.325, 0.47]
+    #   # size: [0.349, 0.65, 0.84]
+    #   size: [0.476, 0.65, 0.84]
+    #   # levels: [single_cabinet]
+    #   # percentages: [1]
+    #   orientation: left
+    #   panel_config:
+    #     handle_vpos: top
+    #     handle_hpos: right
+
+    - name: stack_1.001
+      type: stack
       pos: [0.247, -0.325, 0.47]
-      # size: [0.349, 0.65, 0.84]
       size: [0.476, 0.65, 0.84]
-      # levels: [single_cabinet]
-      # percentages: [1]
-      orientation: left
-      panel_config:
-        handle_vpos: top
-        handle_hpos: right
+      levels: [single_cabinet]
+      percentages: [1]
+      configs: 
+        single_cabinet:
+          panel_config:
+            handle_vpos: top
+            handle_hpos: right
+          orientation: left
 
     - name: counter_1.008
       type: counter

@@ -193,16 +193,29 @@ main_group_1:
       levels: [drawer, drawer, drawer]
       percentages: [0.34, 0.33, 0.33]
     
-    - name: singlecabinet_1.005
-      type: single_cabinet
-      # pos: [0.314, -0.325, 0.47]
-      align_to: stack_1.004
-      side: left
+    # - name: singlecabinet_1.005
+    #   type: single_cabinet
+    #   pos: [1.09, -0.325, 0.47]
+    #   # align_to: stack_1.004
+    #   # side: left
+    #   size: [0.627, 0.65, 0.84]
+    #   orientation: left
+    #   panel_config:
+    #     handle_hpos: right
+    #     handle_vpos: top
+
+    - name: stack_1.011
+      type: stack
+      pos: [1.09, -0.325, 0.47]
       size: [0.627, 0.65, 0.84]
-      orientation: left
-      panel_config:
-        handle_hpos: right
-        handle_vpos: top
+      levels: [single_cabinet]
+      percentages: [1]
+      configs:
+        single_cabinet:
+          panel_config:
+            handle_hpos: right
+            handle_vpos: top
+          orientation: left
 
   top_row:
     - name: singlecabinet_1.001

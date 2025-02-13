@@ -178,6 +178,12 @@ main_group_1:
       size: [0.463, 0.65, 0.84]
       levels: [single_cabinet]
       percentages: [1]
+      configs:
+        single_cabinet:
+          panel_config:
+            handle_vpos: top
+            handle_hpos: right
+          orientation: left
 
     - name: stack_1.002
       type: stack
@@ -209,10 +215,23 @@ main_group_1:
   top_row:
     - name: hingecabinet_1.010
       type: hinge_cabinet
-      pos: [1.18, -0.203, 1.687]
-      size: [0.769, 0.4, 0.616]
+      pos: [1.18, -0.203, 1.65]
+      size: [0.769, 0.4, 0.536]
       panel_config:
         handle_vpos: bottom
+    
+    - name: hingecabinet_1.002
+      type: hinge_cabinet
+      # pos: [1.18, -0.203, 2.147]
+      align_to: hingecabinet_1.010
+      side: top
+      alignment: back
+      # size: [0.769, 0.4, 0.304]
+      size: [0.769, 0.4, null]
+      panel_config:
+        handle_vpos: bottom
+      stack_height: 1.072
+      stack_fixtures: [hingecabinet_1.010]
 
     - name: cabcorner
       type: box
@@ -224,74 +243,89 @@ main_group_1:
 
     - name: singlecabinet_1.001
       type: single_cabinet
-      pos: [1.775, -0.203, 1.687]
-      size: [0.424, 0.4, 0.616]
+      # pos: [1.775, -0.203, 1.687]
+      pos: [1.775, -0.203, 1.65]
+      size: [0.424, 0.4, 0.536]
       panel_config:
         handle_vpos: bottom
+    
+    - name: singlecabinet_1.004
+      type: single_cabinet
+      # pos: [1.775, -0.203, 2.147]
+      align_to: singlecabinet_1.001
+      side: top
+      # size: [0.424, 0.4, 0.304]
+      size: [0.424, 0.4, 0.536]
+      panel_config:
+        handle_vpos: bottom
+      stack_height: 1.072
+      stack_fixtures: [singlecabinet_1.001]
 
     - name: hingecabinet_1.011
       type: hinge_cabinet
-      pos: [4.169, -0.203, 1.687]
-      size: [0.749, 0.4, 0.616]
+      # pos: [4.169, -0.203, 1.687]
+      pos: [4.163, -0.203, 1.65]
+      # size: [0.749, 0.4, 0.536]
+      size: [0.739, 0.4, 0.536]
       panel_config:
         handle_vpos: bottom
+    
+    - name: hingecabinet_1.003
+      type: hinge_cabinet
+      # pos: [4.169, -0.203, 2.147]
+      align_to: hingecabinet_1.011
+      side: top
+      alignment: back
+      # size: [0.749, 0.4, null]
+      size: [0.739, 0.4, 0.536]
+      panel_config:
+        handle_vpos: bottom
+      stack_height: 1.072
+      stack_fixtures: [hingecabinet_1.011]
+
 
     - name: singlecabinet_1.002
       type: single_cabinet
-      pos: [3.582, -0.203, 1.687]
-      size: [0.424, 0.4, 0.616]
+      # pos: [3.582, -0.203, 1.687]
+      pos: [3.582, -0.203, 1.65]
+      size: [0.424, 0.4, 0.536]
       panel_config:
         handle_vpos: bottom
-
-    - name: hingecabinet_1.002
-      type: hinge_cabinet
-      pos: [1.18, -0.203, 2.147]
-      # size: [0.769, 0.4, 0.304]
-      size: [0.769, 0.4, 0.616]
+    
+    - name: singlecabinet_1.005
+      type: single_cabinet
+      # pos: [3.582, -0.203, 2.147]
+      align_to: singlecabinet_1.002
+      side: top
+      alignment: back
+      # size: [0.424, 0.4, 0.304]
+      size: [0.424, 0.4, null]
       panel_config:
         handle_vpos: bottom
+      stack_height: 1.072
+      stack_fixtures: [singlecabinet_1.002]
 
     # - name: cabcorner.002
     #   type: box
     #   size: [0.795, 0.4, 0.304]
     #   pos: [0.398, -0.203, 2.147]
 
-    - name: singlecabinet_1.004
-      type: single_cabinet
-      pos: [1.775, -0.203, 2.147]
-      # size: [0.424, 0.4, 0.304]
-      size: [0.424, 0.4, 0.616]
-      panel_config:
-        handle_vpos: bottom
-
-    - name: hingecabinet_1.003
-      type: hinge_cabinet
-      pos: [4.169, -0.203, 2.147]
-      # size: [0.749, 0.4, 0.304]
-      size: [0.749, 0.4, 0.616]
-      panel_config:
-        handle_vpos: bottom
-
-    - name: cabcorner.001
-      type: box
-      # size: [0.65, 0.4, 0.616]
-      size: [0.654, 0.4, 1.066]
-      # pos: [4.875, -0.203, 1.687]
-      pos: [4.868, -0.203, 1.920]
+    # - name: cabcorner.001
+    #   type: box
+    #   # size: [0.65, 0.4, 0.616]
+    #   # size: [0.654, 0.4, 1.066]
+    #   size: [0.656, 0.4, 0.616]
+    #   # pos: [4.875, -0.203, 1.687]
+    #   # pos: [4.868, -0.203, 1.920]
+    #   pos: [4.865, -0.203, 1.65]
 
     - name: cabcorner.003
       type: box
       # size: [0.65, 0.4, 0.304]
-      size: [0.65, 0.4, 0.616]
-      pos: [4.875, -0.203, 2.147]
-
-    - name: singlecabinet_1.005
-      type: single_cabinet
-      pos: [3.582, -0.203, 2.147]
-      # size: [0.424, 0.4, 0.304]
-      size: [0.424, 0.4, 0.616]
-      panel_config:
-        handle_vpos: bottom
+      # size: [0.65, 0.4, 0.616]
+      size: [0.660, 0.402, 1.072]
+      # pos: [4.875, -0.203, 2.147]
+      pos: [4.861, -0.203, 1.92]
 
   counter_accessories:
     - name: coffee_machine
@@ -354,8 +388,9 @@ left_group_1:
 
     - name: stack_1.019
       type: stack
-      pos: [3.03, -0.33, 0.47]
-      size: [0.88, 0.65, 0.84]
+      pos: [3.029, -0.33, 0.47]
+      # size: [0.88, 0.65, 0.84]
+      size: [0.869, 0.65, 0.84]
       levels: [drawer, drawer]
       percentages: [0.5, 0.5]
 
@@ -428,7 +463,8 @@ left_group_1:
 
     - name: dishwasher_1
       type: dishwasher
-      pos: [3.765, -0.375, 0.45]
+      # pos: [3.765, -0.375, 0.45]
+      pos: [3.766, -0.375, 0.45]
       size: [0.6, 0.6, 0.89]
   
   counter_accessories:
@@ -477,11 +513,11 @@ right_group_1:
       levels: [hinge_cabinet]
       percentages: [1]
       pos: [2.56, -0.332, 0.25]
-      size: [0.788, 0.66, 0.4]
+      size: [0.785, 0.66, 0.4]
 
     - name: middle
       type: hinge_cabinet
-      size: [0.788, 0.66, 0.758]
+      size: [0.785, 0.66, 0.758]
       align_to: bottom
       alignment: front
       side: top
@@ -495,7 +531,7 @@ right_group_1:
 
     - name: microwave_housing
       type: housing_cabinet
-      size: [0.788, 0.65, 0.55]
+      size: [0.785, 0.65, 0.55]
       padding: [null, [-0.01, null], null]
       align_to: middle
       alignment: front
@@ -504,7 +540,7 @@ right_group_1:
 
     - name: top
       type: hinge_cabinet
-      size: [0.788, 0.66, null]
+      size: [0.785, 0.66, null]
       align_to: microwave_housing
       alignment: front
       side: top
@@ -538,16 +574,17 @@ right_group_1:
     - name: fridge_1_housing
       type: housing_cabinet
       interior_obj: fridge_1
-      padding: [[0.0001, 0.0001], [0, 0.002], [0,0.02]]
+      padding: [[0.001, 0.001], [0, 0.002], [0,0.02]]
       pos: [1.717, -0.4, 0.875]
 
   top_row.002:
     - name: hingecabinet_1.001
       type: hinge_cabinet
       # pos: [0.841, -0.329, 1.839]
-      pos: [0.841, -0.329, 1.919]
+      # pos: [0.841, -0.329, 1.919]
+      pos: [0.835, -0.329, 1.919]
       # size: [0.856, 0.657, 0.92]
-      size: [0.856, 0.657, 1.072]
+      size: [0.862, 0.657, 1.072]
 
     - name: hingecabinet_1.007
       type: hinge_cabinet

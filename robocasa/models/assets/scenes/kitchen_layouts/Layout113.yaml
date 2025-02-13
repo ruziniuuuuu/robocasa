@@ -1,5 +1,3 @@
-      
-      
 room:
   walls:
     - name: wall_left_1
@@ -261,23 +259,23 @@ left_group_1:
     
     - name: counter_1.002
       type: counter
-      # pos: [-4.183, -0.45, 0.46]
-      align_to: stove_1
-      side: left
-      alignment: top_back
+      pos: [-3.41, -0.45, 0.46]
+      # align_to: stove_1
+      # side: left
+      # alignment: top_back
       # offset: [0, 0, 0.02]
       size: [1.706, 0.65, 0.92]
     
     - name: stack_1.007
       type: stack
-      # pos: [-3.618, -0.45, 0.47]
-      align_to: stove_1
-      side: left
-      alignment: top_back
+      pos: [-2.844, -0.45, 0.47]
+      # align_to: stove_1
+      # side: left
+      # alignment: top_back
       size: [0.577, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
       percentages: [0.34, 0.33, 0.33]
-      offset: [0, 0, -0.02]
+      # offset: [0, 0, -0.02]
 
     - name: stack_1.003
       type: stack
@@ -285,6 +283,7 @@ left_group_1:
       align_to: stack_1.007
       side: left
       alignment: top_back
+      # size: [1.13, 0.65, 0.84]
       size: [1.13, 0.65, 0.84]
       levels: [hinge_cabinet]
       percentages: [1]
@@ -346,17 +345,6 @@ right_group_1:
       panel_config:
         handle_hpos: right
         handle_vpos: top
-
-    # - name: right
-    #   type: stack
-    #   levels: [[drawer, drawer], [drawer, drawer], hinge_cabinet]
-    #   percentages: [0.2, 0.2, 0.6]
-    #   pos: [3.502, -0.332, 1.15]
-    #   size: [0.8, 0.65, 2.3]
-    #   configs:
-    #     hinge_cabinet:
-    #       panel_config:
-    #         handle_vpos: center
 
     - name: bottom
       type: stack
@@ -482,7 +470,3 @@ island_group:
       pos: [0.9, -1.02, 0.46]
       size: [1.8, 2.039, 0.92]
       base_opening: [False, True]
-
-    
-
-    
