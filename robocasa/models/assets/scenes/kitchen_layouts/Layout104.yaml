@@ -299,12 +299,42 @@ island_group_1:
   group_origin: [0, 0]
   group_pos: [3.567, -2.329]
   group_z_rot: 3.1415925661670165
-  island_bottom_row.003:
-    - name: counter_1.005
-      type: counter
-      pos: [1.415, -0.325, 0.46]
-      size: [0.910, 0.65, 0.92]
+  bottom_row:
+    # - name: counter_1.005
+    #   type: counter
+    #   pos: [1.415, -0.325, 0.46]
+    #   size: [0.910, 0.65, 0.92]
 
+    - name: sink_1
+      type: sink
+
+    - name: counter_1
+      type: counter
+      interior_obj: sink_1
+      obj_x_percent: 0.5
+      obj_y_percent: 0.5
+      pos: [0.51, -0.325, 0.46]
+      size: [0.96, 0.65, 0.92]
+
+    # - name: counter_1.006
+    #   type: counter
+    #   pos: [0.015, -0.325, 0.46]
+    #   size: [0.03, 0.65, 0.92]
+
+    - name: counter_1
+      type: counter
+      interior_obj: sink_1
+      obj_x_percent: 0.2
+      obj_y_percent: 0.5
+      pos: [0.935, -0.325, 0.46]
+      size: [1.87, 0.65, 0.92]
+
+    - name: counter_1.001
+      type: counter
+      pos: [0.936, 0.271, 0.523]
+      size: [1.873, 0.542, 1.045]
+
+  bottom_row_cabinets:
     - name: stack_1.013
       type: stack
       # pos: [1.143, -0.325, 0.47]
@@ -312,17 +342,6 @@ island_group_1:
       size: [0.256, 0.65, 0.84]
       levels: [drawer, drawer, drawer]
       percentages: [0.34, 0.34, 0.32]
-
-    - name: sink_1
-      type: sink
-
-    - name: sink_1_counter
-      type: counter
-      interior_obj: sink_1
-      obj_x_percent: 0.5
-      obj_y_percent: 0.5
-      pos: [0.51, -0.325, 0.46]
-      size: [0.96, 0.65, 0.92]
 
     - name: sink_1_stack
       type: stack
@@ -336,20 +355,10 @@ island_group_1:
       pos: [0.015, -0.325, 0.47]
       size: [0.03, 0.65, 0.84]
     
-    - name: counter_1.006
-      type: counter
-      pos: [0.015, -0.325, 0.46]
-      size: [0.03, 0.65, 0.92]
-
     - name: dishwasher_1.001
       type: dishwasher
       pos: [1.55, -0.375, 0.445]
       size: [0.6, 0.6, 0.89]
-
-    - name: counter_1.001
-      type: counter
-      pos: [0.936, 0.271, 0.523]
-      size: [1.873, 0.542, 1.045]
 
     - name: cube.002
       type: box
@@ -368,7 +377,7 @@ island_group_1:
     - name: paper_towel
       type: paper_towel
       placement:
-        fixture: counter_1.005
+        fixture: counter_1
         size: [0.40, 0.30]
         pos: [1.0, 0.5]
         rotation: [0, 0]

@@ -100,21 +100,11 @@ left_group_1:
   group_origin: [0, 0]
   group_pos: [0.0, -3.272]
   group_z_rot: 1.5707962925663537
-  bottom_row_cabinets.004:
-    - name: counter_1.003
+  bottom_row:
+    - name: counter_1.006
       type: counter
-      pos: [2.115, -0.325, 0.46]
-      size: [0.769, 0.65, 0.92]
-
-    - name: stack_1.003
-      type: stack
-      # pos: [2.087, -0.325, 0.47]
-      pos: [2.115, -0.325, 0.47]
-      # size: [0.835, 0.65, 0.84]
-      # size: [0.769, 0.65, 0.84]
-      size: [0.769, 0.65, 0.84]
-      levels: [hinge_cabinet, [drawer, drawer]]
-      percentages: [0.75, 0.25]
+      pos: [0.378, -0.325, 0.46]
+      size: [0.749, 0.65, 0.92]
 
     - name: sink
       type: sink
@@ -125,7 +115,24 @@ left_group_1:
       obj_x_percent: 0.5
       obj_y_percent: 0.5
       pos: [1.252, -0.325, 0.46]
-      size: [0.96, 0.65, 0.92]
+      size: [1.0, 0.65, 0.92]
+
+    - name: counter_1.003
+      type: counter
+      pos: [2.125, -0.325, 0.46]
+      size: [0.749, 0.65, 0.92]
+
+  bottom_row_cabinets:
+
+    - name: stack_1.003
+      type: stack
+      # pos: [2.087, -0.325, 0.47]
+      pos: [2.115, -0.325, 0.47]
+      # size: [0.835, 0.65, 0.84]
+      # size: [0.769, 0.65, 0.84]
+      size: [0.769, 0.65, 0.84]
+      levels: [hinge_cabinet, [drawer, drawer]]
+      percentages: [0.75, 0.25]
     
     - name: sink_stack
       type: stack
@@ -134,6 +141,32 @@ left_group_1:
       pos: [1.252, -0.325, 0.47]
       size: [0.96, 0.65, 0.84]
 
+    - name: stack_1.004
+      type: stack
+      # pos: [0.417, -0.325, 0.47]
+      pos: [0.388, -0.325, 0.47]
+      # size: [0.835, 0.65, 0.84]
+      size: [0.765, 0.65, 0.84]
+      levels: [hinge_cabinet, [drawer, drawer]]
+      percentages: [0.75, 0.25]
+
+  top_row:
+    - name: hingecabinet_1.001
+      type: hinge_cabinet
+      pos: [2.087, -0.203, 1.84]
+      size: [0.835, 0.4, 0.92]
+
+    - name: hingecabinet_1.002
+      type: hinge_cabinet
+      pos: [1.252, -0.203, 1.84]
+      size: [0.835, 0.4, 0.92]
+
+    - name: hingecabinet_1.004
+      type: hinge_cabinet
+      pos: [0.417, -0.203, 1.84]
+      size: [0.835, 0.4, 0.92]
+
+  wall_stack:
     - name: bottom
       type: stack
       levels: [drawer]
@@ -163,36 +196,6 @@ left_group_1:
       side: top
       stack_height: 2.25
       stack_fixtures: [bottom, hingecabinet_1.008, hingecabinet_1.007]
-    
-    - name: counter_1.006
-      type: counter
-      pos: [0.388, -0.325, 0.46]
-      size: [0.769, 0.65, 0.92]
-
-    - name: stack_1.004
-      type: stack
-      # pos: [0.417, -0.325, 0.47]
-      pos: [0.388, -0.325, 0.47]
-      # size: [0.835, 0.65, 0.84]
-      size: [0.765, 0.65, 0.84]
-      levels: [hinge_cabinet, [drawer, drawer]]
-      percentages: [0.75, 0.25]
-
-  top_row:
-    - name: hingecabinet_1.001
-      type: hinge_cabinet
-      pos: [2.087, -0.203, 1.84]
-      size: [0.835, 0.4, 0.92]
-
-    - name: hingecabinet_1.002
-      type: hinge_cabinet
-      pos: [1.252, -0.203, 1.84]
-      size: [0.835, 0.4, 0.92]
-
-    - name: hingecabinet_1.004
-      type: hinge_cabinet
-      pos: [0.417, -0.203, 1.84]
-      size: [0.835, 0.4, 0.92]
   
   counter_accessories:
     - name: paper_towel
