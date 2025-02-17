@@ -107,6 +107,9 @@ def collect_human_trajectory(
 
     discard_traj = False
 
+    with open("/Users/ruziniu/Desktop/model.xml", "w") as f:
+        f.write(env.model.get_xml())
+
     # Loop until we get a reset from the input or the task completes
     while True:
         start = time.time()

@@ -41,6 +41,7 @@ class LayoutType(IntEnum):
     LAYOUT118 = 118
     LAYOUT119 = 119
     LAYOUT120 = 120
+    LW_LAYOUT = 200
 
     # negative values correspond to groups (see LAYOUT_GROUPS_TO_IDS)
     ALL = -1
@@ -74,6 +75,7 @@ class StyleType(IntEnum):
     MEDITERRANEAN = 9
     TRANSITIONAL_1 = 10
     TRANSITIONAL_2 = 11
+    LW_STYLE = 200
 
     # negative values correspond to groups
     ALL = -1
