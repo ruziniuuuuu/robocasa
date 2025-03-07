@@ -305,7 +305,13 @@ right_group_1:
   counter_accessories:
     - name: toaster
       type: toaster
-      placement: {'fixture': 'counter_1_right_group_1', 'size': [1.0, 0.4], 'pos': [1.0, 0], 'rotation': [0, 0]}
+      placement: 
+        fixture: 'counter_1_right_group_1'
+        sample_region_kwargs:
+          ref: hingecabinet_4
+        size: [1.0, 0.4]
+        pos: [1.0, 0]
+        rotation: [0, 0]
 
     - name: papertowel
       type: paper_towel
@@ -342,10 +348,6 @@ left_group_1:
     - name: plant
       type: plant
       placement: {'fixture': 'counter_1_left_group_1', 'size': [0.5, 0.5], 'pos': [-1.0, 0.5], 'rotation': [0, 0]}
-
-    - name: knifeblock
-      type: knife_block
-      placement: {'fixture': 'counter_1_left_group_1', 'size': [1.0, 'obj'], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
 
 island_group_1:
   group_origin: [0, 0]
@@ -410,6 +412,11 @@ island_group_1:
       align_to: stack_2
       side: left
       alignment: top_back
+  
+  counter_accessories:
+    - name: knifeblock
+      type: knife_block
+      placement: {'fixture': 'counter_2_island_group_1', 'size': [1.0, 'obj'], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
 
 stool_group_1:
   group_origin: [0, 0]
