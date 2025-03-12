@@ -96,16 +96,11 @@ left_group_1:
       pos: [-1.342, -0.216, 1.84]
       size: [0.885, 0.432, 0.92]
 
-    - name: hingecabinet_1
-      type: hinge_cabinet
-      pos: [-3.327, -0.217, 1.84]
-      size: [0.885, 0.432, 0.92]
-
     - name: microwave
       type: microwave
       size: [1.1, 0.5, null]
-      align_to: hingecabinet_1
-      side: right
+      align_to: hingecabinet_2
+      side: left
       alignment: bottom_back
 
     - name: cab_micro
@@ -118,6 +113,22 @@ left_group_1:
       alignment: back
       stack_height: 0.92
       stack_fixtures: [microwave]
+
+    - name: cube_1
+      type: box
+      size: [0.03, 0.431617, 0.92]
+      #pos: [-2.8998, -0.2167, 1.84]
+      align_to: cab_micro
+      side: left
+      alignment: top_back
+
+    - name: hingecabinet_1
+      type: hinge_cabinet
+      #pos: [-3.3423, -0.2168, 1.84]
+      size: [0.854933, 0.431617, 0.92]
+      align_to: cube_1
+      side: left
+      alignment: top_back
 
   wall_stack:
     - name: fridgefrenchdoor
