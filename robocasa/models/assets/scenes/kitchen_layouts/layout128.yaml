@@ -223,7 +223,7 @@ left_group_1:
 
     - name: stove
       type: stove
-      stove: [0.76, 0.66, 0.915]
+      size: [0.76, 0.66, 0.915]
 
       #pos: [-4.442, -0.325, 0.46]
       align_to: counter_1
