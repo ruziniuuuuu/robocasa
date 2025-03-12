@@ -2,7 +2,7 @@ room:
   walls:
     - name: wall_left_1
       type: wall
-      size: [0.427968, 1.5, 0.02]
+      size: [0.427, 1.5, 0.02]
       pos: [1.520065, -0.427949, 1.5]
       wall_side: left
 
@@ -42,7 +42,7 @@ room:
 
     - name: wall_main_2
       type: wall
-      size: [0.740033, 1.5, 0.02]
+      size: [0.74, 1.5, 0.02]
       pos: [0.740033, -0.895918, 1.5]
 
     - name: wall_main_2_backing
@@ -141,8 +141,8 @@ main_group_1:
 
     - name: stack_2
       type: stack
-      size: [0.3806, 0.6, 0.89]
-      pos: [1.3893, -0.3, 0.445]
+      size: [0.3806, 0.6, 0.84]
+      pos: [1.3893, -0.3, 0.47]
       levels: [single_cabinet]
       percentages: [1]
       configs: {'single_cabinet': {'orientation': 'right', 'panel_config': {'handle_vpos': 'top'}}}
