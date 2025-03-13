@@ -142,6 +142,7 @@ left_group_1:
       side: top
       stack_height: 2.2499999523162844
       stack_fixtures: [bottom, oven_housing, microwave_housing]
+      
   bottom_row_cabinets:
     - name: stack_3
       type: stack
