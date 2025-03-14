@@ -30,12 +30,15 @@ room:
       type: wall
       size: [0.2899, 1.5, 0.02]
       pos: [0.29, -1.12, 1.5]
+      size: [0.2899, 1.5, 0.02]
+      pos: [0.29, -1.12, 1.5]
 
     - name: wall_main_2_backing
       type: wall
       backing: true
       backing_extended:  [False, False]
       size: [0.25, 1.5, 0.1]
+      pos: [0.25, -1.12, 1.5]
       pos: [0.25, -1.12, 1.5]
 
     - name: wall_left_1
@@ -69,11 +72,13 @@ room:
       type: floor
       size: [2.840024, 3.345978, 0.02]
       pos: [2.840027, -4.465976, 0]
+      pos: [2.840027, -4.465976, 0]
 
     - name: floor_1_backing
       type: floor
       backing: true
       size: [2.840024, 3.345978, 0.1]
+      pos: [2.840027, -4.465976, 0]
       pos: [2.840027, -4.465976, 0]
 
     - name: floor_2
@@ -103,11 +108,14 @@ main_group_1:
     - name: fridgebottomfreezer
       type: fridge_bottom_freezer
       size: [0.78, 0.8, 1.75]
+      size: [0.78, 0.8, 1.75]
 
     - name: fridgebottomfreezer_housing
       type: housing_cabinet
       interior_obj: fridgebottomfreezer
       padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.02]]
+      pos: [0.41, -0.39, 0.885]
+
       pos: [0.41, -0.39, 0.885]
 
 
@@ -138,17 +146,17 @@ main_group_1:
 
     - name: cube_2
       type: box
-      size: [0.25, 0.800009, 0.55]
+      size: [0.25, 0.8, 0.55]
       pos: [2.645, -0.4, 2.025]
 
     - name: cube_3
       type: box
-      size: [0.25, 0.800009, 0.75]
+      size: [0.25, 0.8, 0.75]
       pos: [2.645, -0.4, 1.375]
 
     - name: cube_1
       type: box
-      size: [0.25, 0.800009, 1.0]
+      size: [0.25, 0.8, 1.0]
       pos: [2.645, -0.4, 0.5]
 
     - name: oven_housing
@@ -162,6 +170,7 @@ main_group_1:
 
     - name: hingecabinet_1
       type: hinge_cabinet
+      size: [0.82, 0.8, 0.53]
       size: [0.82, 0.8, 0.53]
       alignment: back
       align_to: fridgebottomfreezer_housing
@@ -183,7 +192,7 @@ main_group_1:
       align_to: microwave_housing
       alignment: front
       side: top
-      stack_height: 2.2500001907348635
+      stack_height: 2.25
       stack_fixtures: [bottom, oven_housing, microwave_housing]
 
 right_group_1:
@@ -196,8 +205,8 @@ right_group_1:
 
     - name: counter_1
       type: counter
-      pos: [4.7447, -0.3261, 0.46]
-      size: [4.500002, 0.650008, 0.92]
+      pos: [4.7447, -0.325, 0.46]
+      size: [4.500002, 0.65, 0.92]
       interior_obj: stovetop
       obj_x_percent: 0.5
       obj_y_percent: 0.5
@@ -205,33 +214,33 @@ right_group_1:
   top_row:
     - name: hingecabinet_1
       type: hinge_cabinet
-      pos: [2.9197, -0.2005, 1.84]
+      pos: [2.9197, -0.2, 1.84]
       size: [0.85, 0.4, 0.92]
 
     - name: hingecabinet_2
       type: hinge_cabinet
-      pos: [3.7697, -0.2008, 1.84]
+      pos: [3.7697, -0.2, 1.84]
       size: [0.85, 0.4, 0.92]
 
     - name: hingecabinet_3
       type: hinge_cabinet
-      pos: [5.7197, -0.2014, 1.84]
+      pos: [5.7197, -0.2, 1.84]
       size: [0.85, 0.4, 0.92]
 
     - name: hingecabinet_4
       type: hinge_cabinet
-      pos: [6.5697, -0.2016, 1.84]
+      pos: [6.5697, -0.2, 1.84]
       size: [0.85, 0.4, 0.92]
 
     - name: hood
       type: hood
-      pos: [4.7447, -0.3011, 1.84]
+      pos: [4.7447, -0.3, 1.84]
       size: [0.76, 0.6, null]
 
   bottom_row_cabinets:
     - name: stack_2
       type: stack
-      pos: [3.7697, -0.3008, 0.47]
+      pos: [3.7697, -0.3, 0.47]
       size: [0.85, 0.6, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
@@ -239,7 +248,7 @@ right_group_1:
 
     - name: stack_1
       type: stack
-      pos: [2.9197, -0.3005, 0.47]
+      pos: [2.9197, -0.3, 0.47]
       size: [0.85, 0.6, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
@@ -247,7 +256,7 @@ right_group_1:
 
     - name: stack_4
       type: stack
-      pos: [5.7197, -0.3014, 0.47]
+      pos: [5.7197, -0.3, 0.47]
       size: [0.85, 0.6, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
@@ -255,7 +264,7 @@ right_group_1:
 
     - name: stack_3
       type: stack
-      pos: [4.7447, -0.3011, 0.47]
+      pos: [4.7447, -0.3, 0.47]
       size: [1.1, 0.6, 0.84]
       levels: [drawer, drawer, panel_cabinet]
       percentages: [0.35, 0.35, 0.3]
@@ -263,7 +272,7 @@ right_group_1:
 
     - name: stack_5
       type: stack
-      pos: [6.5697, -0.3016, 0.47]
+      pos: [6.5697, -0.3, 0.47]
       size: [0.85, 0.6, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
@@ -273,13 +282,16 @@ right_group_1:
     - name: papertowel
       type: paper_towel
       placement: {'fixture': 'counter_1_right_group_1', 'size': [0.4, 0.3], 'pos': [1.0, 0.5], 'rotation': [0, 0]}
+      placement: {'fixture': 'counter_1_right_group_1', 'size': [0.4, 0.3], 'pos': [1.0, 0.5], 'rotation': [0, 0]}
 
     - name: coffee_machine
       type: coffee_machine
       placement: {'fixture': 'counter_1_right_group_1', 'size': [1.0, 0.52], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
+      placement: {'fixture': 'counter_1_right_group_1', 'size': [1.0, 0.52], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
 
     - name: knifeblock
       type: knife_block
+      placement: {'fixture': 'counter_1_right_group_1', 'size': [1.0, 'obj'], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
       placement: {'fixture': 'counter_1_right_group_1', 'size': [1.0, 'obj'], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
 
 island_group_1:
@@ -293,7 +305,7 @@ island_group_1:
     - name: counter_1
       type: counter
       pos: [2.05, -0.6, 0.46]
-      size: [4.099963, 1.300005, 0.92]
+      size: [4.099963, 1.3, 0.92]
       interior_obj: sink
       obj_x_percent: 0.52
       obj_y_percent: 0.25
@@ -383,6 +395,7 @@ island_group_1:
       side: right
       offset: [0, 0, 0]
 
+
   counter_accessories:
     - name: plant
       type: plant
@@ -400,11 +413,14 @@ stool_group_1:
     - name: stool_3
       type: stool
       pos: [1.4843, -0.33, 0.5]
+      pos: [1.4843, -0.33, 0.5]
 
     - name: stool_2
       type: stool
       pos: [0.8593, -0.33, 0.5]
+      pos: [0.8593, -0.33, 0.5]
 
     - name: stool_1
       type: stool
+      pos: [0.25, -0.33, 0.5]
       pos: [0.25, -0.33, 0.5]
