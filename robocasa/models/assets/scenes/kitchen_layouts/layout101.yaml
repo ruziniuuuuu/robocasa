@@ -195,6 +195,10 @@ main_group:
       align_to: stack_4
       alignment: bottom_back
       side: right
+      configs:
+        single_cabinet_2:
+          panel_config:
+            handle_vpos: bottom
 
   top_row:
     - name: cab_1
