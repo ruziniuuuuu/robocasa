@@ -354,7 +354,7 @@ right_group:
       padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.02]]
       # pos: [2.308, -0.325, 1.008]
       align_to: bottom
-      alignment: bottom_front
+      alignment: bottom_back
       side: left
       offset: [0, 0, -0.05]
 
