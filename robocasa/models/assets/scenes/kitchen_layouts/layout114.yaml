@@ -276,7 +276,7 @@ main_group:
       placement:
         fixture: counter_2_main_group
         size: [1.0, 0.52]
-        pos: [-1.0, 1.0]
+        pos: [0, 1.0]
         rotation: [0, 0]
     
     - name: paper_towel
@@ -284,7 +284,7 @@ main_group:
       placement:
         fixture: counter_2_main_group
         size: [1.0, 0.40]
-        pos: [-1.0, 1.0]
+        pos: [-1.0, 0]
         rotation: [0, 0]
     
     - name: toaster
@@ -354,7 +354,7 @@ right_group:
       padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.02]]
       # pos: [2.308, -0.325, 1.008]
       align_to: bottom
-      alignment: bottom_front
+      alignment: bottom_back
       side: left
       offset: [0, 0, -0.05]
 
