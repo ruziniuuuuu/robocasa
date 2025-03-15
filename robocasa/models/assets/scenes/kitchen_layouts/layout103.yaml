@@ -332,6 +332,7 @@ right_group_1:
       levels: [single_cabinet]
       percentages: [1]
     
+      
     - name: stack_1.008
       type: stack
       align_to: stack_1.010
@@ -340,6 +341,11 @@ right_group_1:
       size: [0.75, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.68, 0.32]
+      configs:
+        single_cabinet:
+          orientation: left
+          panel_config:
+            handle_vpos: top
 
     - name: panelbox_1.003
       type: box
