@@ -368,7 +368,10 @@ island_group_1:
     - name: panelbox
       type: stack
       size: [0.02, 0.6, 0.89]
-      pos: [1.862, -0.3, 0.445]
+      #pos: [1.862, -0.3, 0.445]
+      align_to: dishwasher_1
+      side: right
+      alignment: top_back
       levels: [panel_cabinet]
       percentages: [1]
       configs: {'panel_cabinet': {'solid_body': True, 'panel_type': 'slab'}}
