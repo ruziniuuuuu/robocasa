@@ -276,7 +276,7 @@ left_group_1:
     - name: singlecabinet_1.003
       type: single_cabinet
       pos: [3.854, -0.204, 1.89]
-      size: [0.694, 0.4, 0.92]
+      size: [0.728, 0.4, 0.92]
 
     - name: hingecabinet_1.004
       type: hinge_cabinet
