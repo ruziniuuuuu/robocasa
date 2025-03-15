@@ -424,7 +424,7 @@ island_group:
       type: coffee_machine
 
       placement:
-        fixture: island
+        fixture: island_island_group
         size: [1.0, 0.52]
         pos: [-1.0, 1.0]
         rotation: [0, 0]
