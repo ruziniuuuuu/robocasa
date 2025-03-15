@@ -373,3 +373,4 @@ stool_group_1:
     - name: stool_3
       type: stool
       pos: [0.25, -0.15, 0.5]
+
