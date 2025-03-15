@@ -286,7 +286,7 @@ left_group:
   bottom_row:
     - name: counter_1
       type: counter
-      pos: [1.0135, -0.325, 0.46]
+      pos: [1.0135, -0.32, 0.46]
       size: [1.7, 0.65, 0.92]
 
     - name: counter_corner_1
@@ -303,12 +303,12 @@ left_group:
       interior_obj: sink_1
       obj_x_percent: 0.5
       obj_y_percent: 0.7
-      pos: [2.459, -0.325, 0.46]
+      pos: [2.459, -0.32, 0.46]
       size: [1.194, 0.65, 0.92]
 
     - name: counter_2
       type: counter
-      pos: [3.298, -0.325, 0.46]
+      pos: [3.298, -0.32, 0.46]
       size: [0.484, 0.65, 0.92]
 
   bottom_row_cabinets:
