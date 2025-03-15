@@ -54,7 +54,7 @@ room:
     - name: wallaccessory.002
       type: wall_accessory
       attach_to: wall_right_1
-      pos: [null, -0.731, 1.034]
+      pos: [null, -1.531, 1.034]
 
     - name: wallaccessory.005
       type: wall_accessory
