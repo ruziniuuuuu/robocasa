@@ -335,6 +335,11 @@ right_group_1:
       align_to: stack_1
       side: left
       alignment: bottom_back
+      configs:
+        single_cabinet:
+          orientation: left
+          panel_config:
+            handle_vpos: top
 
     - name: box
       type: box

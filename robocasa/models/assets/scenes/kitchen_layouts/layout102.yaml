@@ -295,19 +295,33 @@ left_group:
 
     - name: stack_2
       type: stack
-      size: [1.2, 0.6, 0.84]
+      size: [1.15, 0.6, 0.84]
       levels: [drawer, drawer, panel_cabinet]
       percentages: [0.34, 0.34, 0.33]
       align_to: stack_1
       side: left
       alignment: top_back
 
+    - name: box_3
+      type: box
+      size: [0.05, 0.6, 0.89]
+      align_to: stack_2
+      side: left
+      alignment: top_back
+
     - name: stack_3
       type: stack
-      size: [0.7, 0.6, 0.84]
+      size: [0.65, 0.6, 0.84]
       levels: [drawer, drawer, drawer]
       percentages: [0.34, 0.34, 0.33]
-      align_to: stack_2
+      align_to: box_3
+      side: left
+      alignment: top_back
+
+    - name: box_2
+      type: box
+      size: [0.05, 0.6, 0.89]
+      align_to: stack_3
       side: left
       alignment: top_back
 
@@ -321,10 +335,10 @@ left_group:
       type: housing_cabinet
       interior_obj: fridge_1
       padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.02]]
-      align_to: stack_3
+      align_to: box_2
       side: left
       alignment: bottom_back
-      offset: [0, 0, -0.05]
+      offset: [0, 0, 0]
 
   top_row:
 
