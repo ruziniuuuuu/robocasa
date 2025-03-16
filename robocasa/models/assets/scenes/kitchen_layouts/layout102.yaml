@@ -297,7 +297,7 @@ left_group:
       type: stack
       size: [1.15, 0.6, 0.84]
       levels: [drawer, drawer, panel_cabinet]
-      percentages: [0.34, 0.34, 0.33]
+      percentages: [0.35, 0.35, 0.3]
       align_to: stack_1
       side: left
       alignment: top_back
@@ -313,7 +313,7 @@ left_group:
       type: stack
       size: [0.65, 0.6, 0.84]
       levels: [drawer, drawer, drawer]
-      percentages: [0.34, 0.34, 0.33]
+      percentages: [0.35, 0.35, 0.3]
       align_to: box_3
       side: left
       alignment: top_back
