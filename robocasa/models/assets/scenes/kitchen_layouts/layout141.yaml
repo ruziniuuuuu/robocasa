@@ -56,16 +56,16 @@ room:
 
     - name: wall_right_3
       type: wall
-      size: [0.70927, 0.186328, 0.02]
-      pos: [8.065997, -2.0813, 2.813673]
+      size: [0.70927, 0.298998, 0.02]
+      pos: [8.065997, -2.0813, 2.701001]
       wall_side: right
 
     - name: wall_right_3_backing
       type: wall
       backing: true
       backing_extended: [False, False] 
-      size: [0.74927, 0.066328, 0.1]
-      pos: [8.065997, -2.0813, 2.933673]
+      size: [0.74927, 0.178998, 0.1]
+      pos: [8.065997, -2.0813, 2.821001]
       wall_side: right
 
   floor:
