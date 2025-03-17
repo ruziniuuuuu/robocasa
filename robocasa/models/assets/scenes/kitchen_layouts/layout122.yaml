@@ -270,15 +270,13 @@ right_group_1:
       size: [0.1, 0.6, 0.89]
       pos: [0.6499, -0.3002, 0.442024]
 
-    - name: cube_2
-      type: box
-      size: [0.05, 0.6, 0.89]
-      pos: [2.5849, -0.3008, 0.442024]
-
     - name: stack_1
       type: stack
-      pos: [0.9749, -0.3003, 0.47]
+      #pos: [0.9749, -0.3003, 0.47]
       size: [0.55, 0.6, 0.84]
+      align_to: cube_1
+      alignment: top_back
+      side: right
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
       configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
@@ -290,6 +288,14 @@ right_group_1:
       levels: [drawer, drawer, drawer]
       percentages: [0.3, 0.35, 0.35]
       configs: none
+
+    - name: cube_2
+      type: box
+      size: [0.05, 0.6, 0.89]
+      #pos: [2.5849, -0.3008, 0.442024]
+      align_to: stack_2
+      alignment: top_back
+      side: right
 
   counter_accessories:
     - name: papertowel
@@ -373,4 +379,3 @@ stool_group_1:
     - name: stool_3
       type: stool
       pos: [0.25, -0.15, 0.5]
-
