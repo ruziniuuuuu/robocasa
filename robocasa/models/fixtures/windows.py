@@ -332,3 +332,69 @@ class FramedWindow(Window):
         """
         self.pos = pos
         self._obj.set("pos", a2s(pos))
+
+
+
+class DoubleSashWindow(CompositeBodyObject):
+    """
+    自定义静态窗户类（基于XML模型）
+    功能特性：
+
+    """
+
+    def __init__(
+            self,
+            name,
+            size,
+            ofs=None,
+            pos=None,
+            quat=None,
+            texture="textures/flat/white.png",
+            trim_th=0.02,
+            trim_size=0.015,
+            num_windows=1,
+            rng=None,
+    ):
+        """
+        参数说明：
+        num_windows: 并排窗户数量
+        window_size: 单体窗户尺寸 (width, thickness, height)
+        pos: 基准点坐标 (通常为窗户底部中心)
+        """
+        self.origin_offset = [0, 0, 0]
+        self.window_size = [size[0] / num_windows, size[1], size[2]]
+
+
+        self.texture = xml_path_completion(texture, robocasa.models.assets_root)
+        self.num_windows = num_windows
+        self.pos = [0, 0, 0] if pos is None else pos
+
+        self.quats = []
+        self.trim_size = trim_size
+        self.trim_th = trim_th
+
+        self.center = np.array([0, 0, 0])
+        self.scale = 1.0
+        self.num_windows = num_windows
+        self.ofs = ofs if ofs is not None else [0.0, 0.0, 0.0]
+        self.ofs = np.array(self.ofs)
+
+        self.create_window()
+
+        super().__init__(
+            name=name,
+            objects=self.objects,
+            object_locations=self.positions,
+            object_quats=self.quats,
+            joints=None,
+        )
+
+        if rng is not None:
+            self.rng = rng
+        else:
+            self.rng = np.random.default_rng()
+        # change to create objects then create po
+
+
+
+
