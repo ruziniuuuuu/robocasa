@@ -314,3 +314,292 @@ class KnobHandle(Handle):
                     continue
                 geom.set("pos", a2s(positions[side]))
                 geom.set("size", a2s(sizes[side]))
+
+
+class IrregularityHandle(Handle):
+    def __init__(
+        self,
+        length=0.24,
+        # connector_pad=0.05,
+        handle_pad=0.04,
+        *args,
+        **kwargs
+    ):
+        self.handle_pad = handle_pad
+
+        super().__init__(
+            xml="fixtures/handles/irregularity_handle.xml", length=length, *args, **kwargs
+        )
+
+    def _get_components(self):
+        """
+        Get the geoms of the handle
+        """
+        geom_names = ["handle", "handle_connector_top", "handle_connector_bottom",
+                      "handle_part3", "handle_part4", "handle_part5", "handle_part6", "handle_part7"]
+        body_names = []
+        joint_names = []
+        return self._get_elements_by_name(geom_names, body_names, joint_names)
+
+    def _create_handle(self):
+        """
+        Calculates and sets and positions and sizes of each component of the handles
+        Treats the three types of cabinets separately
+        """
+
+        # adjust handle size if necessary
+        if self.panel_h < self.length + 2 * self.handle_pad:
+            self.length = self.panel_h - 2 * self.handle_pad
+
+        offset = self.length / 2 * 0.60  # - self.connector_pad
+        # distance between main handle and door
+        conn_len = 0.05
+
+        # calculate positions for each component
+        positions = {
+            "handle": np.array([0, -conn_len, 0]),
+            "handle_connector_top": np.array([0, -conn_len / 2, offset]),
+            "handle_connector_bottom": np.array([0, -conn_len / 2, -offset]),
+        }
+        sizes = {
+            "handle": [0.013, self.length / 2],
+            "handle_connector_top": [0.008, conn_len / 2],
+            "handle_connector_bottom": [0.008, conn_len / 2],
+        }
+        eulers = {}
+
+        if self.orientation == "horizontal":
+            positions["handle_connector_top"][[0, 2]] = positions[
+                "handle_connector_top"
+            ][[2, 0]]
+            positions["handle_connector_bottom"][[0, 2]] = positions[
+                "handle_connector_bottom"
+            ][[2, 0]]
+            eulers["handle"] = [0, 1.5708, 0]
+
+        geoms, bodies, joints = self._get_components()
+        for side in positions.keys():
+            for geom in geoms[side]:
+                if geom is None:
+                    continue
+                geom.set("pos", a2s(positions[side]))
+                geom.set("size", a2s(sizes[side]))
+
+                if eulers.get(side) is not None:
+                    geom.set("euler", a2s(eulers[side]))
+
+class FlatRectangularHandle(Handle):
+    def __init__(
+        self,
+        length=0.24,
+        # connector_pad=0.05,
+        handle_pad=0.04,
+        *args,
+        **kwargs
+    ):
+        self.handle_pad = handle_pad
+
+        super().__init__(
+            xml="fixtures/handles/flat_rectangular_handle.xml", length=length, *args, **kwargs
+        )
+
+    def _get_components(self):
+        """
+        Get the geoms of the handle
+        """
+        geom_names = ["handle", "handle_connector_top", "handle_connector_bottom"]
+        body_names = []
+        joint_names = []
+        return self._get_elements_by_name(geom_names, body_names, joint_names)
+
+    def _create_handle(self):
+        """
+        Calculates and sets and positions and sizes of each component of the handles
+        Treats the three types of cabinets separately
+        """
+
+        # adjust handle size if necessary
+        if self.panel_h < self.length + 2 * self.handle_pad:
+            self.length = self.panel_h - 2 * self.handle_pad
+
+        conn_len = 0.05
+        connector_depth = (conn_len / 2) - 0.01
+        connector_zpos = (self.length / 2) - 0.01
+
+        # calculate positions for each component
+        positions = {
+            "handle": np.array([0, -conn_len, 0]),
+            "handle_connector_top": np.array([0, -conn_len / 2, connector_zpos]),
+            "handle_connector_bottom": np.array([0, -conn_len / 2, -connector_zpos]),
+        }
+        sizes = {
+            "handle": [0.01, 0.01, self.length / 2],
+            "handle_connector_top": [0.01, 0.01, connector_depth],
+            "handle_connector_bottom": [0.01, 0.01, connector_depth],
+        }
+        eulers = {}
+
+        if self.orientation == "horizontal":
+            positions["handle_connector_top"][[0, 2]] = positions[
+                "handle_connector_top"
+            ][[2, 0]]
+            positions["handle_connector_bottom"][[0, 2]] = positions[
+                "handle_connector_bottom"
+            ][[2, 0]]
+            eulers["handle"] = [0, 1.5708, 0]
+
+        geoms, bodies, joints = self._get_components()
+        for side in positions.keys():
+            for geom in geoms[side]:
+                if geom is None:
+                    continue
+                geom.set("pos", a2s(positions[side]))
+                geom.set("size", a2s(sizes[side]))
+
+                if eulers.get(side) is not None:
+                    geom.set("euler", a2s(eulers[side]))
+
+
+class RectangularHandle(Handle):
+    def __init__(
+        self,
+        length=0.24,
+        # connector_pad=0.05,
+        handle_pad=0.04,
+        *args,
+        **kwargs
+    ):
+        self.handle_pad = handle_pad
+
+        super().__init__(
+            xml="fixtures/handles/rectangular_handle.xml", length=length, *args, **kwargs
+        )
+
+    def _get_components(self):
+        """
+        Get the geoms of the handle
+        """
+        geom_names = ["handle", "handle_connector_top", "handle_connector_bottom"]
+        body_names = []
+        joint_names = []
+        return self._get_elements_by_name(geom_names, body_names, joint_names)
+
+    def _create_handle(self):
+        """
+        Calculates and sets and positions and sizes of each component of the handles
+        Treats the three types of cabinets separately
+        """
+
+        # adjust handle size if necessary
+        if self.panel_h < self.length + 2 * self.handle_pad:
+            self.length = self.panel_h - 2 * self.handle_pad
+
+        conn_len = 0.05
+        connector_depth = (conn_len / 2) - 0.01
+        connector_zpos = (self.length / 2) - 0.01
+
+        # calculate positions for each component
+        positions = {
+            "handle": np.array([0, -conn_len, 0]),
+            "handle_connector_top": np.array([0, -conn_len / 2, connector_zpos]),
+            "handle_connector_bottom": np.array([0, -conn_len / 2, -connector_zpos]),
+        }
+        sizes = {
+            "handle": [0.01, 0.01, self.length / 2],
+            "handle_connector_top": [0.01, 0.01, connector_depth],
+            "handle_connector_bottom": [0.01, 0.01, connector_depth],
+        }
+        eulers = {}
+
+        if self.orientation == "horizontal":
+            positions["handle_connector_top"][[0, 2]] = positions[
+                "handle_connector_top"
+            ][[2, 0]]
+            positions["handle_connector_bottom"][[0, 2]] = positions[
+                "handle_connector_bottom"
+            ][[2, 0]]
+            eulers["handle"] = [0, 1.5708, 0]
+
+        geoms, bodies, joints = self._get_components()
+        for side in positions.keys():
+            for geom in geoms[side]:
+                if geom is None:
+                    continue
+                geom.set("pos", a2s(positions[side]))
+                geom.set("size", a2s(sizes[side]))
+
+                if eulers.get(side) is not None:
+                    geom.set("euler", a2s(eulers[side]))
+
+
+class FlatRectangularHandle2(Handle):
+    def __init__(
+        self,
+        length=0.24,
+        # connector_pad=0.05,
+        handle_pad=0.04,
+        *args,
+        **kwargs
+    ):
+        self.handle_pad = handle_pad
+
+        super().__init__(
+            xml="fixtures/handles/flat_rectangular_handle_2.xml", length=length, *args, **kwargs
+        )
+
+    def _get_components(self):
+        """
+        Get the geoms of the handle
+        """
+        geom_names = ["handle", "handle_connector_top", "handle_connector_bottom"]
+        body_names = []
+        joint_names = []
+        return self._get_elements_by_name(geom_names, body_names, joint_names)
+
+    def _create_handle(self):
+        """
+        Calculates and sets and positions and sizes of each component of the handles
+        Treats the three types of cabinets separately
+        """
+
+        # adjust handle size if necessary
+        if self.panel_h < self.length + 2 * self.handle_pad:
+            self.length = self.panel_h - 2 * self.handle_pad
+
+        conn_len = 0.05
+        connector_depth = (conn_len / 2) - 0.01
+        connector_zpos = (self.length / 2) - 0.01
+
+        # calculate positions for each component
+        positions = {
+            "handle": np.array([0, -conn_len, 0]),
+            "handle_connector_top": np.array([0, -conn_len / 2, connector_zpos]),
+            "handle_connector_bottom": np.array([0, -conn_len / 2, -connector_zpos]),
+        }
+        sizes = {
+            "handle": [0.01, 0.01, self.length / 2],
+            "handle_connector_top": [0.01, 0.01, connector_depth],
+            "handle_connector_bottom": [0.01, 0.01, connector_depth],
+        }
+        eulers = {}
+
+        if self.orientation == "horizontal":
+            positions["handle_connector_top"][[0, 2]] = positions[
+                "handle_connector_top"
+            ][[2, 0]]
+            positions["handle_connector_bottom"][[0, 2]] = positions[
+                "handle_connector_bottom"
+            ][[2, 0]]
+            eulers["handle"] = [0, 1.5708, 0]
+
+        geoms, bodies, joints = self._get_components()
+        for side in positions.keys():
+            for geom in geoms[side]:
+                if geom is None:
+                    continue
+                geom.set("pos", a2s(positions[side]))
+                geom.set("size", a2s(sizes[side]))
+
+                if eulers.get(side) is not None:
+                    geom.set("euler", a2s(eulers[side]))
+

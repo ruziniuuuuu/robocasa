@@ -51,6 +51,19 @@ wood_grain_shelves:
 wood_grain_shelves_2:
   texture: textures/wood/wood_grain_3.png
 
+wood_grain_door:
+  texture: textures/wood/wood_grain_4.png
+light_beige_door:
+  texture: textures/flat/light_beige.png
+dark_beige_door:
+  texture: textures/flat/dark_beige.png
+dark_beige_door_2:
+  texture: textures/flat/dark_beige_2.png
+
+
+
+
+
 
 #### panel shapes ####
 slab:
@@ -71,11 +84,16 @@ full_window_clear:
     opacity: 0.1
 
 
+
 #### handle shapes ####
 handle_boxed:
   handle_type: boxed
 handle_knob:
   handle_type: knob
+handle_flat:
+  handle_type: flat
+handle_cuboid:
+  handle_type: cuboid
 
 
 #### handle textures ####
@@ -88,3 +106,20 @@ handle_black:
 handle_dark_gray:
   handle_config:
     texture: textures/flat/dark_gray.png
+
+handle_dark_beige:
+  handle_config:
+    texture: textures/flat/dark_beige_3.png
+handle_dark_beige_2:
+  handle_config:
+    texture: textures/flat/dark_beige_4.png
+handle_light_gray:
+  handle_config:
+    texture: textures/flat/light_gray_2.png
+handle_dark_gray_2:
+  handle_config:
+    texture: textures/flat/dark_gray_2.png
+
+
+
+
