@@ -42,22 +42,22 @@ room:
 
     - name: wall_right_2
       type: wall
-      size: [0.720701, 0.186328, 0.02]
-      pos: [6.310924, -1.766293, 2.813672]
+      size: [0.720701, 0.32894, 0.02]
+      pos: [6.310924, -1.766293, 2.67106]
       wall_side: right
 
     - name: wall_right_2_backing
       type: wall
       backing: true
       backing_extended: [True, False] 
-      size: [0.720701, 0.066328, 0.1]
-      pos: [6.310924, -1.766293, 2.933672]
+      size: [0.720701, 0.20894, 0.1]
+      pos: [6.310924, -1.766293, 2.79106]
       wall_side: right
 
     - name: wall_main_2
       type: wall
       size: [0.875, 1.5, 0.02]
-      pos: [7.225131, -3.876715, 1.5]
+      pos: [7.225831, -3.876715, 1.5]
 
     - name: wall_main_2_backing
       type: wall
