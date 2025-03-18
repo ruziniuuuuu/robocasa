@@ -317,7 +317,7 @@ main_group_1:
       align_to: hingecabinet_6
       side: right
       alignment: top_back
-      size: [0.624225, 0.369177, 0.92]
+      size: [0.624, 0.369177, 0.92]
       orientation: left
       panel_config: {'handle_hpos': 'right', 'handle_vpos': 'bottom'}
 
