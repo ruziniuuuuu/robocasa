@@ -290,10 +290,33 @@ main_group_1:
   group_origin: [0, 0]
   group_pos: [2.833573, -0.103605]
   group_z_rot: -0.0001584410790463818
+  wall_stack_3:
+    - name: fridgesidebyside
+      type: fridge_side_by_side
+      size: [0.85, 0.8, 1.75]
+
+    - name: fridgesidebyside_housing
+      type: housing_cabinet
+      interior_obj: fridgesidebyside
+      padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.02]]
+      pos: [1.1174, -0.3898, 0.885001]
+
+    - name: hingecabinet_6
+      type: hinge_cabinet
+      size: [0.889995, 0.779993, 0.529998]
+      alignment: back
+      align_to: fridgesidebyside_housing
+      side: top
+      offset: [0, 0, 0]
+
+
   top_row_3:
     - name: singlecabinet_1
       type: single_cabinet
-      pos: [1.8745, -0.1843, 1.839999]
+      # pos: [1.8745, -0.1843, 1.839999]
+      align_to: hingecabinet_6
+      side: right
+      alignment: top_back
       size: [0.624225, 0.369177, 0.92]
       orientation: left
       panel_config: {'handle_hpos': 'right', 'handle_vpos': 'bottom'}
@@ -371,24 +394,6 @@ main_group_1:
       percentages: [0.7, 0.3]
       configs: {'hinge_cabinet': {'panel_config': {'handle_vpos': 'top'}}}
 
-  wall_stack_3:
-    - name: fridgesidebyside
-      type: fridge_side_by_side
-      size: [0.85, 0.8, 1.75]
-
-    - name: fridgesidebyside_housing
-      type: housing_cabinet
-      interior_obj: fridgesidebyside
-      padding: [[0.02, 0.02], [-0.04, 0.02], [0, 0.02]]
-      pos: [1.1174, -0.3898, 0.885001]
-
-    - name: hingecabinet_6
-      type: hinge_cabinet
-      size: [0.889995, 0.779993, 0.529998]
-      alignment: back
-      align_to: fridgesidebyside_housing
-      side: top
-      offset: [0, 0, 0]
 
 front_group_2:
   group_origin: [0, 0]
