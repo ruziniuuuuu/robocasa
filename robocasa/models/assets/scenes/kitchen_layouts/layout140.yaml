@@ -184,11 +184,6 @@ main_group_1:
      size: [0.050013, 0.6, 0.89]
      pos: [0.625, -0.3, 0.444999]
 
-   - name: cube_11
-     type: box
-     size: [0.65, 0.65, 0.89]
-     pos: [3.36, -0.325, 0.459998]
-
    - name: dishwasher_1
      type: dishwasher
      size: [0.6, 0.6, 0.89]
@@ -422,6 +417,15 @@ right_group_1:
       type: box
       size: [0.05, 0.6, 0.89]
       pos: [-1.2101, -0.3, 0.445]
+
+    - name: cube_11
+      type: box
+      size: [0.65, 0.65, 0.89]
+      #pos: [3.36, -0.325, 0.459998]
+      align_to: stack_04
+      side: left
+      alignment: top_back
+
 
   counter_accessories_2:
 
