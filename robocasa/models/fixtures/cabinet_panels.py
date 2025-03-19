@@ -614,27 +614,3 @@ class VerticalGrainCabinetPanel(CabinetPanel):
         xml = "fixtures/cabinets/cabinet_panels/vertical_grain_door/model.xml"
         super().__init__(xml=xml,  *args, **kwargs)
 
-    # def _get_components(self):
-    #     """
-    #     Gets the geoms for the cabinet panel. This includes the door and the vertical_grain board.
-    #     """
-    #     geom_names = ["door", "vertical_grain_board"]
-    #     return self._get_elements_by_name(geom_names)[0]
-    #
-    # def _create_panel(self):
-    #     """
-    #     Creates the cabinet panel. This involves setting the size and position of the panel's door and other geoms
-    #     """
-    #     # divide by 2 for mujoco convention
-    #     x, y, z = self.size
-    #
-    #     sizes = {
-    #         "door": [x, y, z],
-    #         # todo
-    #     }
-    #     positions = {
-    #         "door": [0, 0, 0],
-    #     }
-    #
-    #     geoms = self._get_components()
-    #     set_geom_dimensions(sizes, positions, geoms, rotated=True)
