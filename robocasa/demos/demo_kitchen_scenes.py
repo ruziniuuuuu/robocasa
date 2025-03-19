@@ -64,8 +64,8 @@ if __name__ == "__main__":
     # Arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("--task", type=str, default="PnPCounterToCab", help="task")
-    parser.add_argument("--layout", type=int, help="kitchen layout (choose number 0-9)")
-    parser.add_argument("--style", type=int, help="kitchen style (choose number 0-11)")
+    parser.add_argument("--layout", type=int, help="kitchen layout (choose number 0-9)", default=152)
+    parser.add_argument("--style", type=int, help="kitchen style (choose number 0-11)", default=12)
     parser.add_argument("--robot", type=str, help="robot", default="PandaOmron")
     args = parser.parse_args()
 

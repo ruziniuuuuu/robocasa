@@ -1,4 +1,4 @@
-<mujoco model="flat_rectangular_handle">
+<mujoco model="flat_handle">
     <compiler angle="radian"/>
     <asset>
         <mesh file="visuals/CabinetHandle002.obj" name="mesh"/>

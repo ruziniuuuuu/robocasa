@@ -82,7 +82,14 @@ full_window_clear:
   panel_type: full_window
   panel_config:
     opacity: 0.1
-
+wood_slab:
+  panel_type: wood_slab
+red_slab:
+  panel_type: red_slab
+beige_slab:
+  panel_type: beige_slab
+vertical_grain:
+  panel_type: vertical_grain
 
 
 #### handle shapes ####
@@ -94,6 +101,12 @@ handle_flat:
   handle_type: flat
 handle_cuboid:
   handle_type: cuboid
+handle_irregularity:
+  handle_type: irregularity
+handle_protruding_rectangular:
+  handle_type: protruding_rectangular
+handle_rectangular:
+  handle_type: rectangular
 
 
 #### handle textures ####

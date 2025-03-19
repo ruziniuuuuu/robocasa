@@ -1,11 +1,12 @@
-<mujoco model="model">
+<mujoco model="cub_panel_vertical_grain">
     <compiler angle="radian"/>
     <asset>
         <mesh file="visuals/CabinetDoorPanel004.obj" name="mesh"/>
         <mesh file="visuals/CabinetDoorPanel004_Clear.obj" name="mesh_c"/>
         <texture file="visuals/T_CabinetDoorPanel004_BC001.png" name="tex" type="2d"/>
+        <texture file="visuals/T_CabinetDoorPanel004_BC001.png" name="tex2" type="2d"/>
         <material name="mat" rgba="1 1 1 1" texture="tex"/>
-        <material name="mat_c" rgba="1 1 1 0.4" texture="tex"/>
+        <material name="mat_c" rgba="1 1 1 0.4" texture="tex2"/>
     </asset>
     <default>
         <default class="visual">
@@ -21,7 +22,7 @@
                 <geom mesh="mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="mat"/>
                 <geom class="collision" type="box" pos="0.0 0.0 0.0" size="0.21633684635162354 0.008620035834610462 0.3586927652359009" quat="1.0 0.0 0.0 0.0" name="door"/>
                 <body name="vertical_grain_board">
-                    <geom mesh="mesh_c" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="mat_C"/>
+                <geom mesh="mesh_c" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="mat_c"/>
                 </body>
             </body>
         </body>

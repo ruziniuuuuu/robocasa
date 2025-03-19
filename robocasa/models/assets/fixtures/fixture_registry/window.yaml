@@ -1,0 +1,24 @@
+default:
+    name: shutter
+
+
+#### panel textures ####
+
+white_gray:
+  texture: textures/others/white_gray.png
+white:
+  texture: textures/flat/white.png
+black_gray:
+  texture: textures/other/black_gray.png
+wood_grain:
+  texture: textures/flat/wood_grain_6.png
+
+
+double_open_window:
+  xml: fixtures/windows/window
+top_hang_window:
+  xml: fixtures/windows/top_hang_window
+shutter:
+  xml: fixtures/windows/shutter
+grid_window:
+  xml: fixtures/windows/grid_window

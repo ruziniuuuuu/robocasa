@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<mujoco model="model">
+    <compiler angle="radian"/>
+    <asset>
+        <mesh file="visuals/Windows003_Rightdoor1.obj" name="Windows003_Rightdoor1_vis"/>
+        <mesh file="visuals/Windows003_Leftdoor1_Clear.obj" name="Windows003_Leftdoor1_Clear_vis"/>
+        <mesh file="visuals/Windows003_Leftdoor1_Handle.obj" name="Windows003_Leftdoor1_Handle_vis"/>
+        <mesh file="visuals/Windows003_Rightdoor1_Handle.obj" name="Windows003_Rightdoor1_Handle_vis"/>
+        <mesh file="visuals/Windows003_Leftdoor1.obj" name="Windows003_Leftdoor1_vis"/>
+        <mesh file="visuals/Windows003.obj" name="Windows003_vis"/>
+        <mesh file="visuals/Windows003_Rightdoor1_Clear.obj" name="Windows003_Rightdoor1_Clear_vis"/>
+        <texture file="visuals/T_Windows003_BC001.png" name="T_Windows003_BC001" type="2d"/>
+        <material name="material" rgba="1 1 1 1" texture="T_Windows003_BC001"/>
+        <material name="material_Clear" rgba="1 1 1 0.4" texture="T_Windows003_BC001"/>
+    </asset>
+    <default>
+        <default class="visual">
+            <geom conaffinity="0" contype="0" group="1" type="mesh"/>
+        </default>
+        <default class="collision">
+            <geom group="0" rgba="0.5 0 0 0.5"/>
+        </default>
+    </default>
+    <worldbody>
+        <body>
+            <body name="object">
+                <geom mesh="Windows003_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material"/>
+                <geom class="collision" type="box" pos="0.0 -0.00012533040717244148 0.46537449955940247" size="0.4667401611804962 0.021120352670550346 0.4491317570209503" quat="1.0 0.0 0.0 0.0"/>
+                <geom class="collision" type="box" pos="-0.02665865235030651 -0.026908699423074722 0.4397432208061218" size="0.009779690764844418 0.005794933531433344 0.019717348739504814" quat="1.0 0.0 0.0 0.0"/>
+                <geom class="collision" type="box" pos="0.026971276849508286 -0.026908699423074722 0.4397432208061218" size="0.009779690764844418 0.005794933531433344 0.019717348739504814" quat="1.0 0.0 0.0 0.0"/>
+                <geom class="collision" type="box" pos="-0.02665865235030651 -0.04857448488473892 0.4050624966621399" size="0.00676773814484477 0.005794933531433344 0.04192383587360382" quat="1.0 0.0 0.0 0.0"/>
+                <geom class="collision" type="box" pos="0.026453418657183647 -0.04857448488473892 0.4050624966621399" size="0.00676773814484477 0.005794933531433344 0.04192383587360382" quat="1.0 0.0 0.0 0.0"/>
+                <geom class="collision" type="box" pos="-0.02665865048766136 -0.03786240518093109 0.4406713545322418" size="0.00676773814484477 0.005794933531433344 0.013716395944356918" quat="0.6282998919487 0.7779712677001953 -1.7274433601440544e-16 -3.4806199746252005e-24"/>
+                <geom class="collision" type="box" pos="0.026453416794538498 -0.03786240518093109 0.4406713545322418" size="0.00676773814484477 0.005794933531433344 0.013716395944356918" quat="0.6282998919487 0.7779712677001953 -1.7274433601440544e-16 -3.4806199746252005e-24"/>
+                <body name="Windows003_Leftdoor1">
+                    <geom mesh="Windows003_Leftdoor1_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material"/>
+                    <body name="Windows003_Leftdoor1_Clear">
+                        <geom mesh="Windows003_Leftdoor1_Clear_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material_Clear"/>
+                    </body>
+                    <body name="Windows003_Leftdoor1_Handle">
+                        <geom mesh="Windows003_Leftdoor1_Handle_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material"/>
+                    </body>
+                </body>
+                <body name="Windows003_Rightdoor1">
+                    <geom mesh="Windows003_Rightdoor1_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material"/>
+                    <body name="Windows003_Rightdoor1_Clear">
+                        <geom mesh="Windows003_Rightdoor1_Clear_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material_Clear"/>
+                    </body>
+                    <body name="Windows003_Rightdoor1_Handle">
+                        <geom mesh="Windows003_Rightdoor1_Handle_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material"/>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+</mujoco>

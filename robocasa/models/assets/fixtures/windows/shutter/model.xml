@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<mujoco model="model">
+    <compiler angle="radian"/>
+    <asset>
+        <mesh file="visuals/Window002_Rightdoor1.obj" name="Window002_Rightdoor1_vis"/>
+        <mesh file="visuals/Window002_Leftdoor2_Handle.obj" name="Window002_Leftdoor2_Handle_vis"/>
+        <mesh file="visuals/Window002.obj" name="Window002_vis"/>
+        <mesh file="visuals/Window002_Leftdoor1.obj" name="Window002_Leftdoor1_vis"/>
+        <mesh file="visuals/Window002_Rightdoor2_Handle.obj" name="Window002_Rightdoor2_Handle_vis"/>
+        <texture file="visuals/T_Windows002_BC001.png" name="T_Windows002_BC001" type="2d"/>
+        <material name="material" rgba="1 1 1 1" texture="T_Windows002_BC001"/>
+    </asset>
+    <default>
+        <default class="visual">
+            <geom conaffinity="0" contype="0" group="1" type="mesh"/>
+        </default>
+        <default class="collision">
+            <geom group="0" rgba="0.5 0 0 0.5"/>
+        </default>
+    </default>
+    <worldbody>
+        <body>
+            <body name="object">
+                <geom mesh="Window002_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material"/>
+                <geom class="collision" type="box" pos="0.0 -0.001962941838428378 0.5021378993988037" size="0.45227277278900146 0.030053315684199333 0.5079944133758545" quat="1.0 0.0 0.0 0.0"/>
+                <geom class="collision" type="box" pos="-0.008033323101699352 -0.04251907020807266 0.4999549388885498" size="0.006992841139435768 0.010894568637013435 0.006992841139435768" quat="0.9960985779762268 0.0882473886013031 -1.9594856537642058e-17 -3.064145790094425e-24"/>
+                <geom class="collision" type="box" pos="-0.008038744330406189 -0.05403716862201691 0.4635850787162781" size="0.006559084635227919 0.0061176130548119545 0.04223906993865967" quat="1.0 0.0 0.0 0.0"/>
+                <geom class="collision" type="box" pos="0.018591005355119705 -0.04251907020807266 0.4999549388885498" size="0.006992841139435768 0.010894568637013435 0.006992841139435768" quat="0.9960985779762268 0.0882473886013031 -1.9594856537642058e-17 -3.064145790094425e-24"/>
+                <geom class="collision" type="box" pos="0.018585583195090294 -0.05403716862201691 0.4635850787162781" size="0.006559084635227919 0.0061176130548119545 0.04223906993865967" quat="1.0 0.0 0.0 0.0"/>
+                <body name="Window002_Leftdoor1">
+                    <geom mesh="Window002_Leftdoor1_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material"/>
+                    <body name="Window002_Leftdoor2_Handle">
+                        <geom mesh="Window002_Leftdoor2_Handle_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material"/>
+                    </body>
+                </body>
+                <body name="Window002_Rightdoor1">
+                    <geom mesh="Window002_Rightdoor1_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material"/>
+                    <body name="Window002_Rightdoor2_Handle">
+                        <geom mesh="Window002_Rightdoor2_Handle_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="material"/>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+</mujoco>

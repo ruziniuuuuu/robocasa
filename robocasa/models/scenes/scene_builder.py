@@ -42,8 +42,9 @@ FIXTURES = dict(
     stand_mixer=StandMixer,
     utensil_rack=WallAccessory,
     wall_accessory=WallAccessory,
-    window=Window,
+    window=Shutter,
     framed_window=FramedWindow,
+    # shutter=Shutter,
     # needs some additional work
     # slide_cabinet=SlideCabinet,
 )
