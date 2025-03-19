@@ -182,7 +182,8 @@ main_group_1:
       size: [0.608559, 0.6, 0.84]
       levels: [single_cabinet]
       percentages: [1]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'right'}}}
+      configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
+
 
     - name: stack_03
       type: stack
@@ -190,7 +191,7 @@ main_group_1:
       size: [0.608586, 0.6, 0.84]
       levels: [single_cabinet]
       percentages: [1]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'right'}}}
+      configs: {'single_cabinet': {'orientation': 'right', 'panel_config': {'handle_vpos': 'top'}}}
 
   counter_accessories_1:
     - name: coffee_machine
@@ -224,7 +225,7 @@ right_group_1:
     - name: counter_4
       type: counter
       pos: [1.7774, -0.325, 0.46]
-      size: [2.254694, 0.65, 0.92]
+      size: [2.255, 0.65, 0.92]
       interior_obj: sink
       obj_x_percent: 0.2
       obj_y_percent: 0.1
@@ -281,7 +282,7 @@ left_group_1:
     - name: counter_1
       type: counter
       pos: [2.4644, -0.325, 0.46]
-      size: [1.00778, 0.65, 0.92]
+      size: [1.009, 0.65, 0.92]
 
   bottom_row_cabinets_3:
     - name: stack_05
@@ -314,11 +315,10 @@ left_group_1:
       size: [0.82, 0.8, 0.529999]
 
   top_row_3:
-
     - name: singlecabinet_1
       type: single_cabinet
-      pos: [2.9644, -0.2, 1.84]
-      size: [0.507748, 0.4, 0.92]
+      pos: [2.9644, -0.1997, 1.84]
+      size: [0.51, 0.4, 0.92]
       orientation: right
       panel_config: {'handle_vpos': 'bottom'}
 
@@ -341,6 +341,7 @@ left_group_1:
       default_config_name: cab_top_small
       stack_height: 0.92
       stack_fixtures: [microwave]
+
 
   counter_accessories_3:
     - name: papertowel
