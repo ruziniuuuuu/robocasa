@@ -36,8 +36,8 @@ room:
       type: wall
       backing: true
       backing_extended:  [False, False]
-      size: [1.59393, 1.5, 0.1]
-      pos: [5.759986, -4.054725, 1.5]
+      size: [1.57963, 1.5, 0.1]
+      pos: [5.759986, -4.079725, 1.5]
       wall_side: right
 
     - name: wall_front_2
@@ -70,7 +70,7 @@ room:
 
     - name: wall_front_3
       type: wall
-      size: [0.71, 0.336992, 0.02]
+      size: [0.67, 0.336992, 0.02]
       pos: [2.712814, -5.648636, 2.663008]
       wall_side: front
 
@@ -78,7 +78,7 @@ room:
       type: wall
       backing: true
       backing_extended:  [False, False]
-      size: [0.71, 0.216992, 0.1]
+      size: [0.68, 0.216992, 0.1]
       pos: [2.712814, -5.648636, 2.783008]
       wall_side: front
 
