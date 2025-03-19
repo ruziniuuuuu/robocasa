@@ -155,42 +155,47 @@ main_group_1:
       hollow: [False, False]
 
   bottom_row_cabinets_1:
-    - name: stack_02
-      type: stack
-      pos: [1.75, -0.3, 0.47]
-      size: [1.0, 0.6, 0.84]
-      levels: [hinge_cabinet, panel_cabinet]
-      percentages: [0.7, 0.3]
-      configs: {'hinge_cabinet': {'open_top': 'true', 'panel_config': {'handle_vpos': 'top'}}}
+   - name: stack_02
+     type: stack     
+     pos: [1.75, -0.3001, 0.47]
+     size: [1.0, 0.6, 0.84]
+     levels: [hinge_cabinet, panel_cabinet]
+     percentages: [0.7, 0.3]
+     configs: {'hinge_cabinet': {'open_top': 'true', 'panel_config': {'handle_vpos': 'top'}}}
 
-    - name: stack_01
-      type: stack
-      pos: [0.3, -0.3, 0.47]
-      size: [0.600013, 0.600012, 0.840001]
-      levels: [single_cabinet, drawer]
-      percentages: [0.7, 0.3]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'right'}}}
+   - name: stack_01
+     type: stack
+     pos: [0.3, -0.3, 0.47]
+     size: [0.600013, 0.600012, 0.840001]
+     levels: [single_cabinet, drawer]
+     percentages: [0.7, 0.3]
+     configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
 
-    - name: stack_03
-      type: stack
-      pos: [2.6425, -0.3, 0.47]
-      size: [0.784971, 0.6, 0.84]
-      levels: [single_cabinet, drawer]
-      percentages: [0.7, 0.3]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'left'}}}
+   - name: stack_03
+     type: stack
+     pos: [2.6425, -0.3001, 0.47]
+     size: [0.784971, 0.6, 0.84]
+     levels: [single_cabinet, drawer]
+     percentages: [0.7, 0.3]
+     configs:  {'single_cabinet': {'orientation': 'right', 'panel_config': {'handle_vpos': 'top'}}}
 
-    - name: cube_09
-      type: box
-      size: [0.050013, 0.600001, 0.89]
-      pos: [0.625, -0.3, 0.444999]
+   - name: cube_09
+     type: box
+     size: [0.050013, 0.6, 0.89]
+     pos: [0.625, -0.3, 0.444999]
 
-    - name: dishwasher_1
-      type: dishwasher
-      size: [0.600013, 0.600012, 0.890001]
-      alignment: back
-      align_to: cube_09
-      side: right
-      offset: [0, 0, 0]
+   - name: cube_11
+     type: box
+     size: [0.65, 0.65, 0.89]
+     pos: [3.36, -0.3251, 0.459998]
+
+   - name: dishwasher_1
+     type: dishwasher
+     size: [0.6, 0.6, 0.89]
+     alignment: back
+     align_to: cube_09
+     side: right
+     offset: [0, 0, 0]
 
 island_group_1:
   group_origin: [0, 0]
@@ -255,25 +260,24 @@ left_group_1:
   bottom_row_cabinets_3:
     - name: stack_13
       type: stack
-      pos: [2.5082, -0.333, 0.47]
-      size: [0.642573, 0.600017, 0.84]
+      pos: [2.5005, -0.2996, 0.47]
+      size: [0.662386, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'right'}}}
+      configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
 
     - name: stack_12
       type: stack
-      pos: [3.1507, -0.3329, 0.47]
-      size: [0.642573, 0.600017, 0.84]
+      pos: [3.153, -0.2995, 0.47]
+      size: [0.642554, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'left'}}}
-
+      configs: {'single_cabinet': {'orientation': 'right', 'panel_config': {'handle_vpos': 'top'}}}
 
   wall_stack_3:
     - name: fridgefrenchdoor
       type: fridge_french_door
-      size: [0.850006, 0.800005, 1.779997]
+      size: [0.85, 0.8, 1.78]
 
     - name: fridgefrenchdoor_housing
       type: housing_cabinet
@@ -388,7 +392,7 @@ right_group_1:
       size: [0.5, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
-      configs: none
+      configs: {'single_cabinet': {'orientation': 'right', 'panel_config': {'handle_vpos': 'top'}}}
 
     - name: stack_04
       type: stack
@@ -396,7 +400,7 @@ right_group_1:
       size: [0.507032, 0.600024, 0.839997]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'right'}}}
+      configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
 
     - name: stack_05
       type: stack
@@ -430,4 +434,3 @@ right_group_1:
       placement: {'fixture': 'counter_3_right_group_1', 'size': [1.0, 0.40], 'pos': [1.0, 0], 'rotation': [0, 0]}
  
 
-     
