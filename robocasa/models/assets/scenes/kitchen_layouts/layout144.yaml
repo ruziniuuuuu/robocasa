@@ -78,7 +78,7 @@ main_group_1:
       type: stack
       levels: [drawer]
       percentages: [1]
-      pos: [-5.0774, -0.4007, 0.2]
+      pos: [-5.0774, -0.4, 0.2]
       size: [0.8, 0.8, 0.3]
 
     - name: microwave
@@ -94,7 +94,7 @@ main_group_1:
 
     - name: hingecabinet_4
       type: hinge_cabinet
-      size: [0.89, 0.800006, 0.5]
+      size: [0.89, 0.8, 0.5]
       alignment: back
       align_to: fridgefrenchdoor_housing
       side: top
@@ -122,7 +122,7 @@ main_group_1:
     - name: hingecabinet_1
       type: hinge_cabinet
       pos: [-1.4847, -0.2, 1.867007]
-      size: [1.040834, 0.400004, 0.92]
+      size: [1.040834, 0.4, 0.92]
       panel_config: {'handle_vpos': 'bottom'}
 
     - name: hingecabinet_3
@@ -134,7 +134,7 @@ main_group_1:
     - name: singlecabinet_2
       type: single_cabinet
       pos: [-0.6821, -0.2, 1.867007]
-      size: [0.564261, 0.399999, 0.92]
+      size: [0.564261, 0.4, 0.92]
       orientation: right
       panel_config: {'handle_hpos': 'left', 'handle_vpos': 'bottom'}
 
@@ -216,29 +216,29 @@ right_group_1:
   top_row_2:
     - name: opencabinet_1
       type: open_cabinet
-      pos: [-1.9775, -0.2001, 1.867007]
+      pos: [-1.9775, -0.2, 1.867]
       size: [0.17, 0.4, 0.92]
       num_shelves: 6
 
     - name: cube_3
       type: box
       size: [0.05, 0.4, 0.92]
-      pos: [-1.8675, -0.2001, 1.867007]
+      pos: [-1.8675, -0.2, 1.867]
 
     - name: cube_4
       type: box
       size: [0.169998, 0.4, 0.05]
-      pos: [-1.9775, -0.2001, 2.302008]
+      pos: [-1.9775, -0.2, 2.302]
 
     - name: hingecabinet_6
       type: hinge_cabinet
-      pos: [-2.4013, -0.2002, 1.867007]
+      pos: [-2.4013, -0.2002, 1.867]
       size: [0.677568, 0.4, 0.92]
       panel_config: {'handle_vpos': 'bottom'}
 
     - name: hingecabinet_5
       type: hinge_cabinet
-      pos: [-4.925, -0.2006, 1.867007]
+      pos: [-4.925, -0.2006, 1.867]
       size: [0.677568, 0.4, 0.92]
       panel_config: {'handle_vpos': 'bottom'}
 
@@ -263,7 +263,7 @@ right_group_1:
   bottom_row_cabinets_2:
     - name: stack_05
       type: stack
-      pos: [-3.831, -0.3004, 0.47]
+      pos: [-3.831, -0.3, 0.47]
       size: [1.165504, 0.6, 0.84]
       levels: [hinge_cabinet, panel_cabinet]
       percentages: [0.7, 0.3]
@@ -271,7 +271,7 @@ right_group_1:
 
     - name: stack_04
       type: stack
-      pos: [-4.7138, -0.3005, 0.47]
+      pos: [-4.7138, -0.3, 0.47]
       size: [0.599996, 0.6, 0.84]
       levels: [single_cabinet]
       percentages: [1]
@@ -279,7 +279,7 @@ right_group_1:
 
     - name: stack_06
       type: stack
-      pos: [-2.9483, -0.3003, 0.47]
+      pos: [-2.9483, -0.3, 0.47]
       size: [0.599997, 0.6, 0.84]
       levels: [single_cabinet]
       percentages: [1]
@@ -309,7 +309,7 @@ island_group_1:
     - name: stack_07
       type: stack
       pos: [2.1001, -0.8195, 0.47]
-      size: [0.5, 0.599971, 0.84]
+      size: [0.5, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
       configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
@@ -317,15 +317,15 @@ island_group_1:
     - name: stack_08
       type: stack
       pos: [2.8204, -0.8194, 0.47]
-      size: [0.940415, 0.600011, 0.84]
+      size: [0.940415, 0.6, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
       configs: {'hinge_cabinet': {'panel_config': {'handle_vpos': 'top'}}}
 
     - name: cube_3
       type: box
-      size: [0.650013, 0.60001, 0.89]
-      pos: [0.3251, -0.8198, 0.444996]
+      size: [0.650013, 0.6, 0.89]
+      pos: [0.3251, -0.8198, 0.445]
 
     - name: cube_4
       type: box
@@ -335,24 +335,24 @@ island_group_1:
     - name: stack_06
       type: stack
       pos: [0.9001, -0.8197, 0.47]
-      size: [0.5, 0.599971, 0.84]
+      size: [0.5, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
       configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
 
     - name: cube_1
       type: box
-      size: [0.05, 0.60001, 0.89]
+      size: [0.05, 0.6, 0.89]
       pos: [1.1751, -0.8197, 0.444996]
 
     - name: cube_2
       type: box
-      size: [0.05, 0.60001, 0.89]
+      size: [0.05, 0.6, 0.89]
       pos: [1.8251, -0.8196, 0.444996]
 
     - name: dishwasher_1
       type: dishwasher
-      size: [0.600001, 0.600001, 0.89]
+      size: [0.6, 0.6, 0.89]
       alignment: top_back
       align_to: cube_2
       side: left
