@@ -11,6 +11,12 @@ from robosuite.utils.mjcf_utils import xml_path_completion
 import robocasa
 from robocasa.models.fixtures import Fixture
 from robocasa.models.objects.objects import MujocoXMLObjectRobocasa
+import robosuite.utils.transform_utils as T
+
+from robocasa.utils.object_utils import get_pos_after_rel_offset
+
+def site_pos(site):
+    return s2a(site.get("pos"))
 
 
 class Window(CompositeBodyObject):
@@ -340,72 +346,59 @@ class FramedWindow(Window):
 
 
 
-class DoubleOpenWindow(Fixture):
+class ExtraWindow(MujocoXMLObjectRobocasa):
     """
     Double open window object
     """
     def __init__(
         self,
-        xml="fixtures/windows/window/model.xml",
-        name="DoubleOpenWindow",
-        *args,
-        **kwargs
+        xml,
+        name,
+        pos=None,
+        scale=1,
+        duplicate_collision_geoms=False,
+        rng=None,
     ):
+        if not xml.endswith(".xml"):
+            xml = os.path.join(xml, "model.xml")
+
+
         super().__init__(
-            xml=xml, name=name, duplicate_collision_geoms=False, *args, **kwargs
+            xml_path_completion(xml, root=robocasa.models.assets_root),
+            name=name,
+            joints=None,
+            duplicate_collision_geoms=duplicate_collision_geoms,
+            scale=scale,
         )
 
-    @property
-    def nat_lang(self):
-        return "DoubleOpenWindow"
+        self.pos = pos
+
+        if rng is not None:
+            self.rng = rng
+        else:
+            self.rng = np.random.default_rng()
+
+    def update_state(self, env):
+        return
+
+    def set_origin(self, origin):
+        """
+        Set the origin of the fixture to a specified position
+
+        Args:
+            origin (3-tuple): new (x, y, z) position of the fixture
+        """
+        # compute new position
+        fixture_rot = np.array([0, 0, self.rot])
+        fixture_mat = T.euler2mat(fixture_rot)
+
+        pos = origin + np.dot(fixture_mat, -self.origin_offset)
+        self.set_pos(pos)
+
+    def set_pos(self, pos):
+
+        self.pos = pos
+        self._obj.set("pos", a2s(pos))
 
 
-class Shutter(Fixture):
-    """
-    Shutter object
-    """
-    def __init__(self,
-                 xml="fixtures/windows/shutter/model.xml",
-                 name="shutter",
-                 *args,
-                 **kwargs):
-        super().__init__(
-            xml=xml, name=name, duplicate_collision_geoms=False, *args, **kwargs
-        )
 
-    @property
-    def nat_lang(self):
-        return "shutter"
-
-
-class GridWindow(Fixture):
-    def __init__(self,
-                 xml="fixtures/windows/grid_window/model.xml",
-                 name="grid_window",
-                 *args,
-                 **kwargs):
-        super().__init__(
-            xml=xml, name=name, duplicate_collision_geoms=False, *args, **kwargs
-        )
-
-    @property
-    def nat_lang(self):
-        return "grid window"
-
-
-class TopHangWindow(Fixture):
-    """
-    Top Hang window object
-    """
-    def __init__(self,
-                 xml="fixtures/windows/top_hang_window/model.xml",
-                 name="top_hang_window",
-                 *args,
-                 **kwargs):
-        super().__init__(
-            xml=xml, name=name, duplicate_collision_geoms=False, *args, **kwargs
-        )
-
-    @property
-    def nat_lang(self):
-        return "top hang window"

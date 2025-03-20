@@ -44,6 +44,7 @@ FIXTURES = dict(
     wall_accessory=WallAccessory,
     window=Shutter,
     framed_window=FramedWindow,
+    extra_window=ExtraWindow,
     # shutter=Shutter,
     # needs some additional work
     # slide_cabinet=SlideCabinet,

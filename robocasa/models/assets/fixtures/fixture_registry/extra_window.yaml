@@ -16,9 +16,13 @@ wood_grain:
 
 double_open_window:
   xml: fixtures/windows/window
+  pos: [1.5, 0, 1.5]
 top_hang_window:
   xml: fixtures/windows/top_hang_window
+  pos: [1.5, 0, 1.5]
 shutter:
   xml: fixtures/windows/shutter
+  pos: [1.5, 0, 1.5]
 grid_window:
   xml: fixtures/windows/grid_window
+  pos: [1.5, 0, 1.5]

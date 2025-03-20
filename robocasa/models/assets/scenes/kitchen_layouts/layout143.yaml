@@ -137,11 +137,11 @@ main_group_1:
   group_z_rot: -0.00016200541555189525
   top_row_1:
     - name: framedwindow_1
-      type: window
+      type: extra_window
 
 
     - name: framedwindow_2
-      type: window
+      type: extra_window
 
     - name: hingecabinet_3
       type: hinge_cabinet

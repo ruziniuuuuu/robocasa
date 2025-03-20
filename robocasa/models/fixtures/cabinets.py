@@ -183,7 +183,7 @@ class Cabinet(ProcGenFixture):
         elif self.panel_type == "full_window":
             panel_class = FullWindowedCabinetPanel
         elif self.panel_type == "wood_slab":
-            panel_class = WoodSlabCabinetPanel
+            panel_class = ExtraCabinetPanel
         elif self.panel_type == "beige_slab":
             panel_class = BeigeSlabCabinetPanel
         elif self.panel_type == "red_slab":

@@ -1,6 +1,6 @@
 # fixtures using primitive geoms
 cabinet:
-  default: vertical_grain
+  default: wood_slab
   cab_top: [vertical_grain, handle_rectangular]
   cab_top_small: [beige_slab, red_slab]
   shelves: dark_wood_planks_shelves
@@ -34,6 +34,7 @@ utensil_rack: metal
 utensil_holder: holder_3
 wall_accessory: default
 box: default
-window: double_open_window
+window: default
 framed_window: default
+extra_window: double_open_window
 
