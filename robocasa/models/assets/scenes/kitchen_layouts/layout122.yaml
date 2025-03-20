@@ -10,10 +10,10 @@ room:
       type: wall
       backing: true
       backing_extended: [False, False]
-      size: [0.377, 1.5, 0.1]
-      pos: [1.520077, -0.377, 1.5]
+      size: [0.357, 1.5, 0.1]
+      pos: [1.520077, -0.357, 1.5]
       wall_side: left
-
+      
     - name: wall_main_1
       type: wall
       size: [1.424997, 1.5, 0.02]
