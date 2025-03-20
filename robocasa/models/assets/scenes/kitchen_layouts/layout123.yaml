@@ -252,10 +252,6 @@ main_group_1:
       pos: [2.8014, -0.2003, 1.84]
       size: [0.6, 0.400555, 0.92]
 
-    - name: cube_1
-      type: box
-      size: [0.91, 0.400555, 0.564527]
-      pos: [2.0464, -0.2003, 2.017736]
 
   bottom_row:
     - name: counter_1
@@ -275,6 +271,13 @@ main_group_1:
       align_to: counter_1
       side: right
       offset: [0, 0, 0]
+
+    - name: widestove_hood
+      type: hood
+      size: [0.91, 0.6, null]
+      align_to: widestove
+      side: top
+      offset: [0, 0, 0.75]
 
   bottom_row_cabinet:
     - name: stack_1
