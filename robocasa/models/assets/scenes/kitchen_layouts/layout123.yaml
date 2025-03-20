@@ -137,7 +137,7 @@ right_group_1:
   bottom_row_cabinets:
     - name: stack_1
       type: stack
-      pos: [1.8754, -0.2992, 0.47]
+      pos: [1.8754, -0.3, 0.47]
       size: [1.0, 0.6, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
@@ -145,7 +145,7 @@ right_group_1:
 
     - name: stack_2
       type: stack
-      pos: [0.8754, -0.2989, 0.47]
+      pos: [0.8754, -0.3, 0.47]
       size: [1.0, 0.6, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
@@ -153,7 +153,7 @@ right_group_1:
 
     - name: stack_3
       type: stack
-      pos: [3.7654, -0.2997, 0.47]
+      pos: [3.7654, -0.3, 0.47]
       size: [1.0, 0.6, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
@@ -184,6 +184,42 @@ right_group_1:
       side: top
       offset: [0, 0, 0]
 
+    - name: bottom
+      type: stack
+      levels: [drawer]
+      percentages: [1]
+      pos: [4.6654, -0.325, 0.2]
+      size: [0.8, 0.65, 0.3]
+
+    - name: microwave
+      type: microwave
+      size: [0.75, 0.5, null]
+
+    - name: oven_cabinet
+      type: hinge_cabinet
+      size: [0.8, 0.65, 0.7]
+      align_to: bottom
+      alignment: front
+      side: top
+
+    - name: microwave_housing
+      type: housing_cabinet
+      size: [0.8, 0.65, 0.55]
+      padding: [null, [-0.01, null], null]
+      align_to: oven_cabinet
+      alignment: front
+      side: top
+      interior_obj: microwave
+
+    - name: top
+      type: hinge_cabinet
+      size: [0.8, 0.65, null]
+      align_to: microwave_housing
+      alignment: front
+      side: top
+      stack_height: 2.2499999523162844
+      stack_fixtures: [bottom, oven_cabinet, microwave_housing]
+
   counter_accessories:
     - name: coffee_machine
       type: coffee_machine
@@ -196,7 +232,7 @@ main_group_1:
   top_row:
     - name: hingecabinet_1
       type: hinge_cabinet
-      pos: [0.6414, -0.2003, 1.84]
+      pos: [0.4914, -0.2003, 1.84]
       size: [1.0, 0.400555, 0.92]
 
     - name: hingecabinet_2
@@ -206,18 +242,25 @@ main_group_1:
 
     - name: singlecabinet_1
       type: single_cabinet
-      pos: [1.4414, -0.2003, 1.84]
+      pos: [1.2914, -0.2003, 1.84]
       size: [0.6, 0.400555, 0.92]
+      orientation: left
+      panel_config: {'handle_vpos': 'bottom'}
 
     - name: singlecabinet_2
       type: single_cabinet
       pos: [2.8014, -0.2003, 1.84]
       size: [0.6, 0.400555, 0.92]
 
+    - name: cube_1
+      type: box
+      size: [0.91, 0.400555, 0.564527]
+      pos: [2.0464, -0.2003, 2.017736]
+
   bottom_row:
     - name: counter_1
       type: counter
-      pos: [0.9414, -0.325, 0.46]
+      pos: [0.7914, -0.325, 0.46]
       size: [1.6, 0.65, 0.92]
 
     - name: counter_2
@@ -225,37 +268,18 @@ main_group_1:
       pos: [3.3014, -0.325, 0.46]
       size: [1.6, 0.65, 0.92]
 
-    - name: stove
-      type: stove
-      size: [0.76, 0.66, 0.915]
+    - name: widestove
+      type: stove_wide
+      size: [0.91, 0.7, 0.915]
       alignment: top_back
       align_to: counter_1
       side: right
       offset: [0, 0, 0]
 
-    - name: microwave
-      type: microwave
-      size: [0.76, 0.45, null]
-      align_to: stove
-      side: top
-      alignment: back
-      offset: [0, 0, 0.46]
-
-    - name: micro_cab
-      type: hinge_cabinet
-      handle_type: knob
-      default_config_name: cab_top_small
-      size: [0.76, 0.4, null]
-      align_to: microwave
-      side: top
-      alignment: back
-      stack_height: 0.92
-      stack_fixtures: [microwave]
-
   bottom_row_cabinet:
     - name: stack_1
       type: stack
-      pos: [0.6414, -0.3, 0.47]
+      pos: [0.4914, -0.3, 0.47]
       size: [1.0, 0.6, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
@@ -271,7 +295,7 @@ main_group_1:
 
     - name: stack_2
       type: stack
-      pos: [1.4414, -0.3, 0.47]
+      pos: [1.2914, -0.3, 0.47]
       size: [0.6, 0.6, 0.84]
       levels: [drawer, drawer, drawer]
       percentages: [0.35, 0.35, 0.3]
@@ -284,6 +308,7 @@ main_group_1:
       levels: [drawer, drawer, drawer]
       percentages: [0.35, 0.35, 0.3]
       configs: none
+
 
   counter_accessories:
     - name: knifeblock
