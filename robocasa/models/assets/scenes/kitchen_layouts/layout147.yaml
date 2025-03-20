@@ -287,8 +287,8 @@ island_group_1:
   island_bottom_row:
     - name: counter_3
       type: counter
-      pos: [0.3777, 0.325, 0.460001]
-      size: [0.95541, 0.649939, 0.92]
+      pos: [0.2877, 0.325, 0.460001]
+      size: [1.13541, 0.649939, 0.92]
 
     - name: counter_5
       type: counter
@@ -298,8 +298,8 @@ island_group_1:
     - name: stove
       type: stove
       size: [0.76, 0.66, 0.915]
-      align_to: counter_3
-      side: right
+      align_to: counter_5
+      side: left
       alignment: top_back
       offset: [0, -0.007, 0.0]
 
@@ -382,12 +382,12 @@ island_group_2:
   island_bottom_row_2:
     - name: counter_6
       type: counter
-      pos: [-1.1851, 0.5892, 0.460001]
-      size: [2.570725, 1.178824, 0.92]
+      pos: [-1.0951, 0.5892, 0.460001]
+      size: [2.750725, 1.178824, 0.92]
 
 stool_group_1:
   group_origin: [0, 0]
-  group_pos: [-2.785658, -5.178103]
+  group_pos: [-2.785658, -5.258103]
   group_z_rot: 3.141434017808115
   stool_row:
     - name: stool_1
