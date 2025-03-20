@@ -415,14 +415,12 @@ class IrregularityHandle(HandleFixture):
         if self.panel_h < self.length + 2 * self.handle_pad:
             self.length = self.panel_h - 2 * self.handle_pad
 
-        # print(f"输出：{self._obj}")
         offset = self.length / 2 * 0.60  # - self.connector_pad
 
-        conn_len = 0.08
-        conn_pad_len = 0.01
+        conn_pad_len = 0.02
 
         positions = {
-            "handle": np.array([0, 0, 0]),
+            "handle": np.array([0, -conn_pad_len, 0]),
         }
         sizes = {
             "handle": [0.013, self.length / 2],
