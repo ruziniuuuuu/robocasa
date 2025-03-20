@@ -331,7 +331,7 @@ class ExtraHandle(MujocoXMLObject):
         texture=None,
         length=0.24,
         handle_pad=0.05,
-        orientation=None,
+        orientation="vertical"
     ):
         super().__init__(
             xml_path_completion(xml, root=robocasa.models.assets_root),
@@ -375,7 +375,7 @@ class ExtraHandle(MujocoXMLObject):
         positions = np.array([0, -conn_pad_len, 0])
         self._obj.set("pos", a2s(positions))
 
-        if self.orientation == "right":
+        if self.orientation == "vertical":
             euler = np.array([0, 1.5708, 0])
             self._obj.set("euler", a2s(euler))
 
