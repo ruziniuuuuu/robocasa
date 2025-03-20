@@ -233,7 +233,7 @@ right_group_1:
     - name: hingecabinet_6
       type: hinge_cabinet
       #pos: [-2.4013, -0.2002, 1.867]
-      size: [0.677568, 0.4025, 0.92]
+      size: [0.677568, 0.4026, 0.92]
       panel_config: {'handle_vpos': 'bottom'}
       alignment: top_back
       align_to: opencabinet_1
