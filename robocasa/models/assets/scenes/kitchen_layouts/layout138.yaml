@@ -84,11 +84,6 @@ room:
       config_name: light_switch
       pos: [2.134, null, 1.077]
 
-    - name: lightswitch_4
-      type: wall_accessory
-      attach_to: wall_main_1
-      config_name: light_switch
-      pos: [2.406, null, 1.077]
 
 right_group_1:
   group_origin: [0, 0]
@@ -284,26 +279,13 @@ main_group_1:
       type: counter
       #pos: [0.5959, -0.3249, 0.46]
       size: [0.710738, 0.650005, 0.92]
-      align_to: widestove
+      align_to: counter_1
       side: left
-      alignment: bottom_back
-      offset: [0, 0, 0]
+      alignment: top_back
+      offset: [-0.91, 0, 0]
 
 
   bottom_row_cabinets_3:
-
-    - name: stack_01
-      type: stack
-      #pos: [0.5959, -0.2999, 0.47]
-      size: [0.710704, 0.600003, 0.84]
-      levels: [hinge_cabinet]
-      percentages: [1]
-      configs: {'hinge_cabinet': {'panel_config': {'handle_vpos': 'top'}}}
-      align_to: widestove
-      side: left
-      alignment: bottom_back
-      offset: [0, 0, 0]
-
 
     - name: stack_02
       type: stack
@@ -312,6 +294,18 @@ main_group_1:
       levels: [single_cabinet]
       percentages: [1]
       configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'left'}}}
+
+    - name: stack_01
+      type: stack
+      #pos: [0.5959, -0.2999, 0.47]
+      size: [0.710704, 0.600003, 0.84]
+      levels: [hinge_cabinet]
+      percentages: [1]
+      configs: {'hinge_cabinet': {'panel_config': {'handle_vpos': 'top'}}}
+      align_to: stack_02
+      side: left
+      alignment: bottom_back
+      offset: [-0.91, 0, 0]
 
   top_row_3:
 
