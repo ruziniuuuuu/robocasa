@@ -137,7 +137,7 @@ right_group_1:
   bottom_row_cabinets:
     - name: stack_1
       type: stack
-      pos: [1.8754, -0.2992, 0.47]
+      pos: [1.8754, -0.3, 0.47]
       size: [1.0, 0.6, 0.84]
       levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
