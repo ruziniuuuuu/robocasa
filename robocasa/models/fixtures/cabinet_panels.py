@@ -597,13 +597,21 @@ class ExtraCabinetPanel(CabinetPanel):
         Creates the cabinet panel. This involves setting the size and position of the panel's geom
         """
         geoms = self._get_components()
+        size = [1, 1, 1]
+        for i, geom in geoms.items():
+            # get size
+            size = geom[0].get("size").split(" ")
+            break
 
+        # remove door_vis in geoms
         # divide by 2 for mujoco convention
         x, y, z = [dim / 2 for dim in self.size]
 
-        sizes = {"door": [x, y, z]}
-        positions = {"door": [0, 0, 0]}
-        set_geom_dimensions(sizes, positions, geoms, rotated=False)
+        scale = [ x / float(size[0]), y / float(size[1]), z / float(size[2])]
+
+        self.set_scale(scale)
+
+
 
 
 
