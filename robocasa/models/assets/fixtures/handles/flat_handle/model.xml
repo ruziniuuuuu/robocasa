@@ -16,10 +16,10 @@
     <worldbody>
         <body>
             <body name="object">
-                <geom mesh="mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="mat"/>
+                <geom mesh="mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="mat" name="handle"/>
                 <geom class="collision" type="box" pos="0.0748768299818039 -0.011000003665685654 0.0" size="0.006083001382648945 0.011317244730889797 0.00678551709279418" quat="1.0 0.0 0.0 0.0" name="handle_connector_top"/>
                 <geom class="collision" type="box" pos="-0.07480158656835556 -0.011000003665685654 0.0" size="0.006083001382648945 0.011317244730889797 0.00678551709279418" quat="1.0 0.0 0.0 0.0" name="handle_connector_bottom"/>
-                <geom class="collision" type="box" pos="-3.0074268579483032e-05 -0.021065378561615944 -0.00010767466301331297" size="0.005450711119920015 0.06891729682683945 0.009483992122113705" quat="0.7071067690849304 0.0 0.0 0.7071067690849304" name="handle"/>
+                <geom class="collision" type="box" pos="-3.0074268579483032e-05 -0.021065378561615944 -0.00010767466301331297" size="0.005450711119920015 0.06891729682683945 0.009483992122113705" quat="0.7071067690849304 0.0 0.0 0.7071067690849304"/>
             </body>
         </body>
     </worldbody>
