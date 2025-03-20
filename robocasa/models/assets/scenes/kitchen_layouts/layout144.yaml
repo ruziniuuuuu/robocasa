@@ -232,13 +232,16 @@ right_group_1:
 
     - name: hingecabinet_6
       type: hinge_cabinet
-      pos: [-2.4013, -0.2002, 1.867]
-      size: [0.677568, 0.4, 0.92]
+      #pos: [-2.4013, -0.2002, 1.867]
+      size: [0.677568, 0.4025, 0.92]
       panel_config: {'handle_vpos': 'bottom'}
+      alignment: top_back
+      align_to: opencabinet_1
+      side: left
 
     - name: hingecabinet_5
       type: hinge_cabinet
-      pos: [-4.925, -0.2006, 1.867]
+      pos: [-4.925, -0.2, 1.867]
       size: [0.677568, 0.4, 0.92]
       panel_config: {'handle_vpos': 'bottom'}
 
