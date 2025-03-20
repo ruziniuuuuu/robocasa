@@ -2,7 +2,7 @@ room:
   walls:
     - name: wall_right_1
       type: wall
-      size: [3.316548, 1.5, 0.02]
+      size: [3.308548, 1.5, 0.02]
       pos: [0.0, -3.329516, 1.5]
       wall_side: right
 
@@ -10,8 +10,8 @@ room:
       type: wall
       backing: true
       backing_extended: [True, False] 
-      size: [3.323548, 1.5, 0.1]
-      pos: [0.0, -3.322516, 1.5]
+      size: [3.319548, 1.5, 0.1]
+      pos: [0.0, -3.319516, 1.5]
       wall_side: right
 
     - name: wall_main_1
@@ -162,7 +162,7 @@ main_group_1:
       align_to: fridgesidebyside_housing
       side: top
       # alignment: bottom_back
-      size: [0.89, 0.78, 0.33]
+      size: [0.89, 0.78, 0.53]
 
     - name: bottom
       type: stack
@@ -197,7 +197,7 @@ main_group_1:
       align_to: microwave_housing
       alignment: front
       side: top
-      stack_height: 2.05
+      stack_height: 2.25
       stack_fixtures: [bottom, oven_cabinet, microwave_housing]
 
 left_group_1:
@@ -255,7 +255,7 @@ left_group_1:
 
     - name: stack_05
       type: stack
-      pos: [4.2568, -0.2994, 0.46]
+      pos: [4.2568, -0.2994, 0.47]
       size: [0.979219, 0.6, 0.84]
       levels: [drawer, drawer, drawer]
       percentages: [0.35, 0.35, 0.3]
@@ -287,8 +287,8 @@ island_group_1:
   island_bottom_row:
     - name: counter_3
       type: counter
-      pos: [0.4277, 0.325, 0.460001]
-      size: [0.85541, 0.649939, 0.92]
+      pos: [0.2877, 0.325, 0.460001]
+      size: [1.13541, 0.649939, 0.92]
 
     - name: counter_5
       type: counter
@@ -297,10 +297,11 @@ island_group_1:
 
     - name: stove
       type: stove
-      size: [0.76, 0.46, 0.915]
-      align_to: counter_3
-      side: right
+      size: [0.76, 0.66, 0.915]
+      align_to: counter_5
+      side: left
       alignment: top_back
+      offset: [0, -0.007, 0.0]
 
     - name: stove_hood
       type: hood
@@ -351,7 +352,7 @@ island_group_2:
 
     - name: stack_08
       type: stack
-      pos: [-0.4109, 0.3499, 0.46]
+      pos: [-0.4109, 0.3499, 0.47]
       size: [0.549468, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
@@ -381,12 +382,12 @@ island_group_2:
   island_bottom_row_2:
     - name: counter_6
       type: counter
-      pos: [-1.2351, 0.5892, 0.460001]
-      size: [2.470725, 1.178824, 0.92]
+      pos: [-1.0951, 0.5892, 0.460001]
+      size: [2.750725, 1.178824, 0.92]
 
 stool_group_1:
   group_origin: [0, 0]
-  group_pos: [-2.785658, -5.272103]
+  group_pos: [-2.785658, -5.258103]
   group_z_rot: 3.141434017808115
   stool_row:
     - name: stool_1

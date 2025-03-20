@@ -91,7 +91,7 @@ main_group_1:
       pos: [3.6733, -0.325, 0.46]
       size: [3.2636, 0.65, 0.92]
       interior_obj: sink
-      obj_x_percent: 0.5
+      obj_x_percent: 0.65
       obj_y_percent: 0.5
 
   top_row_2:
@@ -128,29 +128,51 @@ main_group_1:
       size: [0.71306, 0.65, 0.92]
 
   bottom_row_cabinets_2:
-    - name: stack_02
+    - name: cube_14
+      type: box
+      size: [0.05, 0.6, 0.89]
+      pos: [2.0665, -0.3, 0.445]
+
+    - name: stack_04
       type: stack
-      pos: [4.1551, -0.3, 0.47]
-      size: [1.0, 0.6, 0.84]
-      levels: [hinge_cabinet, panel_cabinet]
+      #pos: [2.5776, -0.3, 0.47]
+      size: [0.972307, 0.6, 0.84]
+      alignment: top_back
+      align_to: cube_14
+      side: right
+      levels: [hinge_cabinet, drawer]
       percentages: [0.7, 0.3]
       configs: {'hinge_cabinet': {'open_top': 'true', 'panel_config': {'handle_vpos': 'top'}}}
 
     - name: stack_03
       type: stack
-      pos: [3.3594, -0.3, 0.47]
+      #pos: [3.3594, -0.3, 0.47]
       size: [0.591374, 0.6, 0.84]
+      alignment: top_back
+      align_to: stack_04
+      side: right
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
       configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
 
-    - name: stack_04
+    - name: stack_02
       type: stack
-      pos: [2.5776, -0.3, 0.47]
-      size: [0.972307, 0.6, 0.84]
-      levels: [hinge_cabinet, drawer]
+      #pos: [4.1551, -0.3, 0.47]
+      size: [1.0, 0.6, 0.84]
+      alignment: top_back
+      align_to: stack_03
+      side: right
+      levels: [hinge_cabinet, panel_cabinet]
       percentages: [0.7, 0.3]
       configs: {'hinge_cabinet': {'open_top': 'true', 'panel_config': {'handle_vpos': 'top'}}}
+
+    - name: dishwasher_1
+      type: dishwasher
+      size: [0.6, 0.6, 0.89]
+      alignment: top_back
+      align_to: stack_02
+      side: right
+      offset: [0, 0, 0]
 
     - name: stack_01
       type: stack
@@ -165,32 +187,25 @@ main_group_1:
       size: [0.05, 0.6, 0.89]
       pos: [5.2801, -0.3, 0.445]
 
-    - name: cube_14
-      type: box
-      size: [0.05, 0.6, 0.89]
-      pos: [2.0665, -0.3, 0.445]
-
-    - name: dishwasher_1
-      type: dishwasher
-      size: [0.6, 0.6, 0.89]
-      alignment: top_back
-      align_to: stack_02
-      side: right
-      offset: [0, 0, 0]
-
-  counter_accessories_4:
+  counter_accessories:
     - name: coffee_machine
       type: coffee_machine
-      placement: {'fixture': 'counter_1_main_group_1', 'size': [1.0, 0.52], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
+      placement:
+        fixture: counter_1_main_group_1
+        sample_region_kwargs:
+          ref:  hingecabinet_1
+        size: [1.0, 0.52]
+        pos: [null, 1.0]
+        rotation: [0, 0]
 
     - name: papertowel
       type: paper_towel
-      placement: 
+      placement:
         fixture: counter_1_main_group_1
         sample_region_kwargs:
-          ref: 
-        size: [0.4, 0.3]
-        pos: [1.0, 0.5] 
+          ref: singlecabinet_2
+        size: [1.0, 0.52]
+        pos: [null, 1.0]
         rotation: [0, 0]
 
 left_group_1:
@@ -267,17 +282,17 @@ island_group_1:
     - name: counter_4
       type: counter
       pos: [0.4559, -0.5866, 0.46]
-      size: [0.911602, 0.650009, 0.92]
-
-    - name: counter_5
-      type: counter
-      pos: [1.2916, -0.1307, 0.46]
-      size: [2.583142, 0.261783, 0.920001]
+      size: [0.911602, 0.65, 0.92]
 
     - name: counter_6
       type: counter
-      pos: [2.1275, -0.5864, 0.46]
-      size: [0.911556, 0.650008, 0.92]
+      pos: [2.1275, -0.5866, 0.46]
+      size: [0.911556, 0.65, 0.92]
+
+    - name: counter_5
+      type: counter
+      pos: [1.2916, -0.1307085, 0.46]
+      size: [2.583142, 0.261783, 0.920001]
 
     - name: stove
       type: stove
@@ -285,7 +300,7 @@ island_group_1:
       align_to: counter_4
       side: right
       alignment: top_back
-      offset: [0, 0, 0]
+      offset: [0, -0.01, 0]
 
     - name: stove_hood
       type: hood
@@ -333,6 +348,11 @@ island_group_1:
       type: box
       size: [2.480869, 0.050035, 0.890001]
       pos: [1.2916, -0.2365, 0.445]
+
+  counter_accessories:
+    - name: toaster
+      type: toaster
+      placement: {'fixture': 'counter_4_island_group_1', 'size': [1.0, 0.4], 'pos': [1.0, 0], 'rotation': [0, 0]}
 
 stool_group_1:
   group_origin: [0, 0]
