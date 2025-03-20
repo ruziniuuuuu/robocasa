@@ -16,15 +16,15 @@
         <texture file="visuals/T_Refrigerator033_BC001.png" name="Refrigerator033_Body001_Clear_material" type="2d"/>
         <material name="Refrigerator033_Body001_Clear_material" rgba="1 1 1 0.20207251608371735" texture="Refrigerator033_Body001_Clear_material" shininess="0.141421377658844" specular="0.3103448502657381"/>
         <texture file="visuals/T_Refrigerator033_BC001.png" name="Refrigerator033_Body002_material" type="2d"/>
-        <material name="Refrigerator033_Body002_material" rgba="1 1 1 1.0" texture="Refrigerator033_Body002_material" shininess="0.141421377658844" specular="0.8"/>
+        <material name="Refrigerator033_Body002_material" rgba="1 1 1 1.0" texture="Refrigerator033_Body002_material" shininess="0.141421377658844" specular="0.3103448502657381"/>
         <texture file="visuals/T_Refrigerator033_BC001.png" name="Refrigerator033_Door001_material" type="2d"/>
-        <material name="Refrigerator033_Door001_material" rgba="1 1 1 1.0" texture="Refrigerator033_Door001_material" shininess="0.141421377658844" specular="0.8"/>
+        <material name="Refrigerator033_Door001_material" rgba="1 1 1 1.0" texture="Refrigerator033_Door001_material" shininess="0.141421377658844" specular="0.3103448502657381"/>
         <texture file="visuals/T_Refrigerator033_BC001.png" name="Refrigerator033_Door002_material" type="2d"/>
-        <material name="Refrigerator033_Door002_material" rgba="1 1 1 1.0" texture="Refrigerator033_Door002_material" shininess="0.141421377658844" specular="0.8"/>
+        <material name="Refrigerator033_Door002_material" rgba="1 1 1 1.0" texture="Refrigerator033_Door002_material" shininess="0.141421377658844" specular="0.3103448502657381"/>
         <texture file="visuals/T_Refrigerator033_BC001.png" name="Refrigerator033_Drawer001_material" type="2d"/>
-        <material name="Refrigerator033_Drawer001_material" rgba="1 1 1 1.0" texture="Refrigerator033_Drawer001_material" shininess="0.141421377658844" specular="0.7"/>
+        <material name="Refrigerator033_Drawer001_material" rgba="1 1 1 1.0" texture="Refrigerator033_Drawer001_material" shininess="0.141421377658844" specular="0.3103448502657381"/>
         <texture file="visuals/T_Refrigerator033_BC001.png" name="Refrigerator033_Drawer002_material" type="2d"/>
-        <material name="Refrigerator033_Drawer002_material" rgba="1 1 1 1.0" texture="Refrigerator033_Drawer002_material" shininess="0.141421377658844" specular="0.7"/>
+        <material name="Refrigerator033_Drawer002_material" rgba="1 1 1 1.0" texture="Refrigerator033_Drawer002_material" shininess="0.141421377658844" specular="0.3103448502657381"/>
         <texture file="visuals/T_Refrigerator033_BC001.png" name="Refrigerator033_Drawer003_material" type="2d"/>
         <material name="Refrigerator033_Drawer003_material" rgba="1 1 1 1.0" texture="Refrigerator033_Drawer003_material" shininess="0.141421377658844" specular="0.3103448502657381"/>
         <texture file="visuals/T_Refrigerator033_BC001.png" name="Refrigerator033_Drawer004_material" type="2d"/>
@@ -63,15 +63,15 @@
                 <geom class="collision" type="box" pos="-0.008467378094792366 0.0799221396446228 0.9239232540130615" size="0.40993714332580566 0.3305925130844116 0.027449237182736397" quat="1.0 0.0 0.0 0.0"/>
                 <geom class="collision" type="box" pos="-0.008467383682727814 -0.1735897958278656 0.2095966637134552" size="0.3539907932281494 0.036297693848609924 0.008237498812377453" quat="0.9520677924156189 0.3058871328830719 0.0 0.0"/>
                 <geom class="collision" type="box" pos="-0.008467383682727814 0.08136413991451263 0.19076384603977203" size="0.3539907932281494 0.2572411596775055 0.017921723425388336" quat="1.0 0.0 0.0 0.0"/>
-                <geom class="collision" type="box" pos="-0.008467379957437515 0.01875067502260208 0.6012089848518372" size="0.040077485144138336 0.28091996908187866 0.008237329311668873" quat="1.0 0.0 0.0 0.0"/>
-                <geom class="collision" type="box" pos="-0.008467379957437515 0.01875067502260208 0.7156364321708679" size="0.040077533572912216 0.2809203863143921 0.008237342350184917" quat="1.0 0.0 0.0 0.0"/>
+                <geom class="collision" type="box" pos="-0.008467379957437515 0.01875067502260208 0.6012089848518372" size="0.04007716104388237 0.28091710805892944 0.00823723990470171" quat="1.0 0.0 0.0 0.0"/>
+                <geom class="collision" type="box" pos="-0.008467379957437515 0.01875067502260208 0.7156364321708679" size="0.04007723554968834 0.280917763710022 0.008237260393798351" quat="1.0 0.0 0.0 0.0"/>
                 <geom class="collision" type="box" pos="-0.34602850675582886 0.046809688210487366 0.7156364321708679" size="0.010963814333081245 0.2809253931045532 0.008237498812377453" quat="1.0 0.0 0.0 0.0"/>
                 <geom class="collision" type="box" pos="-0.34602850675582886 0.046809688210487366 0.6009508371353149" size="0.010963814333081245 0.2809253931045532 0.008237498812377453" quat="1.0 0.0 0.0 0.0"/>
                 <geom class="collision" type="box" pos="-0.34602850675582886 0.046809688210487366 0.3911812901496887" size="0.010963814333081245 0.2809253931045532 0.008237498812377453" quat="1.0 0.0 0.0 0.0"/>
                 <geom class="collision" type="box" pos="0.3365817666053772 0.046809688210487366 0.7156364321708679" size="0.010963814333081245 0.2809253931045532 0.008237498812377453" quat="1.0 0.0 0.0 0.0"/>
                 <geom class="collision" type="box" pos="0.3365817666053772 0.046809688210487366 0.6009508371353149" size="0.010963814333081245 0.2809253931045532 0.008237498812377453" quat="1.0 0.0 0.0 0.0"/>
                 <geom class="collision" type="box" pos="0.3365817666053772 0.046809688210487366 0.3911812901496887" size="0.010963814333081245 0.2809253931045532 0.008237498812377453" quat="1.0 0.0 0.0 0.0"/>
-                <geom class="collision" type="box" pos="-0.008467379957437515 0.01875067502260208 0.39031657576560974" size="0.04007786139845848 0.2809233069419861 0.00823743361979723" quat="1.0 0.0 0.0 0.0"/>
+                <geom class="collision" type="box" pos="-0.008467379957437515 0.01875067502260208 0.39031657576560974" size="0.040077753365039825 0.2809223532676697 0.008237403817474842" quat="1.0 0.0 0.0 0.0"/>
                 <geom class="collision" type="box" pos="-0.008467379957437515 0.029944101348519325 -0.0810936987400055" size="0.3686636686325073 0.2809253931045532 0.024825863540172577" quat="1.0 0.0 0.0 0.0"/>
                 <body name="Refrigerator033_Body001_Clear">
                     <geom mesh="Refrigerator033_Body001_Clear_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="Refrigerator033_Body001_Clear_material"/>
@@ -82,7 +82,7 @@
                 <body name="Refrigerator033_Door001">
                     <joint axis="0.0 0.0 1.0" pos="0.38031667470932007 -0.29779359698295593 0.42703258991241455" limited="true" name="Refrigerator033_Door001_joint" range="0.0 1.5707963267948966" type="hinge" damping="1" frictionloss="1" armature=".01" stiffness="0.05"/>
                     <geom mesh="Refrigerator033_Door001_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="Refrigerator033_Door001_material"/>
-                    <geom class="collision" type="box" pos="0.21519553661346436 -0.30665650963783264 0.42834436893463135" size="0.20001262426376343 0.024120310321450233 0.5224586129188538" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="0.20686829090118408 -0.31674689054489136 0.42834436893463135" size="0.1728004515171051 0.015148164704442024 0.5224586129188538" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="0.08263462781906128 -0.3514144718647003 0.3858376741409302" size="0.004676217213273048 0.03463103622198105 0.012289422564208508" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="0.08263462781906128 -0.3514144718647003 0.15110839903354645" size="0.004676217213273048 0.03463103622198105 0.012289422564208508" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="cylinder" pos="0.0981806293129921 -0.3977900743484497 0.2688939571380615" size="0.013072801753878593 0.13244543969631195" quat="1.0 0.0 0.0 0.0"/>
@@ -90,12 +90,12 @@
                 <body name="Refrigerator033_Door002">
                     <joint axis="0.0 0.0 -1.0" pos="-0.3791999816894531 -0.297992080450058 0.4270331859588623" limited="true" name="Refrigerator033_Door002_joint" range="0.0 1.5707963267948966" type="hinge" damping="1" frictionloss="1" armature=".01" stiffness="0.05"/>
                     <geom mesh="Refrigerator033_Door002_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="Refrigerator033_Door002_material"/>
-                    <geom class="collision" type="box" pos="-0.21066907048225403 -0.30665650963783264 0.4283443093299866" size="0.2054167240858078 0.024120310321450233 0.5224586129188538" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="-0.1892462968826294 -0.3163755536079407 0.4283443093299866" size="0.18988600373268127 0.015519666485488415 0.5224586129188538" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="-0.04864192008972168 -0.3514144718647003 0.3858376741409302" size="0.004676217213273048 0.03463103622198105 0.012289422564208508" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="-0.04864192008972168 -0.3514144718647003 0.15136994421482086" size="0.004676217213273048 0.03463103622198105 0.012289422564208508" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="cylinder" pos="-0.06515726447105408 -0.3977900743484497 0.2688939571380615" size="0.012072807177901268 0.13244543969631195" quat="1.0 0.0 0.0 0.0"/>
-                    <geom class="collision" type="box" pos="-0.19307315349578857 -0.2247045785188675 0.802829384803772" size="0.15636995434761047 0.030043408274650574 0.03490014746785164" quat="1.0 0.0 0.0 0.0"/>
-                    <geom class="collision" type="box" pos="-0.19307315349578857 -0.2247045785188675 0.47840675711631775" size="0.1563701629638672 0.030043432489037514 0.034900177270174026" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="-0.19307315349578857 -0.2247045785188675 0.802829384803772" size="0.1563696563243866 0.030043376609683037 0.034900106489658356" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="-0.19307315349578857 -0.2247045785188675 0.47840675711631775" size="0.15637002885341644 0.03004341572523117 0.034900158643722534" quat="1.0 0.0 0.0 0.0"/>
                 </body>
                 <body name="Refrigerator033_Drawer001">
                     <joint axis="0.0 -1.0 0.0" pos="0.0007692771032452583 -0.06064990162849426 -0.29845720529556274" limited="true" name="Refrigerator033_Drawer001_joint" range="0.0 0.3" type="slide" damping="1" frictionloss="1" armature=".01" stiffness="0.05"/>
@@ -108,20 +108,20 @@
                     <geom class="collision" type="box" pos="-0.0828661397099495 -0.35915860533714294 -0.1849631369113922" size="0.013696780428290367 0.03383396938443184 0.00421290285885334" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="cylinder" pos="0.031228989362716675 -0.39113444089889526 -0.2003689855337143" size="0.01358901895582676 0.1311779022216797" quat="0.7071068286895752 -0.0 0.7071067690849304 0.0"/>
                     <geom class="collision" type="box" pos="0.004416104406118393 0.27410802245140076 -0.33054229617118835" size="0.320508748292923 0.009062724187970161 0.10751214623451233" quat="1.0 0.0 0.0 0.0"/>
-                    <geom class="collision" type="box" pos="-0.001242657657712698 -0.2528001070022583 -0.24188652634620667" size="0.3243648409843445 0.005486628040671349 0.017762016505002975" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="-0.001242657657712698 -0.2528001070022583 -0.24188652634620667" size="0.3243619203567505 0.0054865810088813305 0.017762016505002975" quat="1.0 0.0 0.0 0.0"/>
                 </body>
                 <body name="Refrigerator033_Drawer002">
                     <joint axis="0.0 -1.0 0.0" pos="0.0007692771032452583 -0.06064990162849426 -0.6953182220458984" limited="true" name="Refrigerator033_Drawer002_joint" range="0.0 0.3" type="slide" damping="1" frictionloss="1" armature=".01" stiffness="0.05"/>
                     <geom mesh="Refrigerator033_Drawer002_vis" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" class="visual" material="Refrigerator033_Drawer002_material"/>
-                    <geom class="collision" type="box" pos="0.329494833946228 0.0013529476709663868 -0.7225852012634277" size="0.008338311687111855 0.2600202262401581 0.10198786854743958" quat="1.0 0.0 0.0 0.0"/>
-                    <geom class="collision" type="box" pos="-0.329394668340683 0.0027760532684624195 -0.7246100306510925" size="0.00846378318965435 0.26276886463165283 0.10351844877004623" quat="1.0 0.0 0.0 0.0"/>
-                    <geom class="collision" type="box" pos="0.0001845196820795536 0.0075332364067435265 -0.8260484933853149" size="0.32906466722488403 0.2662908434867859 0.0043228319846093655" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="0.329494833946228 0.0013529476709663868 -0.7225852012634277" size="0.008338158018887043 0.26001212000846863 0.10198554396629333" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="-0.329394668340683 0.0027760532684624195 -0.7246100306510925" size="0.008463632315397263 0.26276084780693054 0.10351385176181793" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="0.0001845196820795536 0.0075332364067435265 -0.8260484933853149" size="0.32906466722488403 0.26628294587135315 0.004322757478803396" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="0.14199252426624298 -0.351383775472641 -0.581786572933197" size="0.013696780428290367 0.03383396938443184 0.00421290285885334" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="-0.08300895988941193 -0.351383775472641 -0.581786572933197" size="0.013696780428290367 0.03383396938443184 0.00421290285885334" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="cylinder" pos="0.031228989362716675 -0.39113444089889526 -0.5969080924987793" size="0.01358901895582676 0.1311779022216797" quat="0.7071068286895752 -0.0 0.7071067690849304 0.0"/>
-                    <geom class="collision" type="box" pos="-0.001242657657712698 0.27157437801361084 -0.7190272212028503" size="0.3243621289730072 0.005486558191478252 0.0981932058930397" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="-0.001242657657712698 0.27157437801361084 -0.7190272212028503" size="0.32435762882232666 0.0054864585399627686 0.09819141775369644" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="0.00015743178664706647 -0.2934815585613251 -0.697505533695221" size="0.4006064236164093 0.03555590286850929 0.1959410458803177" quat="1.0 0.0 0.0 0.0"/>
-                    <geom class="collision" type="box" pos="-0.001242657657712698 -0.2528001070022583 -0.6380019187927246" size="0.32436445355415344 0.005486621521413326 0.017762016505002975" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="-0.001242657657712698 -0.2528001070022583 -0.6380019187927246" size="0.32436129450798035 0.00548657076433301 0.017762016505002975" quat="1.0 0.0 0.0 0.0"/>
                 </body>
                 <body name="Refrigerator033_Drawer003">
                     <joint axis="0.0 -1.0 0.0" pos="-0.1845870316028595 5.893409252166748e-05 0.049359142780303955" limited="true" name="Refrigerator033_Drawer003_joint" range="0.0 0.3" type="slide" damping="1" frictionloss="1" armature=".01" stiffness="0.05"/>
@@ -133,7 +133,7 @@
                     <geom class="collision" type="box" pos="-0.1767464280128479 -0.0036468282341957092 -0.03566092252731323" size="0.13721756637096405 0.16969113051891327 0.004579473752528429" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="-0.17898491024971008 -0.15335553884506226 0.126534104347229" size="0.14287614822387695 0.01033714972436428 0.012092240154743195" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="-0.1789848804473877 -0.14808031916618347 0.08019638061523438" size="0.14287613332271576 0.01033715158700943 0.03989255800843239" quat="0.9453846216201782 -0.32595694065093994 7.237698010940984e-17 -1.6096955755257956e-25"/>
-                    <geom class="collision" type="box" pos="-0.1767464280128479 0.17903143167495728 0.12726733088493347" size="0.13722094893455505 0.003487263573333621 0.011838503181934357" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="-0.1767464280128479 0.17903143167495728 0.12726733088493347" size="0.1372227817773819 0.003487263573333621 0.011838637292385101" quat="1.0 0.0 0.0 0.0"/>
                 </body>
                 <body name="Refrigerator033_Drawer004">
                     <joint axis="0.0 -1.0 0.0" pos="0.17834961414337158 5.8084726333618164e-05 0.04935950040817261" limited="true" name="Refrigerator033_Drawer004_joint" range="0.0 0.3" type="slide" damping="1" frictionloss="1" armature=".01" stiffness="0.05"/>
@@ -145,17 +145,17 @@
                     <geom class="collision" type="box" pos="0.17504164576530457 -0.0036468282341957092 -0.03566092252731323" size="0.14566780626773834 0.16969113051891327 0.004579473752528429" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="0.1726652979850769 -0.15335553884506226 0.126534104347229" size="0.15167486667633057 0.01033714972436428 0.012092240154743195" quat="1.0 0.0 0.0 0.0"/>
                     <geom class="collision" type="box" pos="0.1726653277873993 -0.14808031916618347 0.08019638061523438" size="0.15167485177516937 0.01033715158700943 0.03989255800843239" quat="0.9453846216201782 -0.32595694065093994 7.237698010940984e-17 -1.6096955755257956e-25"/>
-                    <geom class="collision" type="box" pos="0.1714893877506256 0.17903143167495728 0.12726733088493347" size="0.14566734433174133 0.003487263573333621 0.01183825358748436" quat="1.0 0.0 0.0 0.0"/>
+                    <geom class="collision" type="box" pos="0.1714893877506256 0.17903143167495728 0.12726733088493347" size="0.14566552639007568 0.003487263573333621 0.01183825358748436" quat="1.0 0.0 0.0 0.0"/>
                 </body>
             </body>
         </body>
     </worldbody>
     <actuator>
-        <motor name="Refrigerator033_Door001_joint_actuator" joint="Refrigerator033_Door001_joint" gear="10"/>
-        <motor name="Refrigerator033_Door002_joint_actuator" joint="Refrigerator033_Door002_joint" gear="10"/>
-        <motor name="Refrigerator033_Drawer001_joint_actuator" joint="Refrigerator033_Drawer001_joint" gear="20"/>
-        <motor name="Refrigerator033_Drawer002_joint_actuator" joint="Refrigerator033_Drawer002_joint" gear="20"/>
-        <motor name="Refrigerator033_Drawer003_joint_actuator" joint="Refrigerator033_Drawer003_joint" gear="5"/>
-        <motor name="Refrigerator033_Drawer004_joint_actuator" joint="Refrigerator033_Drawer004_joint" gear="5"/>
+        <motor name="Refrigerator033_Door001_joint_actuator" joint="Refrigerator033_Door001_joint" gear="50"/>
+        <motor name="Refrigerator033_Door002_joint_actuator" joint="Refrigerator033_Door002_joint" gear="50"/>
+        <motor name="Refrigerator033_Drawer001_joint_actuator" joint="Refrigerator033_Drawer001_joint" gear="50"/>
+        <motor name="Refrigerator033_Drawer002_joint_actuator" joint="Refrigerator033_Drawer002_joint" gear="50"/>
+        <motor name="Refrigerator033_Drawer003_joint_actuator" joint="Refrigerator033_Drawer003_joint" gear="50"/>
+        <motor name="Refrigerator033_Drawer004_joint_actuator" joint="Refrigerator033_Drawer004_joint" gear="50"/>
     </actuator>
 </mujoco>
