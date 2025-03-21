@@ -2,15 +2,15 @@ room:
   walls:
     - name: wall_main_1
       type: wall
-      size: [1.484733, 1.5, 0.02]
-      pos: [2.104734, 0, 1.5]
+      size: [1.578643, 1.5, 0.02]
+      pos: [2.010824, 0, 1.5]
 
     - name: wall_main_1_backing
       type: wall
       backing: true
       backing_extended:  [True, False]
-      size: [1.484733, 1.5, 0.1]
-      pos: [2.104734, 0, 1.5]
+      size: [1.578643, 1.5, 0.1]
+      pos: [2.010824, 0, 1.5]
 
     - name: wall_right_1
       type: wall
@@ -28,32 +28,30 @@ room:
 
     - name: wall_main_2
       type: wall
-      size: [0.2899, 1.5, 0.02]
-      pos: [0.29, -1.12, 1.5]
-      size: [0.2899, 1.5, 0.02]
-      pos: [0.29, -1.12, 1.5]
+      size: [0.19609, 1.5, 0.02]
+      pos: [0.19609, -1.12, 1.5]
 
     - name: wall_main_2_backing
       type: wall
       backing: true
       backing_extended:  [False, False]
-      size: [0.25, 1.5, 0.1]
-      pos: [0.25, -1.12, 1.5]
-      pos: [0.25, -1.12, 1.5]
+      size: [0.15609, 1.5, 0.1]
+      pos: [0.15609, -1.12, 1.5]
 
     - name: wall_left_1
       type: wall
       size: [0.5395, 1.5, 0.02]
-      pos: [0.62, -0.520232, 1.5]
+      pos: [0.43218, -0.5395, 1.5]
       wall_side: left
 
     - name: wall_left_1_backing
       type: wall
       backing: true
       backing_extended: [False, False] 
-      size: [0.5395, 1.5, 0.1]
-      pos: [0.62, -0.520232, 1.5]
+      size: [0.538, 1.5, 0.1]
+      pos: [0.4321, -0.52, 1.5]
       wall_side: left
+
 
     - name: wall_main_3
       type: wall
@@ -83,14 +81,14 @@ room:
 
     - name: floor_2
       type: floor
-      size: [2.530026, 0.5205, 0.02]
-      pos: [3.150026, -0.520499, 0]
+      size: [2.623937, 0.5205, 0.02]
+      pos: [3.056115, -0.520499, 0]
 
     - name: floor_2_backing
       type: floor
       backing: true
-      size: [2.530026, 0.5205, 0.1]
-      pos: [3.150026, -0.520499, 0]
+      size: [2.623937, 0.5205, 0.1]
+      pos: [3.056115, -0.520499, 0]
 
 main_group_1:
   group_origin: [0, 0]

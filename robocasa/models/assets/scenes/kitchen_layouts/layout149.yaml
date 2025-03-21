@@ -68,7 +68,7 @@ room:
 
     - name: wall_left_04
       type: wall
-      size: [0.623, 0.375, 0.02]
+      size: [0.620, 0.375, 0.02]
       pos: [0.119535, -2.65345, 2.624984]
       wall_side: left
 
@@ -76,10 +76,10 @@ room:
       type: wall
       backing: true
       backing_extended: [False, False] 
-      size: [0.627725, 0.255, 0.1]
+      size: [0.620, 0.255, 0.1]
       pos: [0.119535, -2.65345, 2.744984]
       wall_side: left
-
+      
   floor:
     - name: floor_1
       type: floor
@@ -226,7 +226,7 @@ island_group_1:
 
     - name: dishwasher_1
       type: dishwasher
-      size: [0.600003, 0.600003, 0.89]
+      size: [0.6, 0.6, 0.89]
       alignment: top_back
       align_to: stack_2
       side: right
