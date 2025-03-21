@@ -185,12 +185,12 @@ left_group_1:
 
 island_group_1:
   group_origin: [0, 0]
-  group_pos: [4.916788, -3.173239]
+  group_pos: [4.916788, -3.337522]
   group_z_rot: -3.1415925025939906
   bottom_row_cabinets:
     - name: stack_1
       type: stack
-      pos: [0.3511, -0.5617, 0.469969]
+      pos: [0.3511, -0.726, 0.469969]
       size: [0.70229, 0.600005, 0.839938]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
@@ -198,7 +198,7 @@ island_group_1:
 
     - name: stack_2
       type: stack
-      pos: [1.2023, -0.5617, 0.47]
+      pos: [1.2023, -0.726, 0.47]
       size: [1.000005, 0.60001, 0.84]
       levels: [hinge_cabinet, panel_cabinet]
       percentages: [0.7, 0.3]
@@ -207,26 +207,26 @@ island_group_1:
     - name: cube_3
       type: box
       size: [0.1, 0.6, 0.89]
-      pos: [2.3523, -0.5617, 0.444984]
+      pos: [2.3523, -0.726, 0.444984]
 
     - name: cube_1
       type: box
       size: [0.061484, 0.0743, 0.89]
-      pos: [0.0307, -0.0383, 0.444984]
+      pos: [0.0307, -0.0372, 0.444984]
 
     - name: cube_2
       type: box
       size: [0.061484, 0.0743, 0.89]
-      pos: [2.3715, -0.0383, 0.444984]
+      pos: [2.3715, -0.0372, 0.444984]
 
     - name: cube_4
       type: box
       size: [2.402257, 0.038173, 0.89]
-      pos: [1.2011, -0.2426, 0.444984]
+      pos: [1.2011, -0.4069, 0.444984]
 
     - name: dishwasher_1
       type: dishwasher
-      size: [0.6, 0.6, 0.89]
+      size: [0.600003, 0.600003, 0.89]
       alignment: top_back
       align_to: stack_2
       side: right
@@ -238,8 +238,8 @@ island_group_1:
 
     - name: counter_1
       type: counter
-      pos: [1.2011, -0.4558, 0.459983]
-      size: [2.402261, 0.911707, 0.92]
+      pos: [1.2011, -0.538, 0.459983]
+      size: [2.402261, 1.075989, 0.92]
       interior_obj: sink
       obj_x_percent: 0.5
       obj_y_percent: 0.3
@@ -255,21 +255,21 @@ island_group_1:
 
 stool_group_1:
   group_origin: [0, 0]
-  group_pos: [4.548721, -3.374706]
+  group_pos: [4.548721, -3.545563]
   group_z_rot: -3.1415925661670165
   stool_row:
     - name: stool_2
       type: stool
-      pos: [0.25, -0.2, 0.5]
+      pos: [0.25, -0.25, 0.5]
 
     - name: stool_1
       type: stool
-      pos: [0.845, -0.2, 0.5]
+      pos: [0.845, -0.2501, 0.5]
 
     - name: stool_3
       type: stool
-      pos: [1.44, -0.2, 0.5]
-
+      pos: [1.44, -0.2501, 0.5]
+      
 main_group_1:
   group_origin: [0, 0]
   group_pos: [0.119542, -1.079795]
