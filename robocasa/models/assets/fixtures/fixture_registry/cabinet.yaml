@@ -93,6 +93,8 @@ vertical_grain:
 
 
 #### handle shapes ####
+handle_bar:
+  handle_type: bar
 handle_boxed:
   handle_type: boxed
 handle_knob:
@@ -135,4 +137,6 @@ handle_dark_gray_2:
 
 
 
-
+panel_handle_mix:
+  panel_type: wood_slab
+  handle_type: rectangular

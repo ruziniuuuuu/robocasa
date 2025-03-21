@@ -1,5 +1,4 @@
-<?xml version="1.0" ?>
-<mujoco model="protruding_rectangular_handle">
+<mujoco model="rectangular_handle">
     <compiler angle="radian"/>
     <asset>
         <mesh file="visuals/CabinetHandle004.obj" name="mesh"/>

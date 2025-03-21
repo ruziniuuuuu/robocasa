@@ -400,5 +400,3 @@ class ExtraWindow(MujocoXMLObjectRobocasa):
         self.pos = pos
         self._obj.set("pos", a2s(pos))
 
-
-

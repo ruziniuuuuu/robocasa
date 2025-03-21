@@ -98,7 +98,7 @@ class CabinetPanel(MujocoXMLObject):
             return
 
         self.texture = xml_path_completion(
-            self.texture, root=robocasa.models.assets_root
+            self.texture, root=robocasa.models.assets_root  
         )
         texture = find_elements(
             self.root, tags="texture", attribs={"name": "tex"}, return_first=True
@@ -612,6 +612,67 @@ class ExtraCabinetPanel(CabinetPanel):
         self.set_scale(scale)
 
 
+    def _add_handle(self):
+
+
+        if self.handle_type is None:
+            return
+        elif self.handle_type == "irregularity":
+            handle_class = IrregularityHandle
+            handle_y = -0.03
+            vpad = 0.20
+            hpad = 0.05
+        elif self.handle_type == "flat":
+            handle_class = FlatHandle
+            handle_y = 0
+            vpad = 0.20
+            hpad = 0.05
+        elif self.handle_type == "protruding_rectangular":
+            handle_class = ProtrudingRectangularHandle
+            handle_y = -0.01
+            vpad = 0.20
+            hpad = 0.05
+        elif self.handle_type == "rectangular":
+            handle_class = RectangularHandle
+            handle_y = -0.01 
+            vpad = 0.20
+            hpad = 0.05
+        else:
+            raise NotImplementedError
+        
+        panel_w = self.size[0]
+        panel_h = self.size[2]
+
+        handle = handle_class(
+            name="{}_handle".format(self.name),
+            panel_w=panel_w,
+            panel_h=panel_h,
+            **self.handle_config,
+        )
+        handle_elem = handle.get_obj()
+
+        if self.handle_vpos == "bottom":
+            handle_z = -(panel_h / 2 - vpad)
+        elif self.handle_vpos == "top":
+            handle_z = panel_h / 2 - vpad
+        elif self.handle_vpos == "center":
+            handle_z = 0.0
+        else:
+            raise NotImplementedError
+
+        if self.handle_hpos == "left":
+            handle_x = -(panel_w / 2 - hpad)
+        elif self.handle_hpos == "right":
+            handle_x = panel_w / 2 - hpad
+        elif self.handle_hpos == "center":
+            handle_x = 0.0
+        else:
+            raise NotImplementedError
+        
+        handle_elem.set("pos", a2s([handle_x, handle_y, handle_z]))
+
+        self.merge_assets(handle)
+        self.get_obj().append(handle_elem)
 
 
 
@@ -676,7 +737,7 @@ class BeigeSlabCabinetPanel(CabinetPanel):
 
 class VerticalGrainCabinetPanel(CabinetPanel):
     """
-    Initialize a shaker cabinet panel, which is a simple flat panel with a verticalGrain board.
+    Initialize a VerticalGrain cabinet panel, which is a simple flat panel with a verticalGrain board.
     """
 
     def __init__(self,  *args, **kwargs):

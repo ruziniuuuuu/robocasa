@@ -114,23 +114,11 @@ class BarHandle(Handle):
     Args:
         length (float): Length of the handle
 
-        handle_pad (float): A minimum difference between handle length and cabinet panel height
+        handle_pad (float):  A minimum difference between handle length and cabinet panel height
     """
 
-    def __init__(
-        self,
-        length=0.24,
-        # connector_pad=0.05,
-        handle_pad=0.04,
-        *args,
-        **kwargs
-    ):
-        # z-direction padding for top and bottom connectors
-        # self.connector_pad = connector_pad
-        # assert length > connector_pad * 2
-        # z-direction padding for handle from sides of cabinet
+    def __init__(self, length=0.24, handle_pad=0.04, *args, **kwargs):
         self.handle_pad = handle_pad
-
         super().__init__(
             xml="fixtures/handles/bar_handle.xml", length=length, *args, **kwargs
         )
@@ -150,12 +138,18 @@ class BarHandle(Handle):
         Treats the three types of cabinets separately
         """
 
+        # 添加尺寸验证
+        if self.panel_h <= 0:
+            raise ValueError(f"Invalid panel height: {self.panel_h}")
+            
+        if self.length <= 0:
+            raise ValueError(f"Invalid handle length: {self.length}")
+
         # adjust handle size if necessary
         if self.panel_h < self.length + 2 * self.handle_pad:
             self.length = self.panel_h - 2 * self.handle_pad
-            # if self.length < 3 * self.connector_pad:
-            #     raise ValueError("Cabinet size {:.3f} is too small for " \
-            #                      "bar handles.".format(self.panel_h))
+            if self.length <= 0:
+                raise ValueError(f"Panel height {self.panel_h} is too small for bar handles with padding {self.handle_pad}")
 
         offset = self.length / 2 * 0.60  # - self.connector_pad
         # distance between main handle and door
@@ -164,8 +158,8 @@ class BarHandle(Handle):
         # calculate positions for each component
         positions = {
             "handle": np.array([0, -conn_len, 0]),
-            "handle_connector_top": np.array([0, -conn_len / 2, offset]),
-            "handle_connector_bottom": np.array([0, -conn_len / 2, -offset]),
+            "handle_connector_top": np.array([0, -conn_len / 2-0.05, offset]),
+            "handle_connector_bottom": np.array([0, -conn_len / 2-0.05, -offset]),
         }
         sizes = {
             "handle": [0.013, self.length / 2],
@@ -236,9 +230,9 @@ class BoxedHandle(Handle):
 
         # calculate positions for each component
         positions = {
-            "handle": np.array([0, -conn_len, 0]),
-            "handle_connector_top": np.array([0, -conn_len / 2, connector_zpos]),
-            "handle_connector_bottom": np.array([0, -conn_len / 2, -connector_zpos]),
+            "handle": np.array([0, -conn_len-0.05, 0]),
+            "handle_connector_top": np.array([0, -conn_len / 2-0.05, connector_zpos]),
+            "handle_connector_bottom": np.array([0, -conn_len / 2-0.05, -connector_zpos]),
         }
         sizes = {
             "handle": [0.01, 0.01, self.length / 2],
@@ -331,6 +325,7 @@ class ExtraHandle(MujocoXMLObject):
         texture=None,
         length=0.24,
         handle_pad=0.05,
+        handle_size=None,
         orientation="vertical"
     ):
         super().__init__(
@@ -348,6 +343,8 @@ class ExtraHandle(MujocoXMLObject):
 
         self.panel_w = panel_w
         self.panel_h = panel_h
+
+        self.handle_size = np.concatenate([handle_size, [self.length / 2]])
 
         self._create_handle()
 
@@ -370,14 +367,18 @@ class ExtraHandle(MujocoXMLObject):
         if self.panel_h < self.length + 2 * self.handle_pad:
             self.length = self.panel_h - 2 * self.handle_pad
 
-        conn_pad_len = 0.02
+        conn_len = 0.1
 
-        positions = np.array([0, -conn_pad_len, 0])
-        self._obj.set("pos", a2s(positions))
+        # positions = {"handle": np.array([0, -conn_len, 0])}
+
+        # # positions = np.array([0, conn_len, 0])
+        # self._obj.set("pos", a2s(positions["handle"]))
 
         if self.orientation == "vertical":
             euler = np.array([0, 1.5708, 0])
             self._obj.set("euler", a2s(euler))
+
+
 
 
 
@@ -410,11 +411,12 @@ class IrregularityHandle(ExtraHandle):
         self,
         xml="fixtures/handles/irregularity_handle/model.xml",
         name="irregularity_handle",
+        handle_size=[0.01],
         *args,
         **kwargs
     ):
 
-        super().__init__(xml=xml, name=name,  *args, **kwargs)
+        super().__init__(xml=xml, name=name, handle_size=handle_size, *args, **kwargs)
 
 
 class FlatHandle(ExtraHandle):
@@ -426,10 +428,13 @@ class FlatHandle(ExtraHandle):
         self,
         xml="fixtures/handles/flat_handle/model.xml",
         name="flat_handle",
+        handle_size=[0.01],
         *args,
         **kwargs
     ):
-        super().__init__(xml=xml, name=name,  *args, **kwargs)
+        super().__init__(xml=xml, name=name, handle_size=handle_size, *args, **kwargs)
+    
+
 
 
 
@@ -441,10 +446,11 @@ class RectangularHandle(ExtraHandle):
         self,
         xml="fixtures/handles/rectangular_handle/model.xml",
         name="rectangular_handle",
+        handle_size=[0.01, 0.01],
         *args,
         **kwargs
     ):
-        super().__init__(xml=xml, name=name, *args, **kwargs)
+        super().__init__(xml=xml, name=name, handle_size=handle_size, *args, **kwargs)
 
 
 class ProtrudingRectangularHandle(ExtraHandle):
@@ -455,9 +461,10 @@ class ProtrudingRectangularHandle(ExtraHandle):
             self,
             xml="fixtures/handles/protruding_rectangular_handle/model.xml",
             name="protruding_rectangular_handle",
+            handle_size=[0.01, 0.01],
             *args,
             **kwargs
     ):
-        super().__init__(xml=xml, name=name, *args, **kwargs)
+        super().__init__(xml=xml, name=name, handle_size=handle_size, *args, **kwargs)
 
 

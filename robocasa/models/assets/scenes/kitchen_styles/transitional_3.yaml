@@ -1,6 +1,6 @@
 # fixtures using primitive geoms
 cabinet:
-  default: handle_irregularity
+  default: panel_handle_mix
   cab_top: [vertical_grain, handle_rectangular]
   cab_top_small: [beige_slab, red_slab]
   shelves: dark_wood_planks_shelves
