@@ -68,7 +68,7 @@ room:
 
     - name: wall_left_04
       type: wall
-      size: [0.620, 0.375, 0.02]
+      size: [0.589, 0.375, 0.02]
       pos: [0.119535, -2.65345, 2.624984]
       wall_side: left
 
