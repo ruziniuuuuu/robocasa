@@ -226,7 +226,7 @@ island_group_1:
 
     - name: dishwasher_1
       type: dishwasher
-      size: [0.6, 0.6, 0.89]
+      size: [0.600003, 0.600003, 0.89]
       alignment: top_back
       align_to: stack_2
       side: right
