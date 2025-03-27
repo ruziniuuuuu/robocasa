@@ -91,6 +91,6 @@
 
   </worldbody>
   <actuator>
-  <position name="door_actuator" joint="microjoint" kp="500" kv="50"/>
+  <position name="door_actuator" joint="microjoint" kp="80" kv="50"/>
  </actuator>
 </mujoco>

@@ -32,6 +32,7 @@ def test_microwave(model_path):
 
     # 获取组件ID
     door_actuator_id = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_ACTUATOR, 'door_actuator')
+    door_joint_id = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_JOINT, 'microjoint')
     open_joint_id = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_JOINT, 'start_button_joint')
     close_joint_id = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_JOINT, 'close_button_joint')
 
@@ -51,6 +52,11 @@ def test_microwave(model_path):
     DOOR_OPEN = -1.57        # 全开角度(-90°)
     DOOR_CLOSE = 0.0         # 全关角度
 
+    # 新增时间相关参数
+    DOOR_SPEED = 0.05  # 门运动速度
+
+    current_target = DOOR_CLOSE
+
     while True:
         # 计算实时位移
         delta_open = data.jnt(open_joint_id).qpos[0] - open_origin
@@ -58,17 +64,38 @@ def test_microwave(model_path):
 
         # 开按钮触发
         if delta_open > PRESS_THRESHOLD:
-            data.ctrl[door_actuator_id] = DOOR_OPEN
-            print("开门中")
+            current_target = DOOR_OPEN
 
-        # 关按钮触发
         elif delta_close > PRESS_THRESHOLD:
-            data.ctrl[door_actuator_id] = DOOR_CLOSE
-            print("关门中")
+            current_target = DOOR_CLOSE
+
+        print(f"当前目标：{current_target}")
+
+        current_angle = data.jnt(door_joint_id).qpos[0]
+
+        # 直接设置速度
+        if current_target == DOOR_OPEN:
+            data.ctrl[door_actuator_id] = max(current_angle - DOOR_SPEED, current_target)
+        elif current_target == DOOR_CLOSE:
+            data.ctrl[door_actuator_id] = min(current_angle + DOOR_SPEED, current_target)
+    
+
+        # 实时计算控制量（比例控制）
+        current_angle = data.jnt(door_joint_id).qpos[0]
+        error = current_target - current_angle
+        print(f"当前角度：{current_angle}, 目标角度：{current_target}, 误差：{error}")
+
+                # 到达目标后停止
+        if abs(error) < 0.01:
+            data.ctrl[door_actuator_id] = 0
+            print("到达目标")
+        
+        print(f"当前控制量：{data.ctrl[door_actuator_id]}")
 
         mujoco.mj_step(model, data)
         viewer.sync()
 
 
 if __name__ == "__main__":
+
     test_microwave("./robocasa/models/assets/fixtures/microwaves/gray/model.xml")   
