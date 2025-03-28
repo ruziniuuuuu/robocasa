@@ -389,10 +389,6 @@ island_group_1:
 
 
   counter_accessories:
-    - name: knifeblock
-      type: knife_block
-      placement: {'fixture': 'counter_1_island_group_1', 'size': [1.0, 'obj'], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
-
     - name: papertowel
       type: paper_towel
       placement: {'fixture': 'counter_1_island_group_1', 'size': [0.4, 0.3], 'pos': [1.0, 0.5], 'rotation': [0, 0]}
