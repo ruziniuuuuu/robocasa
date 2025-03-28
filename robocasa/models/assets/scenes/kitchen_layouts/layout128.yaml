@@ -182,6 +182,16 @@ main_group_1:
         pos: [-1.0, 0.5]
         rotation: [0, 0]
 
+    - name: papertowel
+      type: paper_towel
+      placement: 
+        fixture: counter_1_main_group_1
+        sample_region_kwargs:
+          ref: stack_2
+        size: [0.4, 0.3]
+        pos: [1.0, 0.5]
+        rotation: [0, 0]
+
   wall_stack:
     - name: bottom
       type: stack
