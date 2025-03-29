@@ -279,12 +279,14 @@ right_group_1:
   counter_accessories:
     - name: coffee_machine
       type: coffee_machine
-      placement: {'fixture': 'counter_1_right_group_1', 'size': [1.0, 0.52], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
+      placement: {'fixture': 'counter_1_right_group_1', 'sample_region_kwargs':{'ref': 'hingecabinet_1'},'size': [1.0, 0.52], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
 
     - name: toaster
       type: toaster
-      placement: {'fixture': 'counter_1_right_group_1', 'size': [1.0, 0.4], 'pos': [1.0, 0], 'rotation': [0, 0]}
-     
+      placement: {'fixture': 'counter_1_right_group_1', 'sample_region_kwargs':{'ref': 'hingecabinet_2'},'size': [1.0, 0.4], 'pos': [1.0, 0], 'rotation': [0, 0]}
+    - name: papertowel
+      type: paper_towel
+      placement: {'fixture': 'counter_1_right_group_1', 'sample_region_kwargs':{'ref': 'hingecabinet_3'},'size': [0.4, 0.3], 'pos': [1.0, 0.5], 'rotation': [0, 0]}
      
 island_group_1:
   group_origin: [0, 0]
@@ -388,10 +390,6 @@ island_group_1:
       offset: [0, 0, 0]
 
 
-  counter_accessories:
-    - name: papertowel
-      type: paper_towel
-      placement: {'fixture': 'counter_1_island_group_1', 'size': [0.4, 0.3], 'pos': [1.0, 0.5], 'rotation': [0, 0]}
 
 stool_group_1:
   group_origin: [0, 0]
