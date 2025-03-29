@@ -244,15 +244,7 @@ island_group_1:
       obj_x_percent: 0.5
       obj_y_percent: 0.3
 
-  counter_accessories:
-    - name: knifeblock
-      type: knife_block
-      placement: {'fixture': 'counter_1_island_group_1', 'size': [1.0, 'obj'], 'pos': [1.0, 1.0], 'rotation': [0, 0]}
-
-    - name: papertowel
-      type: paper_towel
-      placement: {'fixture': 'counter_1_island_group_1', 'size': [0.4, 0.3], 'pos': [1.0, 0.5], 'rotation': [0, 0]}
-
+    
 stool_group_1:
   group_origin: [0, 0]
   group_pos: [4.548721, -3.545563]
@@ -383,3 +375,6 @@ main_group_1:
       type: toaster
       placement: {'fixture': 'counter_3_main_group_1', 'size': [1.0, 0.4], 'pos': [1.0, 0], 'rotation': [0, 0]}
 
+    - name: papertowel
+      type: paper_towel
+      placement: {'fixture': 'counter_2_main_group_1', 'sample_region_kwargs':{'ref': 'singlecabinet_02'}, 'size': [0.4, 0.3], 'pos': [1.0, 0.5], 'rotation': [0, 0]}
