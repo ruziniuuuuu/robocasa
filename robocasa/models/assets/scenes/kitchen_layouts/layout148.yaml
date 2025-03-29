@@ -104,7 +104,9 @@ main_group_1:
       type: single_cabinet
       pos: [3.1282, -0.1846, 1.84]
       size: [0.5, 0.369139, 0.92]
-
+      orientation: left
+      panel_config: {'handle_vpos': 'bottom'}
+      
     - name: singlecabinet_2
       type: single_cabinet
       pos: [5.0551, -0.1846, 1.84]
@@ -207,6 +209,10 @@ main_group_1:
         size: [1.0, 0.52]
         pos: [null, 1.0]
         rotation: [0, 0]
+
+    - name: toaster
+      type: toaster
+      placement: {'fixture': 'counter_1_main_group_1', 'size': [1.0, 0.4], 'pos': [1.0, 0], 'rotation': [0, 0]}
 
 left_group_1:
   group_origin: [0, 0]
@@ -348,11 +354,7 @@ island_group_1:
       type: box
       size: [2.480869, 0.050035, 0.890001]
       pos: [1.2916, -0.2365, 0.445]
-
-  counter_accessories:
-    - name: toaster
-      type: toaster
-      placement: {'fixture': 'counter_4_island_group_1', 'size': [1.0, 0.4], 'pos': [1.0, 0], 'rotation': [0, 0]}
+    
 
 stool_group_1:
   group_origin: [0, 0]
