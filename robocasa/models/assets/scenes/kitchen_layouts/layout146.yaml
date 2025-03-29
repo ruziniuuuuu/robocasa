@@ -2,15 +2,15 @@ room:
   walls:
     - name: wall_main_1
       type: wall
-      size: [3.177517, 1.5, 0.02]
-      pos: [3.549034, 0.00012, 1.5]
+      size: [3.477517, 1.5, 0.02]
+      pos: [3.249034, 0.00012, 1.5]
 
     - name: wall_main_1_backing
       type: wall
       backing: true
       backing_extended: [False, False] 
-      size: [3.177517, 1.5, 0.1]
-      pos: [3.549034, 0.00012, 1.5]
+      size: [3.477517, 1.5, 0.1]
+      pos: [3.249034, 0.00012, 1.5]
 
     - name: wall_right_1
       type: wall
@@ -29,14 +29,14 @@ room:
   floor:
     - name: floor_1
       type: floor
-      size: [3.17753, 3.002782, 0.02]
-      pos: [3.549021, -3.002714, 0]
+      size: [3.47753, 3.002782, 0.02]
+      pos: [3.249021, -3.002714, 0]
 
     - name: floor_1_backing
       type: floor
       backing: true
-      size: [3.17753, 3.002782, 0.1]
-      pos: [3.549021, -3.002714, 0]
+      size: [3.47753, 3.002782, 0.1]
+      pos: [3.249021, -3.002714, 0]
 
   wall_accessories:
     - name: wallaccessory_1
@@ -250,6 +250,9 @@ main_group_1:
       type: paper_towel
       placement: {'fixture': 'counter_2_main_group_1', 'size': [0.4, 0.3], 'pos': [1.0, 0.5], 'rotation': [0, 0]}
 
+    - name: plant
+      type: plant
+      placement: {'fixture': 'counter_2_main_group_1', 'size': [0.5, 0.5], 'pos': [-1.0, 0.5], 'rotation': [0, 0]}
 
 right_group_1:
   group_origin: [0, 0]
@@ -448,11 +451,7 @@ island_group_1:
       type: box
       size: [0.100014, 1.554588, 0.89]
       pos: [-0.0501, 0.8273, 0.445]
-
-  counter_accessories:
-    - name: plant
-      type: plant
-      placement: {'fixture': 'counter_4_island_group_1', 'size': [0.5, 0.5], 'pos': [-1.0, 0.5], 'rotation': [0, 0]}
+   
 
 stool_group_1:
   group_origin: [0, 0]
