@@ -142,7 +142,7 @@ main_group_1:
   counter_accessories_1:
     - name: papertowel
       type: paper_towel
-      placement: {'fixture': 'counter_1_main_group_1', 'size': [0.4, 0.3], 'pos': [1.0, 0.5], 'rotation': [0, 0]}
+      placement: {'fixture': 'counter_1_main_group_1', 'sample_region_kwargs':{'ref': 'dishwasher_1'},'size': [0.4, 0.3], 'pos': [1.0, 0.5], 'rotation': [0, 0]}
 
   wall_stack_1:
     - name: fridgesidebyside
@@ -278,7 +278,7 @@ left_group_1:
 
     - name: toaster
       type: toaster
-      placement: {'fixture': 'counter_1_main_group_1', 'size': [1.0, 0.40], 'pos': [1, 0], 'rotation': [0, 0]}
+      placement: {'fixture': 'counter_1_main_group_1', 'sample_region_kwargs':{'ref': 'singlecabinet_2'},'size': [1.0, 0.40], 'pos': [1, 0], 'rotation': [0, 0]}
 
 island_group_1:
   group_origin: [0, 0]
@@ -327,7 +327,7 @@ island_group_1:
       size: [0.718988, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'left'}}}
+      configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
 
     - name: stack_06
       type: stack
@@ -335,7 +335,7 @@ island_group_1:
       size: [0.718988, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'right'}}}
+      configs: {'single_cabinet': {'orientation': 'right', 'panel_config': {'handle_vpos': 'top'}}}
 
 island_group_2:
   group_origin: [0, 0]
@@ -348,7 +348,7 @@ island_group_2:
       size: [0.549468, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'right'}}}
+      configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
 
     - name: stack_08
       type: stack
@@ -364,7 +364,7 @@ island_group_2:
       size: [0.549468, 0.6, 0.84]
       levels: [single_cabinet, drawer]
       percentages: [0.7, 0.3]
-      configs: {'single_cabinet': {'panel_config': {'handle_vpos': 'top', 'handle_hpos': 'right'}}}
+      configs: {'single_cabinet': {'orientation': 'left', 'panel_config': {'handle_vpos': 'top'}}}
 
     - name: stack_11
       type: stack
