@@ -330,7 +330,6 @@ class Kitchen(ManipulationEnv, metaclass=KitchenEnvMeta):
             horizon=horizon,
             ignore_done=ignore_done,
             hard_reset=True,
-            load_model_on_init=False,
             camera_names=camera_names,
             camera_heights=camera_heights,
             camera_widths=camera_widths,
@@ -417,7 +416,6 @@ class Kitchen(ManipulationEnv, metaclass=KitchenEnvMeta):
             mujoco_arena=self.mujoco_arena,
             mujoco_robots=[robot.robot_model for robot in self.robots],
             mujoco_objects=list(self.fixtures.values()),
-            enable_multiccd=True,
         )
 
     def _load_model(self):
