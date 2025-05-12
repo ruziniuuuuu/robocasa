@@ -582,8 +582,8 @@ class ExtraCabinetPanel(CabinetPanel):
     Initialize a wood slab cabinet panel, which is a panel door with wood texture.
     """
     def __init__(self, *args, **kwargs):
-        xml = "fixtures/cabinets/cabinet_panels/wood_slab_door/model.xml"
-        super().__init__(xml=xml,  *args, **kwargs)
+        kwargs['xml'] = "fixtures/cabinets/cabinet_panels/wood_slab_door/model.xml"
+        super().__init__(*args, **kwargs)
 
     def _get_components(self):
         """
@@ -612,77 +612,13 @@ class ExtraCabinetPanel(CabinetPanel):
         self.set_scale(scale)
 
 
-    def _add_handle(self):
-
-
-        if self.handle_type is None:
-            return
-        elif self.handle_type == "irregularity":
-            handle_class = IrregularityHandle
-            handle_y = -0.03
-            vpad = 0.20
-            hpad = 0.05
-        elif self.handle_type == "flat":
-            handle_class = FlatHandle
-            handle_y = 0
-            vpad = 0.20
-            hpad = 0.05
-        elif self.handle_type == "protruding_rectangular":
-            handle_class = ProtrudingRectangularHandle
-            handle_y = -0.01
-            vpad = 0.20
-            hpad = 0.05
-        elif self.handle_type == "rectangular":
-            handle_class = RectangularHandle
-            handle_y = -0.01 
-            vpad = 0.20
-            hpad = 0.05
-        else:
-            raise NotImplementedError
-        
-        panel_w = self.size[0]
-        panel_h = self.size[2]
-
-        handle = handle_class(
-            name="{}_handle".format(self.name),
-            panel_w=panel_w,
-            panel_h=panel_h,
-            **self.handle_config,
-        )
-        handle_elem = handle.get_obj()
-
-        if self.handle_vpos == "bottom":
-            handle_z = -(panel_h / 2 - vpad)
-        elif self.handle_vpos == "top":
-            handle_z = panel_h / 2 - vpad
-        elif self.handle_vpos == "center":
-            handle_z = 0.0
-        else:
-            raise NotImplementedError
-
-        if self.handle_hpos == "left":
-            handle_x = -(panel_w / 2 - hpad)
-        elif self.handle_hpos == "right":
-            handle_x = panel_w / 2 - hpad
-        elif self.handle_hpos == "center":
-            handle_x = 0.0
-        else:
-            raise NotImplementedError
-        
-        handle_elem.set("pos", a2s([handle_x, handle_y, handle_z]))
-
-        self.merge_assets(handle)
-        self.get_obj().append(handle_elem)
-
-
-
 class RedSlabCabinetPanel(CabinetPanel):
     """
     Initialize a wood slab cabinet panel, which is a panel door with frame grain.
     """
     def __init__(self, *args, **kwargs):
-        xml = "fixtures/cabinets/cabinet_panels/red_slab_door/model.xml"
-        super().__init__(xml=xml, *args, **kwargs)
+        kwargs['xml'] = "fixtures/cabinets/cabinet_panels/red_slab_door/model.xml"
+        super().__init__(*args, **kwargs)
 
     def _get_components(self):
         """
@@ -696,13 +632,19 @@ class RedSlabCabinetPanel(CabinetPanel):
         Creates the cabinet panel. This involves setting the size and position of the panel's geom
         """
         geoms = self._get_components()
+        size = [1, 1, 1]
+        for i, geom in geoms.items():
+            # get size
+            size = geom[0].get("size").split(" ")
+            break
 
+        # remove door_vis in geoms
         # divide by 2 for mujoco convention
         x, y, z = [dim / 2 for dim in self.size]
 
-        sizes = {"door": [x, y, z]}
-        positions = {"door": [0, 0, 0]}
-        set_geom_dimensions(sizes, positions, geoms, rotated=False)
+        scale = [ x / float(size[0]), y / float(size[1]), z / float(size[2])]
+
+        self.set_scale(scale)
 
 
 class BeigeSlabCabinetPanel(CabinetPanel):
@@ -711,8 +653,8 @@ class BeigeSlabCabinetPanel(CabinetPanel):
     """
 
     def __init__(self, *args, **kwargs):
-        xml = "fixtures/cabinets/cabinet_panels/beige_slab_door/model.xml"
-        super().__init__(xml=xml, *args, **kwargs)
+        kwargs['xml'] = "fixtures/cabinets/cabinet_panels/beige_slab_door/model.xml"
+        super().__init__(*args, **kwargs)
 
     def _get_components(self):
         """
@@ -726,13 +668,19 @@ class BeigeSlabCabinetPanel(CabinetPanel):
         Creates the cabinet panel. This involves setting the size and position of the panel's geom
         """
         geoms = self._get_components()
+        size = [1, 1, 1]
+        for i, geom in geoms.items():
+            # get size
+            size = geom[0].get("size").split(" ")
+            break
 
+        # remove door_vis in geoms
         # divide by 2 for mujoco convention
         x, y, z = [dim / 2 for dim in self.size]
 
-        sizes = {"door": [x, y, z]}
-        positions = {"door": [0, 0, 0]}
-        set_geom_dimensions(sizes, positions, geoms, rotated=False)
+        scale = [ x / float(size[0]), y / float(size[1]), z / float(size[2])]
+
+        self.set_scale(scale)
 
 
 class VerticalGrainCabinetPanel(CabinetPanel):
@@ -741,8 +689,8 @@ class VerticalGrainCabinetPanel(CabinetPanel):
     """
 
     def __init__(self,  *args, **kwargs):
-        xml = "fixtures/cabinets/cabinet_panels/vertical_grain_door/model.xml"
-        super().__init__(xml=xml,  *args, **kwargs)
+        kwargs['xml'] = "fixtures/cabinets/cabinet_panels/vertical_grain_door/model.xml"
+        super().__init__(*args, **kwargs)
 
     def _get_components(self):
         """
@@ -756,11 +704,16 @@ class VerticalGrainCabinetPanel(CabinetPanel):
         Creates the cabinet panel. This involves setting the size and position of the panel's geom
         """
         geoms = self._get_components()
+        size = [1, 1, 1]
+        for i, geom in geoms.items():
+            # get size
+            size = geom[0].get("size").split(" ")
+            break
 
+        # remove door_vis in geoms
         # divide by 2 for mujoco convention
         x, y, z = [dim / 2 for dim in self.size]
 
-        sizes = {"door": [x, y, z]}
-        positions = {"door": [0, 0, 0]}
-        set_geom_dimensions(sizes, positions, geoms, rotated=False)
+        scale = [ x / float(size[0]), y / float(size[1]), z / float(size[2])]
 
+        self.set_scale(scale)

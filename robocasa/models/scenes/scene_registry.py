@@ -73,6 +73,7 @@ class LayoutType(IntEnum):
     LAYOUT150 = 150
     LAYOUT151 = 151
     LAYOUT152 = 152
+    LAYOUT153 = 153
 
     # negative values correspond to groups (see LAYOUT_GROUPS_TO_IDS)
     ALL = -1

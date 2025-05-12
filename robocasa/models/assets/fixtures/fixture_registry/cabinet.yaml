@@ -138,5 +138,5 @@ handle_dark_gray_2:
 
 
 panel_handle_mix:
-  panel_type: wood_slab
-  handle_type: rectangular
+  panel_type: vertical_grain
+  handle_type: irregularity
